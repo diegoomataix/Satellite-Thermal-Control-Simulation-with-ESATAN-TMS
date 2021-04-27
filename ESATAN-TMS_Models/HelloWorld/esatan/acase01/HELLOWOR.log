@@ -2,7 +2,7 @@
 #@@> ESATAN-TMS  2020                    November  2019
 #@@> ITP Engines UK - www.esatan-tms.com
 #@@>
-#@@> Run date: 20 April     2021  11:13:52
+#@@> Run date: 27 April     2021  10:36:33
 #@@>
 
 $MODEL HelloWorld_acase01, ACDFILE
@@ -2226,7 +2226,7 @@ C
       NLOOP=500
       RELXCA=0.01
       DTIMEI=10.0
-      CALL SOLCYC('SLCRNC',0.01D0,0.01D0,6050.2473D0,10,' ','NONE')
+      CALL SOLCYC('SLCRNC',0.01D0,0.01D0,6050.2473D0,50,' ','NONE')
 C
       CALL SLCRNC
 C

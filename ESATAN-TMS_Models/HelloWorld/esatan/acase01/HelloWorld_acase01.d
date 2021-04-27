@@ -1,7 +1,7 @@
 $MODEL HelloWorld_acase01, ACDFILE
 # ESATAN-TMS 2020, run date 11:33 Tue 13 Apr 2021
 # Model name: HelloWorld        Analysis case: acase01
-# 
+#
 # template file: Template.tpl
 # ESATAN-TMS 2020, run date 11:32 Tue 13 Apr 2021
 # Model name: HelloWorld        Analysis case: acase01
@@ -55,7 +55,7 @@ C
       NLOOP=500
       RELXCA=0.01
       DTIMEI=10.0
-      CALL SOLCYC('SLCRNC',0.01D0,0.01D0,6050.2473D0,10,' ','NONE')
+      CALL SOLCYC('SLCRNC',0.01D0,0.01D0,6050.2473D0,50,' ','NONE')
 C
       CALL SLCRNC
 C

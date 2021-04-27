@@ -1,0 +1,29 @@
+/* ESATAN-TMS version 2020, run date 11:21 Tue 27 Apr 2021 */
+BEGIN_MODEL GagarinSat_v0 WORKBENCH_V1
+
+REAL MLI_k_through_data[5, 2] = {-75.0, 0.00393, -45.0, 0.0104, 14.0, 0.01499, 50.0, 0.02289, 70.0, 0.03368};
+PROPERTY MLI_k_through;
+
+MLI_k_through = DEFINE_PROPERTY (dependence = "TEMPERATURE",
+    interpolation = "linear", data = MLI_k_through_data);
+
+OPTICAL VDA_Kapton;
+DEFINE_OPTICAL(optical = VDA_Kapton,
+               description = "",
+               ir_emiss = 0.1,
+               ir_transm = 0.0,
+               solar_absorb = 0.2,
+               solar_transm = 0.0,
+               ir_spec_refl = 0.9,
+               solar_spec_refl = 0.8);
+
+OPTICAL IR_lens;
+DEFINE_OPTICAL(optical = IR_lens,
+               description = "",
+               ir_emiss = 0.1,
+               ir_transm = 0.9,
+               solar_absorb = 0.1,
+               solar_transm = 0.0,
+               ir_spec_refl = 0.0,
+               solar_spec_refl = 0.0);
+

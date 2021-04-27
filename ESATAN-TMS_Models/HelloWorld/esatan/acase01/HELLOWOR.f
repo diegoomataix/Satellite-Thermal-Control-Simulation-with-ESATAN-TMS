@@ -215,7 +215,7 @@ C
       IG(4)=500                                                         
       RG(13)=0.01                                                       
       RG(3)=10.0                                                        
-      CALL SOLCYC('SLCRNC',0.01D0,0.01D0,6050.2473D0,10,' ','NONE')     
+      CALL SOLCYC('SLCRNC',0.01D0,0.01D0,6050.2473D0,50,' ','NONE')     
       CALL SLCRNC                                                       
       RETURN                                                            
       END                                                               

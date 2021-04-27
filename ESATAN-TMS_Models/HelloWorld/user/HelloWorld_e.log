@@ -284,3 +284,5 @@ RUN_ANALYSIS (
     analysis_case = acase01);
 /* ESATAN-TMS version 2020, run date 9:37 Tue 27 Apr 2021 */
 /* BEGIN_MODEL HelloWorld WORKBENCH_V1 */ ;
+RUN_ANALYSIS (
+    analysis_case = acase01);

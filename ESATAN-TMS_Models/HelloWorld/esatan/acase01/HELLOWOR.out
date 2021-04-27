@@ -1,6 +1,6 @@
 1
  ESATAN-TMS  2020                                                      Page     1
- 20 April     2021  11:13:54                                   HELLOWORLD_ACASE01
+ 27 April     2021  10:36:37                                   HELLOWORLD_ACASE01
 
 
 
@@ -289,7 +289,7 @@
 
 1
  ESATAN-TMS  2020                                                      Page     2
- 20 April     2021  11:13:54                                   HELLOWORLD_ACASE01
+ 27 April     2021  10:36:37                                   HELLOWORLD_ACASE01
 
 
 
@@ -579,7 +579,7 @@
 
 1
  ESATAN-TMS  2020                                                      Page     3
- 20 April     2021  11:13:54                                   HELLOWORLD_ACASE01
+ 27 April     2021  10:36:37                                   HELLOWORLD_ACASE01
 
 
 
@@ -869,7 +869,7 @@
 
 1
  ESATAN-TMS  2020                                                      Page     4
- 20 April     2021  11:13:54                                   HELLOWORLD_ACASE01
+ 27 April     2021  10:36:37                                   HELLOWORLD_ACASE01
 
 
 
@@ -1159,7 +1159,7 @@
 
 1
  ESATAN-TMS  2020                                                      Page     5
- 20 April     2021  11:13:54                                   HELLOWORLD_ACASE01
+ 27 April     2021  10:36:37                                   HELLOWORLD_ACASE01
 
 
 
@@ -1473,7 +1473,7 @@
 @                          
 1
  ESATAN-TMS  2020                                                      Page     6
- 20 April     2021  11:13:54                                   HELLOWORLD_ACASE01
+ 27 April     2021  10:36:37                                   HELLOWORLD_ACASE01
 
 
 
@@ -1871,7 +1871,7 @@
 @                          
 1
  ESATAN-TMS  2020                                                      Page     7
- 20 April     2021  11:13:54                                   HELLOWORLD_ACASE01
+ 27 April     2021  10:36:37                                   HELLOWORLD_ACASE01
 
 
 
@@ -2269,7 +2269,7 @@
 @                          
 1
  ESATAN-TMS  2020                                                      Page     8
- 20 April     2021  11:13:54                                   HELLOWORLD_ACASE01
+ 27 April     2021  10:36:37                                   HELLOWORLD_ACASE01
 
 
 
@@ -2571,7 +2571,7 @@
 @                          
 1
  ESATAN-TMS  2020                                                      Page     9
- 20 April     2021  11:13:54                                   HELLOWORLD_ACASE01
+ 27 April     2021  10:36:37                                   HELLOWORLD_ACASE01
 
 
 
@@ -2861,7 +2861,7 @@
 
 1
  ESATAN-TMS  2020                                                      Page    10
- 20 April     2021  11:13:54                                   HELLOWORLD_ACASE01
+ 27 April     2021  10:36:37                                   HELLOWORLD_ACASE01
 
 
 
@@ -3151,7 +3151,7 @@
 
 1
  ESATAN-TMS  2020                                                      Page    11
- 20 April     2021  11:13:54                                   HELLOWORLD_ACASE01
+ 27 April     2021  10:36:37                                   HELLOWORLD_ACASE01
 
 
 
@@ -3441,7 +3441,7 @@
 
 1
  ESATAN-TMS  2020                                                      Page    12
- 20 April     2021  11:13:54                                   HELLOWORLD_ACASE01
+ 27 April     2021  10:36:37                                   HELLOWORLD_ACASE01
 
 
 
@@ -3809,21 +3809,41 @@
    Max delta dT/dt =  2.6498E-06
      at node 209
      in submodel HELLOWORLD_ACASE01
-@                          
-@---------------------------------------------------- | MESSAGE   23 |-
-@                          
-@@@@  FAILURE              
-@                          
-@     Problem............: SOLCYC: Failed to converge within MAXCYC 
-@                          iterations
-@                          
-@     Reference..........: (SOLCYC,   4)
-@                          
-@----------------------------------------------------------------------
-@                          
+
+ SOLCYC cycle number: 11
+   Max delta T =  1.7638E-02
+     at node 260
+     in submodel HELLOWORLD_ACASE01
+   Max delta dT/dt =  2.0837E-06
+     at node 209
+     in submodel HELLOWORLD_ACASE01
+
+ SOLCYC cycle number: 12
+   Max delta T =  1.3872E-02
+     at node 260
+     in submodel HELLOWORLD_ACASE01
+   Max delta dT/dt =  1.6387E-06
+     at node 209
+     in submodel HELLOWORLD_ACASE01
+
+ SOLCYC cycle number: 13
+   Max delta T =  1.0911E-02
+     at node 260
+     in submodel HELLOWORLD_ACASE01
+   Max delta dT/dt =  1.2888E-06
+     at node 209
+     in submodel HELLOWORLD_ACASE01
+
+ SOLCYC cycle number: 14
+   Max delta T =  8.5831E-03
+     at node 260
+     in submodel HELLOWORLD_ACASE01
+   Max delta dT/dt =  1.0137E-06
+     at node 209
+     in submodel HELLOWORLD_ACASE01
 1
  ESATAN-TMS  2020                                                      Page    13
- 20 April     2021  11:13:54                                   HELLOWORLD_ACASE01
+ 27 April     2021  10:36:37                                   HELLOWORLD_ACASE01
 
 
 
@@ -3845,102 +3865,102 @@
 
           NODE   LABEL                              T             QS            
 
-          100    Body_A_MLI                      160.35        187.12
+          100    Body_A_MLI                      160.34        187.12
           101    Body_A_MLI                      160.29        187.12
           102    Body_A_MLI                      160.41        187.12
           103    Body_A_MLI                      160.34        187.12
-          104    Body_A_MLI                       -2.84          0.00
-          105    Body_A_MLI                       -4.99          0.00
-          106    Body_A_MLI                       -2.39          0.61
-          107    Body_A_MLI                       -5.03          0.08
-          108    Body_A_MLI                       -2.89          0.00
-          109    Body_A_MLI                       -2.25          0.00
-          110    Body_A_MLI                       -2.97          0.00
-          111    Body_A_MLI                       -4.17          0.00
-          112    Body_A_MLI                       63.83          5.92
-          113    Body_A_MLI                      107.03         17.81
+          104    Body_A_MLI                       -2.86          0.00
+          105    Body_A_MLI                       -5.01          0.00
+          106    Body_A_MLI                       -2.41          0.61
+          107    Body_A_MLI                       -5.05          0.08
+          108    Body_A_MLI                       -2.91          0.00
+          109    Body_A_MLI                       -2.27          0.00
+          110    Body_A_MLI                       -2.99          0.00
+          111    Body_A_MLI                       -4.18          0.00
+          112    Body_A_MLI                       63.82          5.92
+          113    Body_A_MLI                      107.02         17.81
           114    Body_A_MLI                       83.88         12.92
           115    Body_A_MLI                      107.81         18.37
-          116    Body_A_MLI                       59.93         27.28
-          117    Body_A_MLI                       64.65         26.83
-          118    Body_A_MLI                       64.36         29.69
-          119    Body_A_MLI                       70.75         33.82
-          120    Body_A_MLI                       63.54          0.00
-          121    Body_A_MLI                       62.60          0.00
-          122    Body_A_MLI                       62.49          0.00
+          116    Body_A_MLI                       59.92         27.28
+          117    Body_A_MLI                       64.64         26.83
+          118    Body_A_MLI                       64.35         29.69
+          119    Body_A_MLI                       70.74         33.82
+          120    Body_A_MLI                       63.53          0.00
+          121    Body_A_MLI                       62.59          0.00
+          122    Body_A_MLI                       62.48          0.00
           123    Body_A_MLI                       62.34          0.00
-          150    Body_A_int                       63.31          0.00
-          151    Body_A_int                       63.02          0.00
-          152    Body_A_int                       63.95          0.00
-          153    Body_A_int                       63.45          0.00
-          154    Body_A_int                       60.13          0.00
-          155    Body_A_int                       59.85          0.00
-          156    Body_A_int                       60.21          0.00
-          157    Body_A_int                       59.94          0.00
-          158    Body_A_int                       59.90          0.00
-          159    Body_A_int                       60.30          0.00
-          160    Body_A_int                       60.00          0.00
-          161    Body_A_int                       60.40          0.00
-          162    Body_A_int                       61.78          0.00
-          163    Body_A_int                       63.94          0.00
-          164    Body_A_int                       62.29          0.00
-          165    Body_A_int                       64.06          0.00
-          166    Body_A_int                       61.89          0.00
-          167    Body_A_int                       61.32          0.00
-          168    Body_A_int                       62.03          0.00
-          169    Body_A_int                       61.52          0.00
-          170    Body_A_int                       61.94          0.00
-          171    Body_A_int                       61.41          0.00
-          172    Body_A_int                       61.28          0.00
-          173    Body_A_int                       60.99          0.00
+          150    Body_A_int                       63.27          0.00
+          151    Body_A_int                       62.98          0.00
+          152    Body_A_int                       63.92          0.00
+          153    Body_A_int                       63.42          0.00
+          154    Body_A_int                       60.10          0.00
+          155    Body_A_int                       59.81          0.00
+          156    Body_A_int                       60.18          0.00
+          157    Body_A_int                       59.91          0.00
+          158    Body_A_int                       59.87          0.00
+          159    Body_A_int                       60.27          0.00
+          160    Body_A_int                       59.96          0.00
+          161    Body_A_int                       60.36          0.00
+          162    Body_A_int                       61.75          0.00
+          163    Body_A_int                       63.91          0.00
+          164    Body_A_int                       62.26          0.00
+          165    Body_A_int                       64.02          0.00
+          166    Body_A_int                       61.85          0.00
+          167    Body_A_int                       61.29          0.00
+          168    Body_A_int                       62.00          0.00
+          169    Body_A_int                       61.48          0.00
+          170    Body_A_int                       61.90          0.00
+          171    Body_A_int                       61.38          0.00
+          172    Body_A_int                       61.25          0.00
+          173    Body_A_int                       60.95          0.00
           200    Body_B_MLI                      160.34         62.37
-          201    Body_B_MLI                      160.28         62.37
+          201    Body_B_MLI                      160.29         62.37
           202    Body_B_MLI                      160.37         62.37
           203    Body_B_MLI                      160.34         62.37
-          204    Body_B_MLI                       98.02          0.11
-          205    Body_B_MLI                       64.75          0.00
-          206    Body_B_MLI                       99.14          0.26
-          207    Body_B_MLI                       78.32          0.24
-          208    Body_B_MLI                       11.02          1.45
-          209    Body_B_MLI                        0.70          0.26
-          210    Body_B_MLI                       17.26          3.07
-          211    Body_B_MLI                       -0.43          0.36
-          212    Body_B_MLI                      108.81         29.72
-          213    Body_B_MLI                      109.16         29.72
+          204    Body_B_MLI                       98.03          0.11
+          205    Body_B_MLI                       64.77          0.00
+          206    Body_B_MLI                       99.15          0.26
+          207    Body_B_MLI                       78.33          0.24
+          208    Body_B_MLI                       11.04          1.45
+          209    Body_B_MLI                        0.73          0.26
+          210    Body_B_MLI                       17.28          3.07
+          211    Body_B_MLI                       -0.41          0.36
+          212    Body_B_MLI                      108.82         29.72
+          213    Body_B_MLI                      109.17         29.72
           214    Body_B_MLI                      109.55         29.72
-          215    Body_B_MLI                      109.11         29.72
-          216    Body_B_MLI                       59.39         13.68
-          217    Body_B_MLI                       75.00         17.83
-          218    Body_B_MLI                       60.24         14.06
-          219    Body_B_MLI                       75.58         18.21
-          220    Body_B_MLI                       63.32          0.00
-          221    Body_B_MLI                       62.52          0.00
-          222    Body_B_MLI                       63.07          0.00
-          223    Body_B_MLI                       62.03          0.00
-          250    Body_B_int                       63.43          0.00
-          251    Body_B_int                       62.95          0.00
-          252    Body_B_int                       63.73          0.00
-          253    Body_B_int                       63.47          0.00
-          254    Body_B_int                       62.73          0.00
-          255    Body_B_int                       61.37          0.00
-          256    Body_B_int                       62.86          0.00
-          257    Body_B_int                       61.68          0.00
-          258    Body_B_int                       60.20          0.00
-          259    Body_B_int                       60.64          0.00
-          260    Body_B_int                       60.39          0.00
-          261    Body_B_int                       60.74          0.00
-          262    Body_B_int                       63.80          0.00
-          263    Body_B_int                       64.05          0.00
-          264    Body_B_int                       63.91          0.00
-          265    Body_B_int                       64.15          0.00
-          266    Body_B_int                       61.78          0.00
-          267    Body_B_int                       61.90          0.00
-          268    Body_B_int                       61.89          0.00
-          269    Body_B_int                       62.01          0.00
-          270    Body_B_int                       61.76          0.00
-          271    Body_B_int                       61.49          0.00
-          272    Body_B_int                       61.47          0.00
-          273    Body_B_int                       60.96          0.00
+          215    Body_B_MLI                      109.12         29.72
+          216    Body_B_MLI                       59.40         13.68
+          217    Body_B_MLI                       75.01         17.83
+          218    Body_B_MLI                       60.25         14.06
+          219    Body_B_MLI                       75.59         18.21
+          220    Body_B_MLI                       63.33          0.00
+          221    Body_B_MLI                       62.53          0.00
+          222    Body_B_MLI                       63.08          0.00
+          223    Body_B_MLI                       62.05          0.00
+          250    Body_B_int                       63.48          0.00
+          251    Body_B_int                       63.00          0.00
+          252    Body_B_int                       63.78          0.00
+          253    Body_B_int                       63.52          0.00
+          254    Body_B_int                       62.78          0.00
+          255    Body_B_int                       61.42          0.00
+          256    Body_B_int                       62.91          0.00
+          257    Body_B_int                       61.73          0.00
+          258    Body_B_int                       60.26          0.00
+          259    Body_B_int                       60.69          0.00
+          260    Body_B_int                       60.44          0.00
+          261    Body_B_int                       60.79          0.00
+          262    Body_B_int                       63.85          0.00
+          263    Body_B_int                       64.10          0.00
+          264    Body_B_int                       63.96          0.00
+          265    Body_B_int                       64.20          0.00
+          266    Body_B_int                       61.83          0.00
+          267    Body_B_int                       61.95          0.00
+          268    Body_B_int                       61.94          0.00
+          269    Body_B_int                       62.06          0.00
+          270    Body_B_int                       61.81          0.00
+          271    Body_B_int                       61.54          0.00
+          272    Body_B_int                       61.52          0.00
+          273    Body_B_int                       61.01          0.00
           300    Solar_Pannel_Support             50.00          0.00
           301    Solar_Pannel_Support             50.15          0.01
           302    Solar_Pannel_Support             50.29          0.01
@@ -4113,7 +4133,7 @@
 
 1
  ESATAN-TMS  2020                                                      Page    14
- 20 April     2021  11:13:54                                   HELLOWORLD_ACASE01
+ 27 April     2021  10:36:37                                   HELLOWORLD_ACASE01
 
 
 
@@ -4135,102 +4155,102 @@
 
           NODE   LABEL                              T             QS            
 
-          100    Body_A_MLI                      160.35        187.12
+          100    Body_A_MLI                      160.34        187.12
           101    Body_A_MLI                      160.29        187.12
           102    Body_A_MLI                      160.41        187.12
           103    Body_A_MLI                      160.34        187.12
-          104    Body_A_MLI                       -2.84          0.00
-          105    Body_A_MLI                       -4.99          0.00
-          106    Body_A_MLI                       -2.39          0.61
-          107    Body_A_MLI                       -5.03          0.08
-          108    Body_A_MLI                       -2.89          0.00
-          109    Body_A_MLI                       -2.25          0.00
-          110    Body_A_MLI                       -2.97          0.00
-          111    Body_A_MLI                       -4.17          0.00
-          112    Body_A_MLI                       63.83          5.92
-          113    Body_A_MLI                      107.03         17.81
+          104    Body_A_MLI                       -2.86          0.00
+          105    Body_A_MLI                       -5.01          0.00
+          106    Body_A_MLI                       -2.41          0.61
+          107    Body_A_MLI                       -5.05          0.08
+          108    Body_A_MLI                       -2.91          0.00
+          109    Body_A_MLI                       -2.27          0.00
+          110    Body_A_MLI                       -2.99          0.00
+          111    Body_A_MLI                       -4.18          0.00
+          112    Body_A_MLI                       63.82          5.92
+          113    Body_A_MLI                      107.02         17.81
           114    Body_A_MLI                       83.88         12.92
           115    Body_A_MLI                      107.81         18.37
-          116    Body_A_MLI                       59.93         27.28
-          117    Body_A_MLI                       64.65         26.83
-          118    Body_A_MLI                       64.36         29.69
-          119    Body_A_MLI                       70.75         33.82
-          120    Body_A_MLI                       63.54          0.00
-          121    Body_A_MLI                       62.60          0.00
-          122    Body_A_MLI                       62.49          0.00
+          116    Body_A_MLI                       59.92         27.28
+          117    Body_A_MLI                       64.64         26.83
+          118    Body_A_MLI                       64.35         29.69
+          119    Body_A_MLI                       70.74         33.82
+          120    Body_A_MLI                       63.53          0.00
+          121    Body_A_MLI                       62.59          0.00
+          122    Body_A_MLI                       62.48          0.00
           123    Body_A_MLI                       62.34          0.00
-          150    Body_A_int                       63.31          0.00
-          151    Body_A_int                       63.02          0.00
-          152    Body_A_int                       63.95          0.00
-          153    Body_A_int                       63.45          0.00
-          154    Body_A_int                       60.13          0.00
-          155    Body_A_int                       59.85          0.00
-          156    Body_A_int                       60.21          0.00
-          157    Body_A_int                       59.94          0.00
-          158    Body_A_int                       59.90          0.00
-          159    Body_A_int                       60.30          0.00
-          160    Body_A_int                       60.00          0.00
-          161    Body_A_int                       60.40          0.00
-          162    Body_A_int                       61.78          0.00
-          163    Body_A_int                       63.94          0.00
-          164    Body_A_int                       62.29          0.00
-          165    Body_A_int                       64.06          0.00
-          166    Body_A_int                       61.89          0.00
-          167    Body_A_int                       61.32          0.00
-          168    Body_A_int                       62.03          0.00
-          169    Body_A_int                       61.52          0.00
-          170    Body_A_int                       61.94          0.00
-          171    Body_A_int                       61.41          0.00
-          172    Body_A_int                       61.28          0.00
-          173    Body_A_int                       60.99          0.00
+          150    Body_A_int                       63.27          0.00
+          151    Body_A_int                       62.98          0.00
+          152    Body_A_int                       63.92          0.00
+          153    Body_A_int                       63.42          0.00
+          154    Body_A_int                       60.10          0.00
+          155    Body_A_int                       59.81          0.00
+          156    Body_A_int                       60.18          0.00
+          157    Body_A_int                       59.91          0.00
+          158    Body_A_int                       59.87          0.00
+          159    Body_A_int                       60.27          0.00
+          160    Body_A_int                       59.96          0.00
+          161    Body_A_int                       60.36          0.00
+          162    Body_A_int                       61.75          0.00
+          163    Body_A_int                       63.91          0.00
+          164    Body_A_int                       62.26          0.00
+          165    Body_A_int                       64.02          0.00
+          166    Body_A_int                       61.85          0.00
+          167    Body_A_int                       61.29          0.00
+          168    Body_A_int                       62.00          0.00
+          169    Body_A_int                       61.48          0.00
+          170    Body_A_int                       61.90          0.00
+          171    Body_A_int                       61.38          0.00
+          172    Body_A_int                       61.25          0.00
+          173    Body_A_int                       60.95          0.00
           200    Body_B_MLI                      160.34         62.37
-          201    Body_B_MLI                      160.28         62.37
+          201    Body_B_MLI                      160.29         62.37
           202    Body_B_MLI                      160.37         62.37
           203    Body_B_MLI                      160.34         62.37
-          204    Body_B_MLI                       98.02          0.11
-          205    Body_B_MLI                       64.75          0.00
-          206    Body_B_MLI                       99.14          0.26
-          207    Body_B_MLI                       78.32          0.24
-          208    Body_B_MLI                       11.02          1.45
-          209    Body_B_MLI                        0.70          0.26
-          210    Body_B_MLI                       17.26          3.07
-          211    Body_B_MLI                       -0.43          0.36
-          212    Body_B_MLI                      108.81         29.72
-          213    Body_B_MLI                      109.16         29.72
+          204    Body_B_MLI                       98.03          0.11
+          205    Body_B_MLI                       64.77          0.00
+          206    Body_B_MLI                       99.15          0.26
+          207    Body_B_MLI                       78.33          0.24
+          208    Body_B_MLI                       11.04          1.45
+          209    Body_B_MLI                        0.73          0.26
+          210    Body_B_MLI                       17.28          3.07
+          211    Body_B_MLI                       -0.41          0.36
+          212    Body_B_MLI                      108.82         29.72
+          213    Body_B_MLI                      109.17         29.72
           214    Body_B_MLI                      109.55         29.72
-          215    Body_B_MLI                      109.11         29.72
-          216    Body_B_MLI                       59.39         13.68
-          217    Body_B_MLI                       75.00         17.83
-          218    Body_B_MLI                       60.24         14.06
-          219    Body_B_MLI                       75.58         18.21
-          220    Body_B_MLI                       63.32          0.00
-          221    Body_B_MLI                       62.52          0.00
-          222    Body_B_MLI                       63.07          0.00
-          223    Body_B_MLI                       62.03          0.00
-          250    Body_B_int                       63.43          0.00
-          251    Body_B_int                       62.95          0.00
-          252    Body_B_int                       63.73          0.00
-          253    Body_B_int                       63.47          0.00
-          254    Body_B_int                       62.73          0.00
-          255    Body_B_int                       61.37          0.00
-          256    Body_B_int                       62.86          0.00
-          257    Body_B_int                       61.68          0.00
-          258    Body_B_int                       60.20          0.00
-          259    Body_B_int                       60.64          0.00
-          260    Body_B_int                       60.39          0.00
-          261    Body_B_int                       60.74          0.00
-          262    Body_B_int                       63.80          0.00
-          263    Body_B_int                       64.05          0.00
-          264    Body_B_int                       63.91          0.00
-          265    Body_B_int                       64.15          0.00
-          266    Body_B_int                       61.78          0.00
-          267    Body_B_int                       61.90          0.00
-          268    Body_B_int                       61.89          0.00
-          269    Body_B_int                       62.01          0.00
-          270    Body_B_int                       61.76          0.00
-          271    Body_B_int                       61.49          0.00
-          272    Body_B_int                       61.47          0.00
-          273    Body_B_int                       60.96          0.00
+          215    Body_B_MLI                      109.12         29.72
+          216    Body_B_MLI                       59.40         13.68
+          217    Body_B_MLI                       75.01         17.83
+          218    Body_B_MLI                       60.25         14.06
+          219    Body_B_MLI                       75.59         18.21
+          220    Body_B_MLI                       63.33          0.00
+          221    Body_B_MLI                       62.53          0.00
+          222    Body_B_MLI                       63.08          0.00
+          223    Body_B_MLI                       62.05          0.00
+          250    Body_B_int                       63.48          0.00
+          251    Body_B_int                       63.00          0.00
+          252    Body_B_int                       63.78          0.00
+          253    Body_B_int                       63.52          0.00
+          254    Body_B_int                       62.78          0.00
+          255    Body_B_int                       61.42          0.00
+          256    Body_B_int                       62.91          0.00
+          257    Body_B_int                       61.73          0.00
+          258    Body_B_int                       60.26          0.00
+          259    Body_B_int                       60.69          0.00
+          260    Body_B_int                       60.44          0.00
+          261    Body_B_int                       60.79          0.00
+          262    Body_B_int                       63.85          0.00
+          263    Body_B_int                       64.10          0.00
+          264    Body_B_int                       63.96          0.00
+          265    Body_B_int                       64.20          0.00
+          266    Body_B_int                       61.83          0.00
+          267    Body_B_int                       61.95          0.00
+          268    Body_B_int                       61.94          0.00
+          269    Body_B_int                       62.06          0.00
+          270    Body_B_int                       61.81          0.00
+          271    Body_B_int                       61.54          0.00
+          272    Body_B_int                       61.52          0.00
+          273    Body_B_int                       61.01          0.00
           300    Solar_Pannel_Support             50.00          0.00
           301    Solar_Pannel_Support             50.15          0.01
           302    Solar_Pannel_Support             50.29          0.01

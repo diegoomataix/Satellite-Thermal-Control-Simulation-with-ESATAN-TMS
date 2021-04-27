@@ -103,12 +103,1952 @@
             <secondaryattributes/>
         </dualaxisviewmodel>
     </attributechart>
+    <attributechart>
+        <name>Attribute Chart 7</name>
+        <attributechartdata displaystyle="LINE_STYLE" timestep="0.0"/>
+        <commondata timeformat="SECONDS">
+            <datasources>
+                <acasetmd id="1">
+                    <casename>acase01</casename>
+                    <filename>HELLOWORLD_ACASE01.TMD2</filename>
+                    <lastversion>20 April     2021 11:13:54 [11]</lastversion>
+                </acasetmd>
+            </datasources>
+            <attributes>
+                <attribute datasourcetype="TMD" datatype="DOUBLE" displaytype="SCALE_DISPLAY" id="2" name="Value" type="CONDUCTOR_ATTRIBUTE" visible="true"/>
+                <attribute datasourcetype="TMD" datatype="DOUBLE" displaytype="SCALE_DISPLAY" id="3" name="Value" type="CONSTANT_ATTRIBUTE" visible="true"/>
+                <attribute datasourcetype="TMD" datatype="DOUBLE" displaytype="SCALE_DISPLAY" id="4" name="Average Temperature" type="CONTAINER_ATTRIBUTE" visible="true"/>
+                <attribute datasourcetype="TMD" datatype="DOUBLE" displaytype="SCALE_DISPLAY" id="5" name="Sum Total Solar Heat Source" type="CONTAINER_ATTRIBUTE" visible="true"/>
+                <attribute datasourcetype="TMD" datatype="DOUBLE" displaytype="SCALE_DISPLAY" id="6" name="Incident Solar Heat Source" type="ENTITY_ATTRIBUTE" visible="true"/>
+                <attribute datasourcetype="TMD" datatype="DOUBLE" displaytype="SCALE_DISPLAY" id="7" name="Temperature" type="ENTITY_ATTRIBUTE" visible="true"/>
+            </attributes>
+            <referencedelements>
+                <node id="8" visible="true">
+                    <number>300</number>
+                    <submodel/>
+                </node>
+                <node id="9" visible="true">
+                    <number>301</number>
+                    <submodel/>
+                </node>
+                <node id="10" visible="true">
+                    <number>302</number>
+                    <submodel/>
+                </node>
+                <node id="11" visible="true">
+                    <number>303</number>
+                    <submodel/>
+                </node>
+                <node id="12" visible="true">
+                    <number>304</number>
+                    <submodel/>
+                </node>
+                <node id="13" visible="true">
+                    <number>305</number>
+                    <submodel/>
+                </node>
+                <node id="14" visible="true">
+                    <number>306</number>
+                    <submodel/>
+                </node>
+                <node id="15" visible="true">
+                    <number>307</number>
+                    <submodel/>
+                </node>
+                <node id="16" visible="true">
+                    <number>308</number>
+                    <submodel/>
+                </node>
+                <node id="17" visible="true">
+                    <number>309</number>
+                    <submodel/>
+                </node>
+                <node id="18" visible="true">
+                    <number>310</number>
+                    <submodel/>
+                </node>
+                <node id="19" visible="true">
+                    <number>311</number>
+                    <submodel/>
+                </node>
+                <node id="20" visible="true">
+                    <number>312</number>
+                    <submodel/>
+                </node>
+                <node id="21" visible="true">
+                    <number>313</number>
+                    <submodel/>
+                </node>
+                <node id="22" visible="true">
+                    <number>314</number>
+                    <submodel/>
+                </node>
+                <node id="23" visible="true">
+                    <number>315</number>
+                    <submodel/>
+                </node>
+                <node id="24" visible="true">
+                    <number>350</number>
+                    <submodel/>
+                </node>
+                <node id="25" visible="true">
+                    <number>351</number>
+                    <submodel/>
+                </node>
+                <node id="26" visible="true">
+                    <number>352</number>
+                    <submodel/>
+                </node>
+                <node id="27" visible="true">
+                    <number>353</number>
+                    <submodel/>
+                </node>
+                <node id="28" visible="true">
+                    <number>354</number>
+                    <submodel/>
+                </node>
+                <node id="29" visible="true">
+                    <number>355</number>
+                    <submodel/>
+                </node>
+                <node id="30" visible="true">
+                    <number>356</number>
+                    <submodel/>
+                </node>
+                <node id="31" visible="true">
+                    <number>357</number>
+                    <submodel/>
+                </node>
+                <node id="32" visible="true">
+                    <number>358</number>
+                    <submodel/>
+                </node>
+                <node id="33" visible="true">
+                    <number>359</number>
+                    <submodel/>
+                </node>
+                <node id="34" visible="true">
+                    <number>360</number>
+                    <submodel/>
+                </node>
+                <node id="35" visible="true">
+                    <number>361</number>
+                    <submodel/>
+                </node>
+                <node id="36" visible="true">
+                    <number>362</number>
+                    <submodel/>
+                </node>
+                <node id="37" visible="true">
+                    <number>363</number>
+                    <submodel/>
+                </node>
+                <node id="38" visible="true">
+                    <number>364</number>
+                    <submodel/>
+                </node>
+                <node id="39" visible="true">
+                    <number>365</number>
+                    <submodel/>
+                </node>
+            </referencedelements>
+            <chartelements>
+                <element id="8"/>
+                <element id="9"/>
+                <element id="10"/>
+                <element id="11"/>
+                <element id="12"/>
+                <element id="13"/>
+                <element id="14"/>
+                <element id="15"/>
+                <element id="16"/>
+                <element id="17"/>
+                <element id="18"/>
+                <element id="19"/>
+                <element id="20"/>
+                <element id="21"/>
+                <element id="22"/>
+                <element id="23"/>
+                <element id="24"/>
+                <element id="25"/>
+                <element id="26"/>
+                <element id="27"/>
+                <element id="28"/>
+                <element id="29"/>
+                <element id="30"/>
+                <element id="31"/>
+                <element id="32"/>
+                <element id="33"/>
+                <element id="34"/>
+                <element id="35"/>
+                <element id="36"/>
+                <element id="37"/>
+                <element id="38"/>
+                <element id="39"/>
+            </chartelements>
+            <dataseriesmap>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="8"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="8"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="40.45698298357087"/>
+                        <dataseriesvalue domain="605.0247" range="52.07300838355828"/>
+                        <dataseriesvalue domain="1210.0494" range="55.47254279743306"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="55.671892910720025"/>
+                        <dataseriesvalue domain="2420.0988" range="49.8856961793894"/>
+                        <dataseriesvalue domain="3025.1235" range="25.73779025382948"/>
+                        <dataseriesvalue domain="3630.1482" range="9.578233751619692"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-2.1859004822840538"/>
+                        <dataseriesvalue domain="4840.1976" range="14.323591369212265"/>
+                        <dataseriesvalue domain="5445.2223" range="35.00134801963205"/>
+                        <dataseriesvalue domain="6050.247" range="48.03294173721117"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="9"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="9"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="40.5472442396495"/>
+                        <dataseriesvalue domain="605.0247" range="52.27945538045347"/>
+                        <dataseriesvalue domain="1210.0494" range="55.65170380803405"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="55.84759823198456"/>
+                        <dataseriesvalue domain="2420.0988" range="50.055674066041036"/>
+                        <dataseriesvalue domain="3025.1235" range="25.92181642281435"/>
+                        <dataseriesvalue domain="3630.1482" range="9.759878794837515"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-2.053404205387368"/>
+                        <dataseriesvalue domain="4840.1976" range="14.413819927218158"/>
+                        <dataseriesvalue domain="5445.2223" range="35.10012520058892"/>
+                        <dataseriesvalue domain="6050.247" range="48.181194095464676"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="10"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="10"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="40.55601010477113"/>
+                        <dataseriesvalue domain="605.0247" range="52.293369739450725"/>
+                        <dataseriesvalue domain="1210.0494" range="55.662022672990474"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="55.85897046852405"/>
+                        <dataseriesvalue domain="2420.0988" range="50.05463054837545"/>
+                        <dataseriesvalue domain="3025.1235" range="25.838636484245825"/>
+                        <dataseriesvalue domain="3630.1482" range="9.625711029679497"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-2.1532576837995134"/>
+                        <dataseriesvalue domain="4840.1976" range="14.440725947325982"/>
+                        <dataseriesvalue domain="5445.2223" range="35.19217442951507"/>
+                        <dataseriesvalue domain="6050.247" range="48.275647347747515"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="11"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="11"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="40.71352256134827"/>
+                        <dataseriesvalue domain="605.0247" range="52.458706112755145"/>
+                        <dataseriesvalue domain="1210.0494" range="55.82764631133933"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="56.02382871694278"/>
+                        <dataseriesvalue domain="2420.0988" range="50.21394401169585"/>
+                        <dataseriesvalue domain="3025.1235" range="26.02246819916316"/>
+                        <dataseriesvalue domain="3630.1482" range="9.832416320945635"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-1.9717619696491264"/>
+                        <dataseriesvalue domain="4840.1976" range="14.59124999612211"/>
+                        <dataseriesvalue domain="5445.2223" range="35.352205735888774"/>
+                        <dataseriesvalue domain="6050.247" range="48.447979018359135"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="12"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="12"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="40.89530267408827"/>
+                        <dataseriesvalue domain="605.0247" range="52.627891904558695"/>
+                        <dataseriesvalue domain="1210.0494" range="55.979142715024295"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="56.17679611557462"/>
+                        <dataseriesvalue domain="2420.0988" range="50.36679487541578"/>
+                        <dataseriesvalue domain="3025.1235" range="26.14541423669975"/>
+                        <dataseriesvalue domain="3630.1482" range="9.912887493459154"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-1.9185807513201862"/>
+                        <dataseriesvalue domain="4840.1976" range="14.819469311480946"/>
+                        <dataseriesvalue domain="5445.2223" range="35.74999939900974"/>
+                        <dataseriesvalue domain="6050.247" range="48.83377536114975"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="13"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="13"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="41.34251362601748"/>
+                        <dataseriesvalue domain="605.0247" range="53.06770906582469"/>
+                        <dataseriesvalue domain="1210.0494" range="56.43119477344854"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="56.628754369589"/>
+                        <dataseriesvalue domain="2420.0988" range="50.7940276230205"/>
+                        <dataseriesvalue domain="3025.1235" range="26.46662580790302"/>
+                        <dataseriesvalue domain="3630.1482" range="10.186949386687905"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-1.6348402024764006"/>
+                        <dataseriesvalue domain="4840.1976" range="15.240266628704832"/>
+                        <dataseriesvalue domain="5445.2223" range="36.45899264558913"/>
+                        <dataseriesvalue domain="6050.247" range="49.507396895049645"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="14"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="14"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="42.12459714149537"/>
+                        <dataseriesvalue domain="605.0247" range="54.00983190500485"/>
+                        <dataseriesvalue domain="1210.0494" range="57.143666210088966"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="57.33774372069398"/>
+                        <dataseriesvalue domain="2420.0988" range="51.45435491075983"/>
+                        <dataseriesvalue domain="3025.1235" range="26.981077382291353"/>
+                        <dataseriesvalue domain="3630.1482" range="10.622825932559914"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-1.2327171830735244"/>
+                        <dataseriesvalue domain="4840.1976" range="15.84935959139391"/>
+                        <dataseriesvalue domain="5445.2223" range="37.56770881914569"/>
+                        <dataseriesvalue domain="6050.247" range="51.02095553938691"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="15"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="15"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="43.6610466142709"/>
+                        <dataseriesvalue domain="605.0247" range="56.314125476066906"/>
+                        <dataseriesvalue domain="1210.0494" range="59.17868389301867"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="59.35512104734889"/>
+                        <dataseriesvalue domain="2420.0988" range="53.3115623881807"/>
+                        <dataseriesvalue domain="3025.1235" range="28.30244437042281"/>
+                        <dataseriesvalue domain="3630.1482" range="11.631879822360512"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-0.37691721034396153"/>
+                        <dataseriesvalue domain="4840.1976" range="17.24855459694031"/>
+                        <dataseriesvalue domain="5445.2223" range="39.850228142638244"/>
+                        <dataseriesvalue domain="6050.247" range="53.8699244104704"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="16"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="16"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="40.43956448701124"/>
+                        <dataseriesvalue domain="605.0247" range="52.06558958224164"/>
+                        <dataseriesvalue domain="1210.0494" range="55.46048253768548"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="55.65940329161119"/>
+                        <dataseriesvalue domain="2420.0988" range="49.875184859031826"/>
+                        <dataseriesvalue domain="3025.1235" range="25.743045944125615"/>
+                        <dataseriesvalue domain="3630.1482" range="9.586376181535337"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-2.1930365167737325"/>
+                        <dataseriesvalue domain="4840.1976" range="14.322290789532497"/>
+                        <dataseriesvalue domain="5445.2223" range="34.965437572329556"/>
+                        <dataseriesvalue domain="6050.247" range="48.00302177569368"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="17"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="17"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="40.5151027015184"/>
+                        <dataseriesvalue domain="605.0247" range="52.24061361699825"/>
+                        <dataseriesvalue domain="1210.0494" range="55.60840700339388"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="55.805368671306375"/>
+                        <dataseriesvalue domain="2420.0988" range="50.01091255238903"/>
+                        <dataseriesvalue domain="3025.1235" range="25.86699099506357"/>
+                        <dataseriesvalue domain="3630.1482" range="9.699574313524813"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-2.098116586817963"/>
+                        <dataseriesvalue domain="4840.1976" range="14.412114842115631"/>
+                        <dataseriesvalue domain="5445.2223" range="35.08097382064623"/>
+                        <dataseriesvalue domain="6050.247" range="48.15038090735616"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="18"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="18"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="40.57856520656907"/>
+                        <dataseriesvalue domain="605.0247" range="52.343886615620455"/>
+                        <dataseriesvalue domain="1210.0494" range="55.7028073054455"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="55.897716808889626"/>
+                        <dataseriesvalue domain="2420.0988" range="50.107474668750015"/>
+                        <dataseriesvalue domain="3025.1235" range="25.975725101014774"/>
+                        <dataseriesvalue domain="3630.1482" range="9.798270333959149"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-2.040977715471068"/>
+                        <dataseriesvalue domain="4840.1976" range="14.432396963401201"/>
+                        <dataseriesvalue domain="5445.2223" range="35.12133232694279"/>
+                        <dataseriesvalue domain="6050.247" range="48.24865255611299"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="19"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="19"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="40.69616618090396"/>
+                        <dataseriesvalue domain="605.0247" range="52.40469882670697"/>
+                        <dataseriesvalue domain="1210.0494" range="55.76972192765664"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="55.96701475996469"/>
+                        <dataseriesvalue domain="2420.0988" range="50.17917351793434"/>
+                        <dataseriesvalue domain="3025.1235" range="26.030045870598084"/>
+                        <dataseriesvalue domain="3630.1482" range="9.855486084775517"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-1.9470650115669845"/>
+                        <dataseriesvalue domain="4840.1976" range="14.595737634706046"/>
+                        <dataseriesvalue domain="5445.2223" range="35.31484603868346"/>
+                        <dataseriesvalue domain="6050.247" range="48.37492357124691"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="20"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="20"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="40.89602435588887"/>
+                        <dataseriesvalue domain="605.0247" range="52.61746433580748"/>
+                        <dataseriesvalue domain="1210.0494" range="55.96715093581948"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="56.16206015060188"/>
+                        <dataseriesvalue domain="2420.0988" range="50.34288065596836"/>
+                        <dataseriesvalue domain="3025.1235" range="26.112461659883788"/>
+                        <dataseriesvalue domain="3630.1482" range="9.903609829290193"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-1.8991781173767124"/>
+                        <dataseriesvalue domain="4840.1976" range="14.881444661049546"/>
+                        <dataseriesvalue domain="5445.2223" range="35.798908885464975"/>
+                        <dataseriesvalue domain="6050.247" range="48.84578794876326"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="21"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="21"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="41.302573794748184"/>
+                        <dataseriesvalue domain="605.0247" range="52.8083556333007"/>
+                        <dataseriesvalue domain="1210.0494" range="56.164822375833"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="56.363738350897606"/>
+                        <dataseriesvalue domain="2420.0988" range="50.56503016202706"/>
+                        <dataseriesvalue domain="3025.1235" range="26.324354333864807"/>
+                        <dataseriesvalue domain="3630.1482" range="10.118849084046278"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-1.6371853828104597"/>
+                        <dataseriesvalue domain="4840.1976" range="15.298082743408752"/>
+                        <dataseriesvalue domain="5445.2223" range="36.431566633567385"/>
+                        <dataseriesvalue domain="6050.247" range="49.4303059948786"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="22"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="22"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="41.89885372585002"/>
+                        <dataseriesvalue domain="605.0247" range="53.351785887827255"/>
+                        <dataseriesvalue domain="1210.0494" range="56.61557482087719"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="56.81714044356396"/>
+                        <dataseriesvalue domain="2420.0988" range="51.05688931791242"/>
+                        <dataseriesvalue domain="3025.1235" range="26.888651310175444"/>
+                        <dataseriesvalue domain="3630.1482" range="10.657855985764842"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-1.2149067884492546"/>
+                        <dataseriesvalue domain="4840.1976" range="15.921367912747659"/>
+                        <dataseriesvalue domain="5445.2223" range="37.10578650012748"/>
+                        <dataseriesvalue domain="6050.247" range="50.05286316830119"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="23"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="23"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="43.01044113190329"/>
+                        <dataseriesvalue domain="605.0247" range="54.48206548008584"/>
+                        <dataseriesvalue domain="1210.0494" range="57.84494621681101"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="58.04430880203981"/>
+                        <dataseriesvalue domain="2420.0988" range="52.21554221801055"/>
+                        <dataseriesvalue domain="3025.1235" range="27.80359633947358"/>
+                        <dataseriesvalue domain="3630.1482" range="11.37040828983961"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-0.6894523193773843"/>
+                        <dataseriesvalue domain="4840.1976" range="16.956101886031604"/>
+                        <dataseriesvalue domain="5445.2223" range="38.57013951022359"/>
+                        <dataseriesvalue domain="6050.247" range="51.40778561862297"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="24"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="24"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="40.463390766816474"/>
+                        <dataseriesvalue domain="605.0247" range="52.08080415935765"/>
+                        <dataseriesvalue domain="1210.0494" range="55.4873585445019"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="55.680914808805326"/>
+                        <dataseriesvalue domain="2420.0988" range="49.883318475479214"/>
+                        <dataseriesvalue domain="3025.1235" range="25.734094185624425"/>
+                        <dataseriesvalue domain="3630.1482" range="9.579017130081407"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-2.189116305371975"/>
+                        <dataseriesvalue domain="4840.1976" range="14.33195396645607"/>
+                        <dataseriesvalue domain="5445.2223" range="35.016589809419436"/>
+                        <dataseriesvalue domain="6050.247" range="48.038986921198465"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="25"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="25"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="40.55365361475452"/>
+                        <dataseriesvalue domain="605.0247" range="52.286831418857496"/>
+                        <dataseriesvalue domain="1210.0494" range="55.66684610984187"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="55.85626014689337"/>
+                        <dataseriesvalue domain="2420.0988" range="50.053656180899246"/>
+                        <dataseriesvalue domain="3025.1235" range="25.917841411181147"/>
+                        <dataseriesvalue domain="3630.1482" range="9.7609668666115"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-2.0569241145158794"/>
+                        <dataseriesvalue domain="4840.1976" range="14.422480010640628"/>
+                        <dataseriesvalue domain="5445.2223" range="35.115065129706544"/>
+                        <dataseriesvalue domain="6050.247" range="48.18748994243581"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="26"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="26"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="40.56241276111143"/>
+                        <dataseriesvalue domain="605.0247" range="52.30073577267747"/>
+                        <dataseriesvalue domain="1210.0494" range="55.67717939878224"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="55.867583020296024"/>
+                        <dataseriesvalue domain="2420.0988" range="50.052584990419675"/>
+                        <dataseriesvalue domain="3025.1235" range="25.834568759218993"/>
+                        <dataseriesvalue domain="3630.1482" range="9.626798818587"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-2.156789927557276"/>
+                        <dataseriesvalue domain="4840.1976" range="14.449388013466406"/>
+                        <dataseriesvalue domain="5445.2223" range="35.20719800019748"/>
+                        <dataseriesvalue domain="6050.247" range="48.28191891776268"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="27"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="27"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="40.71993194907759"/>
+                        <dataseriesvalue domain="605.0247" range="52.46605866785246"/>
+                        <dataseriesvalue domain="1210.0494" range="55.84278691802815"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="56.032427068901725"/>
+                        <dataseriesvalue domain="2420.0988" range="50.21191128117814"/>
+                        <dataseriesvalue domain="3025.1235" range="26.018439453956603"/>
+                        <dataseriesvalue domain="3630.1482" range="9.833522903791135"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-1.9752975965928057"/>
+                        <dataseriesvalue domain="4840.1976" range="14.599945273613612"/>
+                        <dataseriesvalue domain="5445.2223" range="35.36722720122645"/>
+                        <dataseriesvalue domain="6050.247" range="48.454278081107866"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="28"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="28"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="40.901719981271924"/>
+                        <dataseriesvalue domain="605.0247" range="52.63520725073292"/>
+                        <dataseriesvalue domain="1210.0494" range="55.994281247244295"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="56.185352658739305"/>
+                        <dataseriesvalue domain="2420.0988" range="50.36475171642015"/>
+                        <dataseriesvalue domain="3025.1235" range="26.141354513242977"/>
+                        <dataseriesvalue domain="3630.1482" range="9.913996530373353"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-1.922120350491262"/>
+                        <dataseriesvalue domain="4840.1976" range="14.827778203743147"/>
+                        <dataseriesvalue domain="5445.2223" range="35.76591973739393"/>
+                        <dataseriesvalue domain="6050.247" range="48.83929700164853"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="29"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="29"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="41.34894302326194"/>
+                        <dataseriesvalue domain="605.0247" range="53.07493148180604"/>
+                        <dataseriesvalue domain="1210.0494" range="56.446325412467665"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="56.63717717347373"/>
+                        <dataseriesvalue domain="2420.0988" range="50.79200172224319"/>
+                        <dataseriesvalue domain="3025.1235" range="26.462479220177727"/>
+                        <dataseriesvalue domain="3630.1482" range="10.188132849776816"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-1.6384056062769397"/>
+                        <dataseriesvalue domain="4840.1976" range="15.24869699617947"/>
+                        <dataseriesvalue domain="5445.2223" range="36.474602472120075"/>
+                        <dataseriesvalue domain="6050.247" range="49.51339194910254"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="30"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="30"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="42.13104355333263"/>
+                        <dataseriesvalue domain="605.0247" range="54.01611837140752"/>
+                        <dataseriesvalue domain="1210.0494" range="57.15876138456679"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="57.346032667284256"/>
+                        <dataseriesvalue domain="2420.0988" range="51.45233433985529"/>
+                        <dataseriesvalue domain="3025.1235" range="26.976846713355364"/>
+                        <dataseriesvalue domain="3630.1482" range="10.624058271302788"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-1.2363266967604085"/>
+                        <dataseriesvalue domain="4840.1976" range="15.857896700349922"/>
+                        <dataseriesvalue domain="5445.2223" range="37.58306378280994"/>
+                        <dataseriesvalue domain="6050.247" range="51.027407882360144"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="31"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="31"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="43.66760543108512"/>
+                        <dataseriesvalue domain="605.0247" range="56.32190488456962"/>
+                        <dataseriesvalue domain="1210.0494" range="59.19160543002491"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="59.36499132239059"/>
+                        <dataseriesvalue domain="2420.0988" range="53.30764640377444"/>
+                        <dataseriesvalue domain="3025.1235" range="28.299751773446072"/>
+                        <dataseriesvalue domain="3630.1482" range="11.631492774225718"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-0.3789846724295768"/>
+                        <dataseriesvalue domain="4840.1976" range="17.25586289796798"/>
+                        <dataseriesvalue domain="5445.2223" range="39.86794199921627"/>
+                        <dataseriesvalue domain="6050.247" range="53.87503034171645"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="32"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="32"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="40.44597864892182"/>
+                        <dataseriesvalue domain="605.0247" range="52.07340429315158"/>
+                        <dataseriesvalue domain="1210.0494" range="55.47528582106834"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="55.66845708491739"/>
+                        <dataseriesvalue domain="2420.0988" range="49.87279684451451"/>
+                        <dataseriesvalue domain="3025.1235" range="25.739378347767136"/>
+                        <dataseriesvalue domain="3630.1482" range="9.587136592374144"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-2.1962386648344454"/>
+                        <dataseriesvalue domain="4840.1976" range="14.330653489351901"/>
+                        <dataseriesvalue domain="5445.2223" range="34.98070822786502"/>
+                        <dataseriesvalue domain="6050.247" range="48.009041836728"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="33"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="33"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="40.52151452892252"/>
+                        <dataseriesvalue domain="605.0247" range="52.24800486498454"/>
+                        <dataseriesvalue domain="1210.0494" range="55.6235726797082"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="55.81405349877086"/>
+                        <dataseriesvalue domain="2420.0988" range="50.008874919209056"/>
+                        <dataseriesvalue domain="3025.1235" range="25.863002264591263"/>
+                        <dataseriesvalue domain="3630.1482" range="9.700651449313778"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-2.101623057911037"/>
+                        <dataseriesvalue domain="4840.1976" range="14.420757283993332"/>
+                        <dataseriesvalue domain="5445.2223" range="35.095944106988696"/>
+                        <dataseriesvalue domain="6050.247" range="48.156645239808704"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="34"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="34"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="40.5849690046939"/>
+                        <dataseriesvalue domain="605.0247" range="52.35127898524493"/>
+                        <dataseriesvalue domain="1210.0494" range="55.71793413968727"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="55.906392257703956"/>
+                        <dataseriesvalue domain="2420.0988" range="50.105437696661916"/>
+                        <dataseriesvalue domain="3025.1235" range="25.971763296672368"/>
+                        <dataseriesvalue domain="3630.1482" range="9.799329178234009"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-2.0444967371522003"/>
+                        <dataseriesvalue domain="4840.1976" range="14.441036817468701"/>
+                        <dataseriesvalue domain="5445.2223" range="35.13626453669889"/>
+                        <dataseriesvalue domain="6050.247" range="48.254918260821746"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="35"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="35"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="40.7025756138504"/>
+                        <dataseriesvalue domain="605.0247" range="52.412063649112724"/>
+                        <dataseriesvalue domain="1210.0494" range="55.78488190343765"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="55.97564373594123"/>
+                        <dataseriesvalue domain="2420.0988" range="50.17713616686214"/>
+                        <dataseriesvalue domain="3025.1235" range="26.026040643882343"/>
+                        <dataseriesvalue domain="3630.1482" range="9.856581208167304"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-1.9505958594007984"/>
+                        <dataseriesvalue domain="4840.1976" range="14.604403762055126"/>
+                        <dataseriesvalue domain="5445.2223" range="35.329841023286555"/>
+                        <dataseriesvalue domain="6050.247" range="48.38121610321625"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="36"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="36"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="40.902433675902216"/>
+                        <dataseriesvalue domain="605.0247" range="52.624798001542224"/>
+                        <dataseriesvalue domain="1210.0494" range="55.98226747136358"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="56.17064107173056"/>
+                        <dataseriesvalue domain="2420.0988" range="50.3408201145838"/>
+                        <dataseriesvalue domain="3025.1235" range="26.10841780914414"/>
+                        <dataseriesvalue domain="3630.1482" range="9.9047079642974"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-1.9027011042519255"/>
+                        <dataseriesvalue domain="4840.1976" range="14.88970252535474"/>
+                        <dataseriesvalue domain="5445.2223" range="35.814799311603934"/>
+                        <dataseriesvalue domain="6050.247" range="48.8512404130982"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="37"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="37"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="41.30899186299098"/>
+                        <dataseriesvalue domain="605.0247" range="52.81568469465866"/>
+                        <dataseriesvalue domain="1210.0494" range="56.17991668010726"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="56.3723037868425"/>
+                        <dataseriesvalue domain="2420.0988" range="50.56289846739925"/>
+                        <dataseriesvalue domain="3025.1235" range="26.320308710756844"/>
+                        <dataseriesvalue domain="3630.1482" range="10.119959903255868"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-1.640639600292683"/>
+                        <dataseriesvalue domain="4840.1976" range="15.306364821083829"/>
+                        <dataseriesvalue domain="5445.2223" range="36.44718796435189"/>
+                        <dataseriesvalue domain="6050.247" range="49.43606483225325"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="38"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="38"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="41.905269717129556"/>
+                        <dataseriesvalue domain="605.0247" range="53.359052482761975"/>
+                        <dataseriesvalue domain="1210.0494" range="56.630263284573964"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="56.825992945485105"/>
+                        <dataseriesvalue domain="2420.0988" range="51.05436918685339"/>
+                        <dataseriesvalue domain="3025.1235" range="26.884961027018953"/>
+                        <dataseriesvalue domain="3630.1482" range="10.658601204121293"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-1.218082207533964"/>
+                        <dataseriesvalue domain="4840.1976" range="15.928967661601611"/>
+                        <dataseriesvalue domain="5445.2223" range="37.12221848583506"/>
+                        <dataseriesvalue domain="6050.247" range="50.05796039504754"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="6" datasource="1" element="39"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="0.0"/>
+                        <dataseriesvalue domain="605.0247" range="0.0"/>
+                        <dataseriesvalue domain="1210.0494" range="0.0"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="0.0"/>
+                        <dataseriesvalue domain="2420.0988" range="0.0"/>
+                        <dataseriesvalue domain="3025.1235" range="0.0"/>
+                        <dataseriesvalue domain="3630.1482" range="0.0"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="0.0"/>
+                        <dataseriesvalue domain="4840.1976" range="0.0"/>
+                        <dataseriesvalue domain="5445.2223" range="0.0"/>
+                        <dataseriesvalue domain="6050.247" range="0.0"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="7" datasource="1" element="39"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="43.01685029311216"/>
+                        <dataseriesvalue domain="605.0247" range="54.48920121928336"/>
+                        <dataseriesvalue domain="1210.0494" range="57.86001088532076"/>
+                        <dataseriesvalue domain="1815.0741000000003" range="58.052412591118774"/>
+                        <dataseriesvalue domain="2420.0988" range="52.213288194118114"/>
+                        <dataseriesvalue domain="3025.1235" range="27.79930330071711"/>
+                        <dataseriesvalue domain="3630.1482" range="11.371468139882685"/>
+                        <dataseriesvalue domain="4235.1729000000005" range="-0.6930903078690276"/>
+                        <dataseriesvalue domain="4840.1976" range="16.96460808511651"/>
+                        <dataseriesvalue domain="5445.2223" range="38.58575084154829"/>
+                        <dataseriesvalue domain="6050.247" range="51.414402506337225"/>
+                    </dataseriesvalues>
+                </dataseries>
+            </dataseriesmap>
+        </commondata>
+        <dualaxisviewmodel>
+            <seriespropertiescollection>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 308</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>2</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-16750849</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 309</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>4</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-65475</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 300</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>4</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-11403009</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 301</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>0</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-34304</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 302</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>2</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-16711773</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 303</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>4</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-3407617</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 304</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>0</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-2816</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 305</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>2</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-16719617</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 306</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>4</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-65352</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 307</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>0</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-7340288</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 365</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>1</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-7340288</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 364</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>5</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-65352</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 363</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>3</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-16719617</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 362</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>1</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-2816</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 314</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>3</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-2552978</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 358</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>5</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-11403009</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 313</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>1</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-16019495</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 357</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>3</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-16711895</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 312</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>5</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-5187317</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 356</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>1</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-65536</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 311</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>3</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-2552879</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 355</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>5</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-16000625</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 310</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>1</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-16000576</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 354</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>3</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-2527733</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 353</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>1</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-11727911</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 352</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>5</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-16000724</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 351</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>3</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-2553077</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 315</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>5</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-11675381</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 359</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>1</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-34304</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 361</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>5</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-3407617</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 360</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>3</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-16711773</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 360</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>2</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-8464117</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 361</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>4</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-16032295</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 362</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>0</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-2553028</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 363</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>2</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-14952181</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 364</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>4</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-15004711</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 365</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>0</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-2540533</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 303</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>5</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-2553028</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 302</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>3</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-16032295</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 301</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>1</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-8464117</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 300</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>5</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-2552929</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 309</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>5</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-2515189</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 308</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>3</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-8516647</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 307</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>1</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-16000675</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 306</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>5</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-2540533</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 305</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>3</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-15004711</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 304</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>1</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-14952181</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 311</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>2</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-15466241</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 355</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>4</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-11337984</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 312</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>4</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-49920</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 356</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>0</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-16766465</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 313</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>0</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-16711834</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 357</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>2</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-2502389</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 314</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>2</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-7405313</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 358</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>4</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-16006951</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 315</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>4</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-18432</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 359</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>0</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-2552929</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Temperature : 350</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>1</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-16044839</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 350</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>0</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-16711712</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 351</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>2</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-65291</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 352</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>4</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-3342592</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 353</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>0</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-16735233</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 310</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>0</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-15401216</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : acase01 : TMD2 : HELLOWORLD_ACASE01 : Incident Solar Heat Source : 354</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>2</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-65414</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+            </seriespropertiescollection>
+            <titletext>Attribute Chart 7</titletext>
+            <viewport height="794" width="93"/>
+            <zoomselection2d x="0" y="0">
+                <domainzoom lower="0.0" upper="0.0"/>
+                <rangezoom lower="0.0" upper="0.0"/>
+            </zoomselection2d>
+            <rangelabel>Data</rangelabel>
+            <domainlabel>Time[s]</domainlabel>
+            <titlecolor>-16777216</titlecolor>
+            <rangecolor>-12566464</rangecolor>
+            <domaincolor>-12566464</domaincolor>
+            <backgroundpaint>-4144960</backgroundpaint>
+            <plotoutlinepaint>-8355712</plotoutlinepaint>
+            <drawlines>true</drawlines>
+            <showlegend>true</showlegend>
+            <drawmarkers>true</drawmarkers>
+            <rangetickmarks>true</rangetickmarks>
+            <domaintickmarks>true</domaintickmarks>
+            <rangeticklabels>true</rangeticklabels>
+            <domainticklabels>true</domainticklabels>
+            <autoadjustrangerange>true</autoadjustrangerange>
+            <autoadjustdomainrange>true</autoadjustdomainrange>
+            <autoselectrangetickunit>true</autoselectrangetickunit>
+            <autoselectdomaintickunit>true</autoselectdomaintickunit>
+            <minrangerange>0.0</minrangerange>
+            <maxrangerange>0.0</maxrangerange>
+            <mindomainrange>0.0</mindomainrange>
+            <maxdomainrange>0.0</maxdomainrange>
+            <rangetickunitvalue>0.1</rangetickunitvalue>
+            <domaintickunitvalue>0.1</domaintickunitvalue>
+            <titlefont>
+                <name>Tahoma</name>
+                <size>20</size>
+                <style>1</style>
+            </titlefont>
+            <rangefont>
+                <name>Tahoma</name>
+                <size>10</size>
+                <style>0</style>
+            </rangefont>
+            <domainfont>
+                <name>Tahoma</name>
+                <size>10</size>
+                <style>0</style>
+            </domainfont>
+            <rangeticklabelfont>
+                <name>Tahoma</name>
+                <size>10</size>
+                <style>0</style>
+            </rangeticklabelfont>
+            <domainticklabelfont>
+                <name>Tahoma</name>
+                <size>10</size>
+                <style>0</style>
+            </domainticklabelfont>
+            <plotorientation>PlotOrientation.VERTICAL</plotorientation>
+            <plotoutlinestrokewidth>1.0</plotoutlinestrokewidth>
+            <secondaryrangelabel>Data 2</secondaryrangelabel>
+            <secondaryrangecolor>-12566464</secondaryrangecolor>
+            <secondaryrangetickmarks>true</secondaryrangetickmarks>
+            <secondaryrangeticklabels>true</secondaryrangeticklabels>
+            <autoadjustsecondaryrangerange>true</autoadjustsecondaryrangerange>
+            <autoselectsecondaryrangetickunit>true</autoselectsecondaryrangetickunit>
+            <minsecondaryrangerange>0.0</minsecondaryrangerange>
+            <maxsecondaryrangerange>0.0</maxsecondaryrangerange>
+            <secondaryrangetickunitvalue>0.1</secondaryrangetickunitvalue>
+            <secondaryrangefont>
+                <name>Tahoma</name>
+                <size>10</size>
+                <style>0</style>
+            </secondaryrangefont>
+            <secondaryrangeticklabelfont>
+                <name>Tahoma</name>
+                <size>10</size>
+                <style>0</style>
+            </secondaryrangeticklabelfont>
+            <secondaryattributes/>
+        </dualaxisviewmodel>
+    </attributechart>
     <heatchart>
         <name>Heat Chart 2</name>
         <heatchartdata source=""/>
         <commondata timeformat="SECONDS">
-            <datasources/>
-            <attributes/>
+            <datasources>
+                <acasetmd id="1">
+                    <casename>acase01</casename>
+                    <filename>HELLOWORLD_ACASE01.TMD</filename>
+                    <lastversion/>
+                </acasetmd>
+            </datasources>
+            <attributes>
+                <attribute datasourcetype="TMD" datatype="DOUBLE" displaytype="SCALE_DISPLAY" id="2" name="Total Heat Flow" type="CONTAINER_ATTRIBUTE" visible="true"/>
+            </attributes>
             <referencedelements/>
             <chartelements/>
             <dataseriesmap/>
