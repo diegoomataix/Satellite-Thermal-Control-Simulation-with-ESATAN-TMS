@@ -1,0 +1,286 @@
+/* ESATAN-TMS version 2020, run date 9:57 Tue 13 Apr 2021 */
+BEGIN_MODEL HelloWorld WORKBENCH_V1 ;
+ANALYSIS_CASE acase01;
+
+BOUNDARY_CONDITION BC_Body_A;
+BC_Body_A = TOTAL_AREA_HEAT_LOAD(
+    reference = "Body_A:surface2",
+    value = 50.);
+
+BOUNDARY_CONDITION BC_Body_B;
+BC_Body_B = TOTAL_AREA_HEAT_LOAD(
+    reference = "Body_B:surface2",
+    value = 25.);
+
+
+INTEGER analysis_case_error_flag = 0;
+
+DEFINE_ANALYSIS_CASE (
+    analysis_case = acase01,
+    solver = "ESATAN",
+    working_directory = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\HelloWorld\esatan\acase01",
+    analysis_file = "HelloWorld_acase01.d",
+    error_code =  analysis_case_error_flag,
+    analysis_case_type = "Single Radiative Case",
+    radiative_case = Rad_01);
+
+IF (analysis_case_error_flag == 0) THEN
+    GENERATE_TEMPLATE (
+        analysis_case = acase01,
+        submodel_files = FALSE,
+        maxmin = FALSE,
+        error_code =  analysis_case_error_flag,
+        execution_block = 
+"C
+C Steady State Solution
+C
+      RELXCA=0.01
+      NLOOP=100
+C
+      CALL SOLVFM
+C
+C Transient Solution
+C
+      TIMEND=PERIOD
+      DTIMEI=TIMEND/100.0
+      OUTINT=TIMEND/10.0
+C
+      CALL SLCRNC
+
+C
+      TIMEND=6050.2473
+      OUTINT=605.02473
+      NLOOP=500
+      RELXCA=0.01
+      DTIMEI=10.0
+      CALL SOLCYC('SLCRNC',0.01D0,0.01D0,6050.2473D0,10,' ','NONE')
+C
+      CALL SLCRNC
+C",
+        output_block = 
+"      CALL PRNDTB(' ', 'L, T, QS, QE, QA, QI, C', CURRENT)
+C
+      CALL DMPTMD(' ', 'NODES, CONDUCTORS, CONSTANTS', CURRENT, ' ')
+",
+        update = TRUE);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    SET_BOUNDARY_CONDITION(
+        analysis_case = acase01,
+        boundary_condition = BC_Body_A,
+        applies = TRUE);
+
+    SET_BOUNDARY_CONDITION(
+        analysis_case = acase01,
+        boundary_condition = BC_Body_B,
+        applies = TRUE);
+
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    UNSET_HF_MULTIPLIERS(analysis_case = acase01);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    GENERATE_ANALYSIS_FILE (
+        save_only = TRUE,
+        analysis_case = acase01,
+        title = "HelloWorld_acase01",
+        error_code =  analysis_case_error_flag,
+        results = "GL",
+        environment = 99999,
+        environment_temperature = -270.0,
+        segments = TRUE,
+        inactive = 99998);
+END_IF
+
+
+DELETE analysis_case_error_flag;
+
+INTEGER analysis_case_error_flag = 0;
+
+DEFINE_ANALYSIS_CASE (
+    analysis_case = acase01,
+    solver = "ESATAN",
+    working_directory = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\HelloWorld\esatan\acase01",
+    analysis_file = "HelloWorld_acase01.d",
+    error_code =  analysis_case_error_flag,
+    analysis_case_type = "Single Radiative Case",
+    radiative_case = Rad_01);
+
+IF (analysis_case_error_flag == 0) THEN
+    GENERATE_TEMPLATE (
+        analysis_case = acase01,
+        submodel_files = FALSE,
+        maxmin = FALSE,
+        error_code =  analysis_case_error_flag,
+        execution_block = 
+"C
+C Steady State Solution
+C
+      RELXCA=0.01
+      NLOOP=100
+C
+      CALL SOLVFM
+C
+C Transient Solution
+C
+      TIMEND=PERIOD
+      DTIMEI=TIMEND/100.0
+      OUTINT=TIMEND/10.0
+C
+      CALL SLCRNC
+
+C
+      TIMEND=6050.2473
+      OUTINT=605.02473
+      NLOOP=500
+      RELXCA=0.01
+      DTIMEI=10.0
+      CALL SOLCYC('SLCRNC',0.01D0,0.01D0,6050.2473D0,10,' ','NONE')
+C
+      CALL SLCRNC
+C",
+        output_block = 
+"      CALL PRNDTB(' ', 'L, T, QS, QE, QA, QI, C', CURRENT)
+C
+      CALL DMPTMD(' ', 'NODES, CONDUCTORS, CONSTANTS', CURRENT, ' ')
+",
+        update = TRUE);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    SET_BOUNDARY_CONDITION(
+        analysis_case = acase01,
+        boundary_condition = BC_Body_A,
+        applies = TRUE);
+
+    SET_BOUNDARY_CONDITION(
+        analysis_case = acase01,
+        boundary_condition = BC_Body_B,
+        applies = TRUE);
+
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    UNSET_HF_MULTIPLIERS(analysis_case = acase01);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    GENERATE_ANALYSIS_FILE (
+        analysis_case = acase01,
+        title = "HelloWorld_acase01",
+        error_code =  analysis_case_error_flag,
+        results = "GL,TRANS_HF,TRANS_REF",
+        ref_averaged = TRUE,
+        ref_cyclic = TRUE,
+        hf_type = "S,A,P",
+        hf_averaged = TRUE,
+        hf_cyclic = TRUE,
+        environment = 99999,
+        environment_temperature = -270.0,
+        segments = TRUE,
+        inactive = 99998);
+END_IF
+
+
+DELETE analysis_case_error_flag;
+
+INTEGER analysis_case_error_flag = 0;
+
+DEFINE_ANALYSIS_CASE (
+    analysis_case = acase01,
+    solver = "ESATAN",
+    working_directory = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\HelloWorld\esatan\acase01",
+    analysis_file = "HelloWorld_acase01.d",
+    error_code =  analysis_case_error_flag,
+    analysis_case_type = "Single Radiative Case",
+    radiative_case = Rad_01);
+
+IF (analysis_case_error_flag == 0) THEN
+    GENERATE_TEMPLATE (
+        analysis_case = acase01,
+        submodel_files = FALSE,
+        maxmin = FALSE,
+        error_code =  analysis_case_error_flag,
+        execution_block = 
+"C
+C Steady State Solution
+C
+      RELXCA=0.01
+      NLOOP=100
+C
+      CALL SOLVFM
+C
+C Transient Solution
+C
+      TIMEND=PERIOD
+      DTIMEI=TIMEND/100.0
+      OUTINT=TIMEND/10.0
+C
+      CALL SLCRNC
+
+C
+      TIMEND=6050.2473
+      OUTINT=605.02473
+      NLOOP=500
+      RELXCA=0.01
+      DTIMEI=10.0
+      CALL SOLCYC('SLCRNC',0.01D0,0.01D0,6050.2473D0,10,' ','NONE')
+C
+      CALL SLCRNC
+C",
+        output_block = 
+"      CALL PRNDTB(' ', 'L, T, QS, QE, QA, QI, C', CURRENT)
+C
+      CALL DMPTMD(' ', 'NODES, CONDUCTORS, CONSTANTS', CURRENT, ' ')
+",
+        update = TRUE);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    UNSET_HF_MULTIPLIERS(analysis_case = acase01);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    GENERATE_ANALYSIS_FILE (
+        analysis_case = acase01,
+        title = "HelloWorld_acase01",
+        error_code =  analysis_case_error_flag,
+        results = "GL,TRANS_HF,TRANS_REF",
+        ref_averaged = TRUE,
+        ref_cyclic = TRUE,
+        hf_type = "S,A,P",
+        hf_averaged = TRUE,
+        hf_cyclic = TRUE,
+        environment = 99999,
+        environment_temperature = -270.0,
+        segments = TRUE,
+        inactive = 99998);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    RUN_ANALYSIS(
+        analysis_case = acase01);
+END_IF
+
+
+DELETE analysis_case_error_flag;
+/* ESATAN-TMS version 2020, run date 10:50 Tue 20 Apr 2021 */
+/* BEGIN_MODEL HelloWorld WORKBENCH_V1 */ ;
+RUN_ANALYSIS (
+    analysis_case = acase01);
+RUN_ANALYSIS (
+    analysis_case = acase01);
+/* ESATAN-TMS version 2020, run date 9:37 Tue 27 Apr 2021 */
+/* BEGIN_MODEL HelloWorld WORKBENCH_V1 */ ;

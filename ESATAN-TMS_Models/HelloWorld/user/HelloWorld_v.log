@@ -1,0 +1,5070 @@
+/* ESATAN-TMS version 2020, run date 9:57 Tue 13 Apr 2021 */
+BEGIN_MODEL HelloWorld WORKBENCH_V1 ;
+RADIATIVE_PRE_PROCESS_OVERLAY(source = "GEOMETRY",
+                              display = "MODEL_ONLY");
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+RESET_VIEW();
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+THERMAL_PRE_PROCESS_OVERLAY(
+result_type = "CONDUCTIVE_INTERFACE");
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 0.0,
+    type = "LINEAR"
+);
+
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 0.0,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = conductive_interface_shade,
+    discrete = "conductiveinterface[1]",
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.DISCRETE = "conductiveinterface[1]";
+HelloWorld.SHADE = "conductive_interface_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Conductive Interfaces",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE)
+   /* Warning Error: current function is cms_create */
+   /* Model is unassigned */
+;
+
+THERMAL_PRE_PROCESS_OVERLAY(
+result_type = "CONDUCTIVE_INTERFACE");
+CLEAR();
+
+KEY(shade = conductive_interface_shade,
+    discrete = "conductiveinterface[1]",
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.DISCRETE = "conductiveinterface[1]";
+HelloWorld.SHADE = "conductive_interface_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Conductive Interfaces",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE)
+   /* Warning Error: current function is cms_create */
+   /* Model is unassigned */
+;
+
+THERMAL_PRE_PROCESS_OVERLAY(
+result_type = "CONDUCTIVE_INTERFACE");
+CLEAR();
+
+KEY(shade = conductive_interface_shade,
+    discrete = "conductiveinterface[1]",
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.DISCRETE = "conductiveinterface[1]";
+HelloWorld.SHADE = "conductive_interface_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Conductive Interfaces",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE)
+   /* Warning Error: current function is cms_create */
+   /* Model is unassigned */
+;
+
+CLEAR();
+
+KEY(shade = conductive_interface_shade,
+    discrete = "conductiveinterface[1]",
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.DISCRETE = "conductiveinterface[1]";
+HelloWorld.SHADE = "conductive_interface_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Conductive Interfaces",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE)
+   /* Warning Error: current function is cms_create */
+   /* Model is unassigned */
+;
+
+CLEAR();
+
+KEY(shade = conductive_interface_shade,
+    discrete = "conductiveinterface[1]",
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.DISCRETE = "conductiveinterface[1]";
+HelloWorld.SHADE = "conductive_interface_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Conductive Interfaces",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+KEY(shade = conductive_interface_shade,
+    discrete = "conductiveinterface[1]",
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.DISCRETE = "conductiveinterface[1]";
+HelloWorld.SHADE = "conductive_interface_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Conductive Interfaces",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+THERMAL_PRE_PROCESS_OVERLAY(
+result_type = "CONDUCTIVE_INTERFACE");
+CLEAR();
+
+KEY(shade = conductive_interface_shade,
+    discrete = "conductiveinterface[1]",
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.DISCRETE = "conductiveinterface[1]";
+HelloWorld.SHADE = "conductive_interface_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Conductive Interfaces",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+STRING vis_items_show[2] = {"Solar_cells",
+    "Low_e"};
+STRING vis_items_key[2] = {"Solar_cells",
+    "Low_e"};
+RADIATIVE_PRE_PROCESS_OVERLAY(
+    source= "THERMO_OPTICAL",
+    item_names = "vis_items_show"
+);
+CLEAR();
+
+KEY(shade = vis_item_shade,
+    discrete = "vis_items_key[1]",
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.DISCRETE = "vis_items_key[1]";
+HelloWorld.SHADE = "vis_item_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Thermo Optical Properties",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+DELETE vis_items_show;
+STRING vis_items_show[2] = {"Solar_cells",
+    "Black"};
+DELETE vis_items_key;
+STRING vis_items_key[2] = {"Solar_cells",
+    "Black"};
+RADIATIVE_PRE_PROCESS_OVERLAY(
+    source= "THERMO_OPTICAL",
+    item_names = "vis_items_show"
+);
+CLEAR();
+
+KEY(shade = vis_item_shade,
+    discrete = "vis_items_key[1]",
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.DISCRETE = "vis_items_key[1]";
+HelloWorld.SHADE = "vis_item_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Thermo Optical Properties",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+KEY(shade = vis_item_shade,
+    discrete = "vis_items_key[1]",
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.DISCRETE = "vis_items_key[1]";
+HelloWorld.SHADE = "vis_item_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Thermo Optical Properties",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+KEY(shade = vis_item_shade,
+    discrete = "vis_items_key[1]",
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.DISCRETE = "vis_items_key[1]";
+HelloWorld.SHADE = "vis_item_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Thermo Optical Properties",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+KEY(shade = vis_item_shade,
+    discrete = "vis_items_key[1]",
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.DISCRETE = "vis_items_key[1]";
+HelloWorld.SHADE = "vis_item_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Thermo Optical Properties",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+KEY(shade = vis_item_shade,
+    discrete = "vis_items_key[1]",
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.DISCRETE = "vis_items_key[1]";
+HelloWorld.SHADE = "vis_item_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Thermo Optical Properties",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+KEY(shade = vis_item_shade,
+    discrete = "vis_items_key[1]",
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.DISCRETE = "vis_items_key[1]";
+HelloWorld.SHADE = "vis_item_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Thermo Optical Properties",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+DELETE vis_items_key;
+STRING vis_items_key[5] = {"White",
+    "Solar_cells",
+    "Low_e",
+    "Black",
+    "Kapton"};
+RADIATIVE_PRE_PROCESS_OVERLAY(
+    source= "THERMO_OPTICAL"
+);
+CLEAR();
+
+DELETE vis_items_show;
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Thermo Optical Properties",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+DELETE vis_items_key;
+STRING vis_items_key[4] = {"Black",
+    "Kapton",
+    "Low_e",
+    "Solar_cells"};
+KEY(shade = vis_item_shade,
+    discrete = "vis_items_key[1]",
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.DISCRETE = "vis_items_key[1]";
+HelloWorld.SHADE = "vis_item_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Thermo Optical Properties",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+RADIATIVE_PRE_PROCESS_OVERLAY(
+    source = "GEOMETRY",
+    display = "ORBITAL",
+    radiative_case = Rad_01,
+    model_scale = 0.1,
+    draw_model = TRUE,
+    planet_scale = 1.0,
+    draw_planet = TRUE);
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "",
+         x = 0.02,
+         y = 0.95);
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.1 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "",
+         x = 0.02,
+         y = 0.95);
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[1],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= Rad_01.NUM_ORBIT_POSITIONS;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.1 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+END_FOR
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "",
+         x = 0.02,
+         y = 0.95);
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[1],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= Rad_01.NUM_ORBIT_POSITIONS;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.1 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+END_FOR
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "",
+         x = 0.02,
+         y = 0.95);
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[1],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= Rad_01.NUM_ORBIT_POSITIONS;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.1 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+END_FOR
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "",
+         x = 0.02,
+         y = 0.95);
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[1],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= Rad_01.NUM_ORBIT_POSITIONS;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.1 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+END_FOR
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "",
+         x = 0.02,
+         y = 0.95);
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[1],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= Rad_01.NUM_ORBIT_POSITIONS;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.1 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+END_FOR
+LOAD_EXTERNAL_RESULTS (
+   type = "TMD",
+   file = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\HelloWorld\esatan\acase01\HELLOWORLD_ACASE01.TMD");
+RADIATIVE_PRE_PROCESS_OVERLAY(source = "GEOMETRY",
+                              display = "MODEL_ONLY");
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+RESET_VIEW();
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type = "Thermal_Node",
+    time_step = 0.0,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = -16.85930255648458,
+    max = 76.03810040630123,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+LOAD_EXTERNAL_RESULTS (
+   type = "TMD",
+   file = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\HelloWorld\esatan\acase01\HELLOWORLD_ACASE01.TMD3");
+RADIATIVE_PRE_PROCESS_OVERLAY(source = "GEOMETRY",
+                              display = "MODEL_ONLY");
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type = "Thermal_Node",
+    time_step = 6050.25,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = -5.032486200200215,
+    max = 160.41041592105844,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+LOAD_EXTERNAL_RESULTS (
+   type = "TMD",
+   file = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\HelloWorld\esatan\acase01\HELLOWORLD_ACASE01.TMD");
+RADIATIVE_PRE_PROCESS_OVERLAY(source = "GEOMETRY",
+                              display = "MODEL_ONLY");
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type = "Thermal_Node",
+    time_step = 0.0,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = -16.85930255648458,
+    max = 76.03810040630123,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type = "Thermal_Node",
+    time_step = 0.0,
+    fixed_scale = FALSE,
+    attribute = "Solar_Absorptivity",
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.2,
+    max = 0.97,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Solar Absorptivity",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type = "Thermal_Node",
+    time_step = 0.0,
+    fixed_scale = FALSE,
+    attribute = "Total_Albedo_Heat_Source",
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 15.827128040946068,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Total Albedo Heat Source",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type = "Thermal_Node",
+    time_step = 0.0,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = -16.85930255648458,
+    max = 76.03810040630123,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+/* ESATAN-TMS version 2020, run date 10:50 Tue 20 Apr 2021 */
+/* BEGIN_MODEL HelloWorld WORKBENCH_V1 */ ;
+RADIATIVE_PRE_PROCESS_OVERLAY(source = "GEOMETRY",
+                              display = "MODEL_ONLY");
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+RESET_VIEW();
+
+THERMAL_PRE_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[5]" ,
+   ir_hf= "Rad_01.IR_PAF[5]",
+    solar_hf= "Rad_01.SAF[5]",
+    intensity = TRUE,
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 1094.752186895305,
+    type = "LINEAR"
+);
+
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 1094.752186895305,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Flux (W/m2):  Rad_01.ALBEDO_PAF[5] + Rad_01.IR_PAF[5] + Rad_01.SAF[5]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[5],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 5,
+        spin_position = 0);
+
+THERMAL_PRE_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[1]" ,
+   ir_hf= "Rad_01.IR_PAF[1]",
+    solar_hf= "Rad_01.SAF[1]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 472.8619315720447,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[1] + Rad_01.IR_PAF[1] + Rad_01.SAF[1]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 1,
+        spin_position = 0);
+
+THERMAL_PRE_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[5]" ,
+   ir_hf= "Rad_01.IR_PAF[5]",
+    solar_hf= "Rad_01.SAF[5]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 493.1516491904943,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[5] + Rad_01.IR_PAF[5] + Rad_01.SAF[5]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[5],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 5,
+        spin_position = 0);
+
+THERMAL_PRE_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[8]" ,
+   ir_hf= "Rad_01.IR_PAF[8]",
+    solar_hf= "Rad_01.SAF[8]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 66.3505684246171,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[8] + Rad_01.IR_PAF[8] + Rad_01.SAF[8]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[8],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 8,
+        spin_position = 0);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[8] + Rad_01.IR_PAF[8] + Rad_01.SAF[8]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[8],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 8,
+        spin_position = 0);
+
+THERMAL_PRE_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[8]" ,
+   ir_hf= "Rad_01.IR_PAF[8]",
+    solar_hf= "Rad_01.SAF[8]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[8] + Rad_01.IR_PAF[8] + Rad_01.SAF[8]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[8],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 8,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[8]" ,
+   ir_hf= "Rad_01.IR_PAF[8]",
+    solar_hf= "Rad_01.SAF[8]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[8] + Rad_01.IR_PAF[8] + Rad_01.SAF[8]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[8],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 8,
+        spin_position = 0);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[8] + Rad_01.IR_PAF[8] + Rad_01.SAF[8]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[8],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 8,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[1]" ,
+   ir_hf= "Rad_01.IR_PDF[1]",
+    solar_hf= "Rad_01.SDF[1]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 935.5949625478096,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[1] + Rad_01.IR_PDF[1] + Rad_01.SDF[1]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 1,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[2]" ,
+   ir_hf= "Rad_01.IR_PDF[2]",
+    solar_hf= "Rad_01.SDF[2]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 924.2049383306428,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[2] + Rad_01.IR_PDF[2] + Rad_01.SDF[2]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[2],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 2,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[3]" ,
+   ir_hf= "Rad_01.IR_PDF[3]",
+    solar_hf= "Rad_01.SDF[3]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 623.80938725228,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[3] + Rad_01.IR_PDF[3] + Rad_01.SDF[3]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[3],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 3,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[4]" ,
+   ir_hf= "Rad_01.IR_PDF[4]",
+    solar_hf= "Rad_01.SDF[4]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 648.2441482637587,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[4] + Rad_01.IR_PDF[4] + Rad_01.SDF[4]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[4],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 4,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[5]" ,
+   ir_hf= "Rad_01.IR_PDF[5]",
+    solar_hf= "Rad_01.SDF[5]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 651.7188152755486,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[5] + Rad_01.IR_PDF[5] + Rad_01.SDF[5]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[5],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 5,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[6]" ,
+   ir_hf= "Rad_01.IR_PDF[6]",
+    solar_hf= "Rad_01.SDF[6]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 141.46144986021199,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[6] + Rad_01.IR_PDF[6] + Rad_01.SDF[6]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[6],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 6,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[7]" ,
+   ir_hf= "Rad_01.IR_PDF[7]",
+    solar_hf= "Rad_01.SDF[7]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[7] + Rad_01.IR_PDF[7] + Rad_01.SDF[7]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[7],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 7,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[8]" ,
+   ir_hf= "Rad_01.IR_PDF[8]",
+    solar_hf= "Rad_01.SDF[8]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[8] + Rad_01.IR_PDF[8] + Rad_01.SDF[8]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[8],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 8,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[9]" ,
+   ir_hf= "Rad_01.IR_PDF[9]",
+    solar_hf= "Rad_01.SDF[9]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 141.461449860212,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[9] + Rad_01.IR_PDF[9] + Rad_01.SDF[9]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[9],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 9,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[8]" ,
+   ir_hf= "Rad_01.IR_PDF[8]",
+    solar_hf= "Rad_01.SDF[8]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 141.46144986021199,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[8] + Rad_01.IR_PDF[8] + Rad_01.SDF[8]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[8],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 8,
+        spin_position = 0);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[8] + Rad_01.IR_PDF[8] + Rad_01.SDF[8]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[8],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 8,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[9]" ,
+   ir_hf= "Rad_01.IR_PDF[9]",
+    solar_hf= "Rad_01.SDF[9]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 141.461449860212,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[9] + Rad_01.IR_PDF[9] + Rad_01.SDF[9]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[9],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 9,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[10]" ,
+   ir_hf= "Rad_01.IR_PDF[10]",
+    solar_hf= "Rad_01.SDF[10]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 651.1512584175566,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[10] + Rad_01.IR_PDF[10] + Rad_01.SDF[10]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[10],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 10,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[11]" ,
+   ir_hf= "Rad_01.IR_PDF[11]",
+    solar_hf= "Rad_01.SDF[11]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 646.3262191202044,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[11] + Rad_01.IR_PDF[11] + Rad_01.SDF[11]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[11],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 11,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[12]" ,
+   ir_hf= "Rad_01.IR_PDF[12]",
+    solar_hf= "Rad_01.SDF[12]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 623.0394362186722,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[12] + Rad_01.IR_PDF[12] + Rad_01.SDF[12]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[12],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 12,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[13]" ,
+   ir_hf= "Rad_01.IR_PDF[13]",
+    solar_hf= "Rad_01.SDF[13]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 935.5949625478096,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[13] + Rad_01.IR_PDF[13] + Rad_01.SDF[13]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[13],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 13,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[1]" ,
+   ir_hf= "Rad_01.IR_PDF[1]",
+    solar_hf= "Rad_01.SDF[1]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[1] + Rad_01.IR_PDF[1] + Rad_01.SDF[1]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 1,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[1]" ,
+   ir_hf= "Rad_01.IR_PDF[1]",
+    solar_hf= "Rad_01.SDF[1]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[1] + Rad_01.IR_PDF[1] + Rad_01.SDF[1]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 1,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[2]" ,
+   ir_hf= "Rad_01.IR_PDF[2]",
+    solar_hf= "Rad_01.SDF[2]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 924.2049383306428,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[2] + Rad_01.IR_PDF[2] + Rad_01.SDF[2]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[2],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 2,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[3]" ,
+   ir_hf= "Rad_01.IR_PDF[3]",
+    solar_hf= "Rad_01.SDF[3]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 623.80938725228,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[3] + Rad_01.IR_PDF[3] + Rad_01.SDF[3]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[3],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 3,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[4]" ,
+   ir_hf= "Rad_01.IR_PDF[4]",
+    solar_hf= "Rad_01.SDF[4]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 648.2441482637587,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[4] + Rad_01.IR_PDF[4] + Rad_01.SDF[4]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[4],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 4,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[5]" ,
+   ir_hf= "Rad_01.IR_PDF[5]",
+    solar_hf= "Rad_01.SDF[5]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 651.7188152755486,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[5] + Rad_01.IR_PDF[5] + Rad_01.SDF[5]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[5],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 5,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[6]" ,
+   ir_hf= "Rad_01.IR_PDF[6]",
+    solar_hf= "Rad_01.SDF[6]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 141.46144986021199,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[6] + Rad_01.IR_PDF[6] + Rad_01.SDF[6]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[6],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 6,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[7]" ,
+   ir_hf= "Rad_01.IR_PDF[7]",
+    solar_hf= "Rad_01.SDF[7]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[7] + Rad_01.IR_PDF[7] + Rad_01.SDF[7]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[7],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 7,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[8]" ,
+   ir_hf= "Rad_01.IR_PDF[8]",
+    solar_hf= "Rad_01.SDF[8]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[8] + Rad_01.IR_PDF[8] + Rad_01.SDF[8]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[8],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 8,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[9]" ,
+   ir_hf= "Rad_01.IR_PDF[9]",
+    solar_hf= "Rad_01.SDF[9]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 141.461449860212,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[9] + Rad_01.IR_PDF[9] + Rad_01.SDF[9]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[9],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 9,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[10]" ,
+   ir_hf= "Rad_01.IR_PDF[10]",
+    solar_hf= "Rad_01.SDF[10]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 651.1512584175566,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[10] + Rad_01.IR_PDF[10] + Rad_01.SDF[10]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[10],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 10,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[11]" ,
+   ir_hf= "Rad_01.IR_PAF[11]",
+    solar_hf= "Rad_01.SAF[11]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 501.4529388218319,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[11] + Rad_01.IR_PAF[11] + Rad_01.SAF[11]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[11],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 11,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[11]" ,
+   ir_hf= "Rad_01.IR_PAF[11]",
+    solar_hf= "Rad_01.SAF[11]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[11] + Rad_01.IR_PAF[11] + Rad_01.SAF[11]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[11],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 11,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[12]" ,
+   ir_hf= "Rad_01.IR_PAF[12]",
+    solar_hf= "Rad_01.SAF[12]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 489.08545090496995,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[12] + Rad_01.IR_PAF[12] + Rad_01.SAF[12]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[12],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 12,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[13]" ,
+   ir_hf= "Rad_01.IR_PAF[13]",
+    solar_hf= "Rad_01.SAF[13]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 472.8619315720447,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[13] + Rad_01.IR_PAF[13] + Rad_01.SAF[13]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[13],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 13,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[1]" ,
+   ir_hf= "Rad_01.IR_PAF[1]",
+    solar_hf= "Rad_01.SAF[1]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[1] + Rad_01.IR_PAF[1] + Rad_01.SAF[1]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 1,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[1]" ,
+   ir_hf= "Rad_01.IR_PAF[1]",
+    solar_hf= "Rad_01.SAF[1]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[1] + Rad_01.IR_PAF[1] + Rad_01.SAF[1]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 1,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF[1]" ,
+   ir_hf= "Rad_01.IR_PDF[1]",
+    solar_hf= "Rad_01.SDF[1]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 935.5949625478096,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF[1] + Rad_01.IR_PDF[1] + Rad_01.SDF[1]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 1,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[1]" ,
+   ir_hf= "Rad_01.IR_PAF[1]",
+    solar_hf= "Rad_01.SAF[1]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 472.8619315720447,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[1] + Rad_01.IR_PAF[1] + Rad_01.SAF[1]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 1,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[2]" ,
+   ir_hf= "Rad_01.IR_PAF[2]",
+    solar_hf= "Rad_01.SAF[2]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 460.37717505977395,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[2] + Rad_01.IR_PAF[2] + Rad_01.SAF[2]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[2],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 2,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[3]" ,
+   ir_hf= "Rad_01.IR_PAF[3]",
+    solar_hf= "Rad_01.SAF[3]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 468.7669522807366,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[3] + Rad_01.IR_PAF[3] + Rad_01.SAF[3]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[3],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 3,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[4]" ,
+   ir_hf= "Rad_01.IR_PAF[4]",
+    solar_hf= "Rad_01.SAF[4]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 490.14146347473724,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[4] + Rad_01.IR_PAF[4] + Rad_01.SAF[4]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[4],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 4,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[5]" ,
+   ir_hf= "Rad_01.IR_PAF[5]",
+    solar_hf= "Rad_01.SAF[5]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 493.1516491904943,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[5] + Rad_01.IR_PAF[5] + Rad_01.SAF[5]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[5],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 5,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[6]" ,
+   ir_hf= "Rad_01.IR_PAF[6]",
+    solar_hf= "Rad_01.SAF[6]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 40.03085132140069,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[6] + Rad_01.IR_PAF[6] + Rad_01.SAF[6]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[6],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 6,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[7]" ,
+   ir_hf= "Rad_01.IR_PAF[7]",
+    solar_hf= "Rad_01.SAF[7]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 66.99671036315806,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[7] + Rad_01.IR_PAF[7] + Rad_01.SAF[7]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[7],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 7,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[8]" ,
+   ir_hf= "Rad_01.IR_PAF[8]",
+    solar_hf= "Rad_01.SAF[8]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 66.3505684246171,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[8] + Rad_01.IR_PAF[8] + Rad_01.SAF[8]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[8],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 8,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[9]" ,
+   ir_hf= "Rad_01.IR_PAF[9]",
+    solar_hf= "Rad_01.SAF[9]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 40.55797165226968,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[9] + Rad_01.IR_PAF[9] + Rad_01.SAF[9]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[9],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 9,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[10]" ,
+   ir_hf= "Rad_01.IR_PAF[10]",
+    solar_hf= "Rad_01.SAF[10]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 505.40574079964415,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[10] + Rad_01.IR_PAF[10] + Rad_01.SAF[10]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[10],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 10,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[11]" ,
+   ir_hf= "Rad_01.IR_PAF[11]",
+    solar_hf= "Rad_01.SAF[11]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 501.4529388218319,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[11] + Rad_01.IR_PAF[11] + Rad_01.SAF[11]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[11],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 11,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[12]" ,
+   ir_hf= "Rad_01.IR_PAF[12]",
+    solar_hf= "Rad_01.SAF[12]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 489.08545090496995,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[12] + Rad_01.IR_PAF[12] + Rad_01.SAF[12]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[12],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 12,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[13]" ,
+   ir_hf= "Rad_01.IR_PAF[13]",
+    solar_hf= "Rad_01.SAF[13]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 472.8619315720447,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[13] + Rad_01.IR_PAF[13] + Rad_01.SAF[13]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[13],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 13,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[1]" ,
+   ir_hf= "Rad_01.IR_PAF[1]",
+    solar_hf= "Rad_01.SAF[1]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[1] + Rad_01.IR_PAF[1] + Rad_01.SAF[1]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 1,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[2]" ,
+   ir_hf= "Rad_01.IR_PAF[2]",
+    solar_hf= "Rad_01.SAF[2]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 460.37717505977395,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[2] + Rad_01.IR_PAF[2] + Rad_01.SAF[2]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[2],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 2,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[3]" ,
+   ir_hf= "Rad_01.IR_PAF[3]",
+    solar_hf= "Rad_01.SAF[3]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 468.7669522807366,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[3] + Rad_01.IR_PAF[3] + Rad_01.SAF[3]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[3],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 3,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[4]" ,
+   ir_hf= "Rad_01.IR_PAF[4]",
+    solar_hf= "Rad_01.SAF[4]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 490.14146347473724,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[4] + Rad_01.IR_PAF[4] + Rad_01.SAF[4]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[4],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 4,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[5]" ,
+   ir_hf= "Rad_01.IR_PAF[5]",
+    solar_hf= "Rad_01.SAF[5]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 493.1516491904943,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[5] + Rad_01.IR_PAF[5] + Rad_01.SAF[5]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[5],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 5,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[6]" ,
+   ir_hf= "Rad_01.IR_PAF[6]",
+    solar_hf= "Rad_01.SAF[6]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 40.03085132140069,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[6] + Rad_01.IR_PAF[6] + Rad_01.SAF[6]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[6],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 6,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[7]" ,
+   ir_hf= "Rad_01.IR_PAF[7]",
+    solar_hf= "Rad_01.SAF[7]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 66.99671036315806,
+    type = "LINEAR"
+);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF[1]" ,
+   ir_hf= "Rad_01.IR_PAF[1]",
+    solar_hf= "Rad_01.SAF[1]",
+    fixed_scale = FALSE,
+    radiative_case = Rad_01
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 472.8619315720447,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[1] + Rad_01.IR_PAF[1] + Rad_01.SAF[1]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 1,
+        spin_position = 0);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = TRUE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF[1] + Rad_01.IR_PAF[1] + Rad_01.SAF[1]",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = Rad_01.ORBIT_TIMES[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = 1,
+        spin_position = 0);
+
+/* ESATAN-TMS version 2020, run date 9:37 Tue 27 Apr 2021 */
+/* BEGIN_MODEL HelloWorld WORKBENCH_V1 */ ;
+RADIATIVE_PRE_PROCESS_OVERLAY(source = "GEOMETRY",
+                              display = "MODEL_ONLY");
+CLEAR();
+
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+RESET_VIEW();
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF",
+    intensity = TRUE,
+    radiative_case= Rad_01,
+    fixed_scale = FALSE,
+     draw_periapsis = TRUE,
+     draw_asc_node = TRUE
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 99.90296569376318,
+    type = "LINEAR"
+);
+
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 99.90296569376318,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Flux (W/m2):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Flux (W/m2):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[1],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= Rad_01.NUM_ORBIT_POSITIONS;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+END_FOR
+vis_orbit_index=1;
+vis_orbit_index=2;
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Flux (W/m2):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Flux (W/m2):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Flux (W/m2):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Flux (W/m2):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+vis_orbit_index=3;
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Flux (W/m2):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Flux (W/m2):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+vis_orbit_index=4;
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Flux (W/m2):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Flux (W/m2):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+vis_orbit_index=5;
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Flux (W/m2):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Flux (W/m2):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+vis_orbit_index=6;
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Flux (W/m2):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Flux (W/m2):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+vis_orbit_index=7;
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Flux (W/m2):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Flux (W/m2):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+vis_orbit_index=8;
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Flux (W/m2):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Flux (W/m2):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+RADIATIVE_POST_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PAF",
+    radiative_case= Rad_01,
+    fixed_scale = FALSE,
+     draw_periapsis = TRUE,
+     draw_asc_node = TRUE
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 45.060131834318845,
+    type = "LINEAR"
+);
+
+vis_orbit_index=1;
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+vis_orbit_index=2;
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+vis_orbit_index=3;
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+vis_orbit_index=4;
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PAF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.02 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+THERMAL_PRE_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF",
+    radiative_case= Rad_01,
+    fixed_scale = FALSE,
+     planet_scale = 0.58,
+     model_scale = 0.259,
+     draw_periapsis = TRUE,
+     draw_asc_node = TRUE
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 225.30065917161429,
+    type = "LINEAR"
+);
+
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 225.30065917161429,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 0.58,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.259 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+THERMAL_PRE_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF",
+    radiative_case= Rad_01,
+    fixed_scale = FALSE,
+     planet_scale = 0.651,
+     model_scale = 0.22,
+     draw_periapsis = TRUE,
+     draw_asc_node = TRUE
+);
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 0.651,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.22 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+THERMAL_PRE_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF",
+    radiative_case= Rad_01,
+    fixed_scale = FALSE,
+     planet_scale = 0.651,
+     model_scale = 0.149,
+     draw_periapsis = TRUE,
+     draw_asc_node = TRUE
+);
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+            scale = 0.651,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.149 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Power (W):  Rad_01.ALBEDO_PDF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[1],
+            scale = 0.651,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= Rad_01.NUM_ORBIT_POSITIONS;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.149 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+END_FOR
+THERMAL_PRE_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF",
+    intensity = TRUE,
+    radiative_case= Rad_01,
+    fixed_scale = FALSE,
+     planet_scale = 0.651,
+     model_scale = 0.149,
+     draw_periapsis = TRUE,
+     draw_asc_node = TRUE
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 300.40087889548573,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Flux (W/m2):  Rad_01.ALBEDO_PDF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[1],
+            scale = 0.651,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= Rad_01.NUM_ORBIT_POSITIONS;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.149 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+END_FOR
+THERMAL_PRE_PROCESS_OVERLAY(
+    result_type = "HF",
+    albedo_hf= "Rad_01.ALBEDO_PDF" ,
+   ir_hf= "Rad_01.IR_PDF",
+    solar_hf= "Rad_01.SDF",
+    intensity = TRUE,
+    radiative_case= Rad_01,
+    fixed_scale = FALSE,
+     planet_scale = 0.651,
+     model_scale = 0.149,
+     draw_periapsis = TRUE,
+     draw_asc_node = TRUE
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 1446.7569954087792,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+HelloWorld.RANGE = "default_range";
+HelloWorld.SHADE = "continuous_shade";
+HelloWorld.NODES = FALSE;
+
+ANNOTATE(string = "Heat Flux (W/m2):  Rad_01.ALBEDO_PDF + Rad_01.IR_PDF + Rad_01.SDF",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_01.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_01.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_01,
+            time = Rad_01.ORBIT_TIMES[1],
+            scale = 0.651,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= Rad_01.NUM_ORBIT_POSITIONS;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = Rad_01.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_01.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.149 * (Rad_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_01,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+END_FOR

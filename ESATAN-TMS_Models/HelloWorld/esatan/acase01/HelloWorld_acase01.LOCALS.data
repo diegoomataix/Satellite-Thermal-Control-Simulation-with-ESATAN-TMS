@@ -1,0 +1,13 @@
+# Results Generated from
+# ESATAN-TMS 2020, run date 11:33 Tue 13 Apr 2021
+# Model name: HelloWorld        Analysis case: acase01
+    $REAL
+      #
+      # Material properties from bulk 'Al_6061' 
+      k_Al_6061 = 160.000;  Cp_Al_6061 = 900.000;  Dens_Al_6061 = 2700.00;  
+      #
+      # Material properties from bulk 'GaAs' 
+      k_GaAs = 55.0000;  Cp_GaAs = 1000.00;  Dens_GaAs = 5300.00;  
+      #
+      # Material properties from bulk 'MLI_foil' 
+      k_MLI_foil = 0.00000;  Cp_MLI_foil = 900.000;  Dens_MLI_foil = 300.000;  

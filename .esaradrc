@@ -1,0 +1,17 @@
+esarad_user_model_directory = C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models
+esarad_user_files_local = false
+esarad_temp_files = false
+geom_temp_files = false
+vis_complex_cutting = false
+esarad_dialog_close_warning = true
+show_command_history_window = true
+esarad_search_path = NULL
+esarad_site_model_directory = NULL
+esarad_sys_fonts = true
+esarad_font_size = 0
+default_overlay = Colour
+esarad_user_editor_path = C:\Users\diego\AppData\Local\atom\atom.exe
+esarad_point_accuracy = 5
+command_history_max_lines = 1000
+report_window_max_lines = 10000
+mesh_colour = Black

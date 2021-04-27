@@ -1,0 +1,831 @@
+/* ESATAN-TMS version 2020, run date 10:42 Tue 13 Apr 2021 */
+BEGIN_MODEL HelloWorld WORKBENCH_V1
+
+BULK Al_6061;
+DEFINE_BULK(bulk = Al_6061,
+               type = "Isotropic",
+               description = "",
+               density = 2700.0,
+               sp_heat = 900.0,
+               cond = 160.0);
+
+BULK MLI_foil;
+DEFINE_BULK(bulk = MLI_foil,
+               type = "Isotropic",
+               description = "									",
+               density = 300.0,
+               sp_heat = 900.0,
+               cond = 0.0);
+
+BULK GaAs;
+DEFINE_BULK(bulk = GaAs,
+               type = "Isotropic",
+               description = "									",
+               density = 5300.0,
+               sp_heat = 1000.0,
+               cond = 55.0);
+
+OPTICAL Black;
+DEFINE_OPTICAL(optical = Black,
+               description = "",
+               ir_emiss = 0.84,
+               ir_transm = 0.0,
+               solar_absorb = 0.97,
+               solar_transm = 0.0,
+               ir_spec_refl = 0.0,
+               solar_spec_refl = 0.0);
+
+OPTICAL Low_e;
+DEFINE_OPTICAL(optical = Low_e,
+               description = "								",
+               ir_emiss = 0.1,
+               ir_transm = 0.0,
+               solar_absorb = 0.2,
+               solar_transm = 0.0,
+               ir_spec_refl = 0.0,
+               solar_spec_refl = 0.0);
+
+OPTICAL Solar_cells;
+DEFINE_OPTICAL(optical = Solar_cells,
+               description = "								",
+               ir_emiss = 0.84,
+               ir_transm = 0.0,
+               solar_absorb = 0.75,
+               solar_transm = 0.0,
+               ir_spec_refl = 0.0,
+               solar_spec_refl = 0.0);
+
+OPTICAL Kapton;
+DEFINE_OPTICAL(optical = Kapton,
+               description = "								",
+               ir_emiss = 0.61,
+               ir_transm = 0.0,
+               solar_absorb = 0.36,
+               solar_transm = 0.0,
+               ir_spec_refl = 0.0,
+               solar_spec_refl = 0.0);
+
+OPTICAL White;
+DEFINE_OPTICAL(optical = White,
+               description = "								",
+               ir_emiss = 0.8,
+               ir_transm = 0.0,
+               solar_absorb = 0.2,
+               solar_transm = 0.0,
+               ir_spec_refl = 0.0,
+               solar_spec_refl = 0.0);
+
+GEOMETRY Body_A;
+Body_A = SHELL_SCS_BOX(
+    height = 1.2,
+    xmax = 1.5,
+    ymax = 2.0,
+    sense = -1,
+    side1 = "Active",
+    ndelta1_1 = 1,
+    side2 = "Active",
+    ndelta2_1 = 1,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    meshType1 = "regular",
+    nodes1 = 1,
+    meshType2 = "regular",
+    nodes2 = 1,
+    meshType3 = "regular",
+    nodes3 = 1,
+    analysis_type = "Lumped Parameter");
+
+Body_A = TRANSLATE(
+    object_name = Body_A,
+    clear = TRUE);
+Body_A = SHELL_SCS_BOX(
+    height = 1.2,
+    xmax = 1.5,
+    ymax = 2.0,
+    sense = -1,
+    side1 = "Active",
+    ndelta1_1 = 1,
+    side2 = "Active",
+    ndelta2_1 = 1,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    meshType1 = "regular",
+    nodes1 = 2,
+    meshType2 = "regular",
+    nodes2 = 2,
+    meshType3 = "regular",
+    nodes3 = 1,
+    analysis_type = "Lumped Parameter");
+
+Body_A = TRANSLATE(
+    object_name = Body_A,
+    clear = TRUE);
+Body_A = SHELL_SCS_BOX(
+    height = 1.2,
+    xmax = 1.5,
+    ymax = 2.0,
+    sense = -1,
+    side1 = "Active",
+    ndelta1_1 = 1,
+    side2 = "Active",
+    ndelta2_1 = 1,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    meshType1 = "regular",
+    nodes1 = 2,
+    meshType2 = "regular",
+    nodes2 = 2,
+    meshType3 = "regular",
+    nodes3 = 2,
+    analysis_type = "Lumped Parameter");
+
+Body_A = TRANSLATE(
+    object_name = Body_A,
+    clear = TRUE);
+Body_A = SHELL_SCS_BOX(
+    height = 1.2,
+    xmax = 1.5,
+    ymax = 2.0,
+    sense = -1,
+    colour1 = "RED",
+    colour2 = "DARK_BLUE",
+    side1 = "Active",
+    nbase1 = 100,
+    ndelta1_1 = 1,
+    side2 = "Active",
+    nbase2 = 150,
+    ndelta2_1 = 1,
+    label1 = "Body_A_MLI",
+    label2 = "Body_A_int",
+    opt1 = Low_e,
+    opt2 = Black,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    composition = "DUAL",
+    bulk1 = MLI_foil,
+    thick1 = 0.0005,
+    bulk2 = Al_6061,
+    thick2 = 0.002,
+    through_cond = "EFFECTIVE",
+    emittance = 0.03,
+    meshType1 = "regular",
+    nodes1 = 2,
+    meshType2 = "regular",
+    nodes2 = 2,
+    meshType3 = "regular",
+    nodes3 = 2,
+    analysis_type = "Lumped Parameter");
+
+Body_A = TRANSLATE(
+    object_name = Body_A,
+    clear = TRUE);
+GEOMETRY Body_B;
+Body_B = SHELL_SCS_BOX(
+    height = 1.2,
+    xmax = 1.0,
+    ymax = 1.0,
+    sense = -1,
+    colour1 = "RED",
+    colour2 = "DARK_BLUE",
+    side1 = "Active",
+    ndelta1_1 = 1,
+    side2 = "Active",
+    ndelta2_1 = 1,
+    label1 = "Body_B_MLI",
+    label2 = "Body_B_int",
+    opt1 = Low_e,
+    opt2 = Black,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    composition = "DUAL",
+    bulk1 = MLI_foil,
+    thick1 = 0.0005,
+    bulk2 = Al_6061,
+    thick2 = 0.002,
+    through_cond = "EFFECTIVE",
+    emittance = 0.03,
+    meshType1 = "regular",
+    nodes1 = 2,
+    meshType2 = "regular",
+    nodes2 = 2,
+    meshType3 = "regular",
+    nodes3 = 2,
+    analysis_type = "Lumped Parameter");
+
+Body_B = TRANSLATE(
+    object_name = Body_B,
+    clear = TRUE);
+GEOMETRY Solar_pannel;
+Solar_pannel = SHELL_SCS_RECTANGLE(
+    xmax = 4.65,
+    ymax = 1.55,
+    sense = -1,
+    colour1 = "RED",
+    colour2 = "DARK_BLUE",
+    side1 = "Active",
+    ndelta1_1 = 1,
+    side2 = "Active",
+    ndelta2_1 = 1,
+    label1 = "Body_B_MLI",
+    label2 = "Body_B_int",
+    opt1 = Low_e,
+    opt2 = Black,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    composition = "DUAL",
+    bulk1 = MLI_foil,
+    thick1 = 0.0005,
+    bulk2 = Al_6061,
+    thick2 = 0.002,
+    through_cond = "EFFECTIVE",
+    emittance = 0.03,
+    meshType1 = "regular",
+    nodes1 = 2,
+    meshType2 = "regular",
+    nodes2 = 2,
+    analysis_type = "Lumped Parameter");
+
+Solar_pannel = ROTATE(
+    object_name = Solar_pannel,
+    x_ang = 90.0,
+    clear = TRUE);
+Solar_pannel = TRANSLATE(
+    object_name = Solar_pannel,
+    x_dist = -4.95);
+Solar_pannel = SHELL_SCS_RECTANGLE(
+    xmax = 4.65,
+    ymax = 1.55,
+    sense = -1,
+    colour1 = "RED",
+    colour2 = "DARK_BLUE",
+    side1 = "Active",
+    ndelta1_1 = 1,
+    side2 = "Active",
+    ndelta2_1 = 1,
+    label1 = "Body_B_MLI",
+    label2 = "Body_B_int",
+    opt1 = Low_e,
+    opt2 = Black,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    composition = "DUAL",
+    bulk1 = MLI_foil,
+    thick1 = 0.0005,
+    bulk2 = Al_6061,
+    thick2 = 0.002,
+    through_cond = "EFFECTIVE",
+    emittance = 0.03,
+    meshType1 = "regular",
+    nodes1 = 8,
+    meshType2 = "regular",
+    nodes2 = 2,
+    analysis_type = "Lumped Parameter");
+
+Solar_pannel = ROTATE(
+    object_name = Solar_pannel,
+    x_ang = 90.0,
+    clear = TRUE);
+Solar_pannel = TRANSLATE(
+    object_name = Solar_pannel,
+    x_dist = -4.95);
+Solar_pannel = SHELL_SCS_RECTANGLE(
+    xmax = 4.65,
+    ymax = 1.55,
+    sense = -1,
+    colour1 = "PURPLE",
+    colour2 = "LAVENDER",
+    side1 = "Active",
+    ndelta1_1 = 1,
+    side2 = "Active",
+    ndelta2_1 = 1,
+    label1 = "Solar_Pannel_Support",
+    label2 = "Solar_Pannel_Cells",
+    opt1 = Kapton,
+    opt2 = Solar_cells,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    composition = "DUAL",
+    bulk1 = Al_6061,
+    thick1 = 0.001,
+    bulk2 = GaAs,
+    thick2 = 0.001,
+    meshType1 = "regular",
+    nodes1 = 8,
+    meshType2 = "regular",
+    nodes2 = 2,
+    analysis_type = "Lumped Parameter");
+
+Solar_pannel = ROTATE(
+    object_name = Solar_pannel,
+    x_ang = 90.0,
+    clear = TRUE);
+Solar_pannel = TRANSLATE(
+    object_name = Solar_pannel,
+    x_dist = -4.95);
+Body_B = SHELL_SCS_BOX(
+    height = 1.2,
+    xmax = 1.0,
+    ymax = 1.0,
+    xmin = 0.0,
+    ymin = 0.0,
+    sense = -1,
+    colour1 = "RED",
+    colour2 = "DARK_BLUE",
+    side1 = "Active",
+    ndelta1_1 = 1,
+    side2 = "Active",
+    ndelta2_1 = 1,
+    label1 = "Body_B_MLI",
+    label2 = "Body_B_int",
+    opt1 = Low_e,
+    opt2 = Black,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    composition = "DUAL",
+    bulk1 = MLI_foil,
+    thick1 = 5.0e-04,
+    bulk2 = Al_6061,
+    thick2 = 2.0e-03,
+    through_cond = "EFFECTIVE",
+    conductance = 0.0,
+    emittance = 0.03,
+    meshType1 = "regular",
+    nodes1 = 2,
+    meshType2 = "regular",
+    nodes2 = 2,
+    meshType3 = "regular",
+    nodes3 = 2,
+    analysis_type = "Lumped Parameter");
+
+Body_B = TRANSLATE(
+    object_name = Body_B,
+    x_dist = 0.25,
+    y_dist = 2.001,
+    clear = TRUE);
+Solar_pannel = SHELL_SCS_RECTANGLE(
+    xmax = 4.65,
+    ymax = 1.55,
+    height = 0.0,
+    xmin = 0.0,
+    ymin = 0.0,
+    sense = -1,
+    colour1 = "PURPLE",
+    colour2 = "LAVENDER",
+    side1 = "Active",
+    nbase1 = 300,
+    ndelta1_1 = 1,
+    side2 = "Active",
+    nbase2 = 350,
+    ndelta2_1 = 1,
+    label1 = "Solar_Pannel_Support",
+    label2 = "Solar_Pannel_Cells",
+    opt1 = Kapton,
+    opt2 = Solar_cells,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    composition = "DUAL",
+    bulk1 = Al_6061,
+    thick1 = 1.0e-03,
+    bulk2 = GaAs,
+    thick2 = 1.0e-03,
+    meshType1 = "regular",
+    nodes1 = 8,
+    meshType2 = "regular",
+    nodes2 = 2,
+    analysis_type = "Lumped Parameter");
+
+Solar_pannel = ROTATE(
+    object_name = Solar_pannel,
+    x_ang = 90.0,
+    clear = TRUE);
+Solar_pannel = TRANSLATE(
+    object_name = Solar_pannel,
+    x_dist = -4.95);
+Body_B = SHELL_SCS_BOX(
+    height = 1.2,
+    xmax = 1.0,
+    ymax = 1.0,
+    xmin = 0.0,
+    ymin = 0.0,
+    sense = -1,
+    colour1 = "RED",
+    colour2 = "DARK_BLUE",
+    side1 = "Active",
+    nbase1 = 200,
+    ndelta1_1 = 1,
+    side2 = "Active",
+    nbase2 = 250,
+    ndelta2_1 = 1,
+    label1 = "Body_B_MLI",
+    label2 = "Body_B_int",
+    opt1 = Low_e,
+    opt2 = Black,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    composition = "DUAL",
+    bulk1 = MLI_foil,
+    thick1 = 5.0e-04,
+    bulk2 = Al_6061,
+    thick2 = 2.0e-03,
+    through_cond = "EFFECTIVE",
+    conductance = 0.0,
+    emittance = 0.03,
+    meshType1 = "regular",
+    nodes1 = 2,
+    meshType2 = "regular",
+    nodes2 = 2,
+    meshType3 = "regular",
+    nodes3 = 2,
+    analysis_type = "Lumped Parameter");
+
+Body_B = TRANSLATE(
+    object_name = Body_B,
+    x_dist = 0.25,
+    y_dist = 2.001,
+    clear = TRUE);
+Solar_pannel = SHELL_SCS_RECTANGLE(
+    xmax = 4.65,
+    ymax = 1.55,
+    height = 0.0,
+    xmin = 0.0,
+    ymin = 0.0,
+    sense = -1,
+    colour1 = "TURQUOISE",
+    colour2 = "CYAN",
+    side1 = "Active",
+    nbase1 = 300,
+    ndelta1_1 = 1,
+    side2 = "Active",
+    nbase2 = 350,
+    ndelta2_1 = 1,
+    label1 = "Solar_Pannel_Support",
+    label2 = "Solar_Pannel_Cells",
+    opt1 = Kapton,
+    opt2 = Solar_cells,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    composition = "DUAL",
+    bulk1 = Al_6061,
+    thick1 = 1.0e-03,
+    bulk2 = GaAs,
+    thick2 = 1.0e-03,
+    meshType1 = "regular",
+    nodes1 = 8,
+    meshType2 = "regular",
+    nodes2 = 2,
+    analysis_type = "Lumped Parameter");
+
+Solar_pannel = ROTATE(
+    object_name = Solar_pannel,
+    x_ang = 90.0,
+    clear = TRUE);
+Solar_pannel = TRANSLATE(
+    object_name = Solar_pannel,
+    x_dist = -4.95);
+Body_B = SHELL_SCS_BOX(
+    height = 1.2,
+    xmax = 1.0,
+    ymax = 1.0,
+    xmin = 0.0,
+    ymin = 0.0,
+    sense = -1,
+    colour1 = "ORANGE",
+    colour2 = "DARK_BLUE",
+    side1 = "Active",
+    nbase1 = 200,
+    ndelta1_1 = 1,
+    side2 = "Active",
+    nbase2 = 250,
+    ndelta2_1 = 1,
+    label1 = "Body_B_MLI",
+    label2 = "Body_B_int",
+    opt1 = Low_e,
+    opt2 = Black,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    composition = "DUAL",
+    bulk1 = MLI_foil,
+    thick1 = 5.0e-04,
+    bulk2 = Al_6061,
+    thick2 = 2.0e-03,
+    through_cond = "EFFECTIVE",
+    conductance = 0.0,
+    emittance = 0.03,
+    meshType1 = "regular",
+    nodes1 = 2,
+    meshType2 = "regular",
+    nodes2 = 2,
+    meshType3 = "regular",
+    nodes3 = 2,
+    analysis_type = "Lumped Parameter");
+
+Body_B = TRANSLATE(
+    object_name = Body_B,
+    x_dist = 0.25,
+    y_dist = 2.001,
+    clear = TRUE);
+GEOMETRY Body;
+Body = Body_A + Body_B;
+GEOMETRY MUSE_SAT;
+MUSE_SAT = ASSEMBLE(
+    ref_comp = Body,
+    moving_comp = Solar_pannel,
+    orientation = "TRUE_SUN",
+    rot_point = [-0.3, 0.0, 0.6],
+    rot_axis = [1.0, 0.0, 0.0],
+    rot_min_ang = 0.0,
+    rot_max_ang = 360.0,
+    point_vect = [0.0, 1.0, 0.0]
+);
+Solar_pannel = SHELL_SCS_RECTANGLE(
+    xmax = 4.65,
+    ymax = 1.55,
+    height = 0.0,
+    xmin = 0.0,
+    ymin = 0.0,
+    sense = -1,
+    colour1 = "TURQUOISE",
+    colour2 = "CYAN",
+    side1 = "Active",
+    nbase1 = 300,
+    ndelta1_1 = 1,
+    side2 = "Active",
+    nbase2 = 350,
+    ndelta2_1 = 1,
+    label1 = "Solar_Pannel_Support",
+    label2 = "Solar_Pannel_Cells",
+    opt1 = Kapton,
+    opt2 = Solar_cells,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    composition = "DUAL",
+    bulk1 = Al_6061,
+    thick1 = 1.0e-03,
+    bulk2 = GaAs,
+    thick2 = 1.0e-03,
+    meshType1 = "regular",
+    nodes1 = 8,
+    meshType2 = "regular",
+    nodes2 = 2,
+    analysis_type = "Lumped Parameter");
+
+Solar_pannel = ROTATE(
+    object_name = Solar_pannel,
+    x_ang = 90.0,
+    clear = TRUE);
+Solar_pannel = TRANSLATE(
+    object_name = Solar_pannel,
+    x_dist = -4.95,
+    z_dist = -0.175);
+DELETE_GEOMETRY (geometry = MUSE_SAT, recursive = FALSE, unassign = TRUE);
+HelloWorld = ASSEMBLE(
+    ref_comp = Body,
+    moving_comp = Solar_pannel,
+    orientation = "TRUE_SUN",
+    rot_point = [-.3, 0.0, .6],
+    rot_axis = [1.0, 0.0, 0.0],
+    rot_min_ang = 0.0,
+    rot_max_ang = 360.0,
+    point_vect = [0.0, 1.0, 0.0]
+);
+DELETE_GEOMETRY (geometry = MUSE_SAT, recursive = FALSE, unassign = FALSE);
+
+CONDUCTIVE_INTERFACE ci_1;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_1,
+	primitiveA = Body_A,
+	primitiveB = Body_A,
+	start_point = [0.0, 0.0, 1.2],
+	end_point = [1.5, 0.0, 1.2],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_2;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_2,
+	primitiveA = Body_A,
+	primitiveB = Body_A,
+	start_point = [0.0, 0.0, 0.0],
+	end_point = [1.5, 0.0, 0.0],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_3;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_3,
+	primitiveA = Body_A,
+	primitiveB = Body_A,
+	start_point = [1.5, 2.0, 1.2],
+	end_point = [0.0, 2.0, 1.2],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_4;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_4,
+	primitiveA = Body_A,
+	primitiveB = Body_A,
+	start_point = [0.0, 2.0, 1.2],
+	end_point = [0.0, 0.0, 1.2],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_5;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_5,
+	primitiveA = Body_A,
+	primitiveB = Body_A,
+	start_point = [1.5, 2.0, 0.0],
+	end_point = [0.0, 2.0, 0.0],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_6;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_6,
+	primitiveA = Body_A,
+	primitiveB = Body_A,
+	start_point = [0.0, 0.0, 0.0],
+	end_point = [0.0, 0.0, 1.2],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_7;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_7,
+	primitiveA = Body_A,
+	primitiveB = Body_A,
+	start_point = [0.0, 2.0, 0.0],
+	end_point = [0.0, 2.0, 1.2],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_8;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_8,
+	primitiveA = Body_A,
+	primitiveB = Body_A,
+	start_point = [0.0, 2.0, 0.0],
+	end_point = [0.0, 0.0, 0.0],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_9;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_9,
+	primitiveA = Body_B,
+	primitiveB = Body_B,
+	start_point = [0.0, 1.0, 0.0],
+	end_point = [0.0, 0.0, 0.0],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_10;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_10,
+	primitiveA = Body_B,
+	primitiveB = Body_B,
+	start_point = [0.0, 0.0, 0.0],
+	end_point = [0.0, 0.0, 1.2],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_11;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_11,
+	primitiveA = Body_B,
+	primitiveB = Body_B,
+	start_point = [0.0, 0.0, 1.2],
+	end_point = [0.0, 1.0, 1.2],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_12;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_12,
+	primitiveA = Body_B,
+	primitiveB = Body_B,
+	start_point = [0.0, 1.0, 0.0],
+	end_point = [0.0, 1.0, 1.2],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_13;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_13,
+	primitiveA = Body_B,
+	primitiveB = Body_B,
+	start_point = [1.0, 1.0, 0.0],
+	end_point = [0.0, 1.0, 0.0],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_14;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_14,
+	primitiveA = Body_B,
+	primitiveB = Body_B,
+	start_point = [0.0, 0.0, 0.0],
+	end_point = [1.0, 0.0, 0.0],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_15;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_15,
+	primitiveA = Body_B,
+	primitiveB = Body_B,
+	start_point = [0.0, 1.0, 1.2],
+	end_point = [1.0, 1.0, 1.2],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_16;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_16,
+	primitiveA = Body_B,
+	primitiveB = Body_B,
+	start_point = [0.0, 0.0, 1.2],
+	end_point = [1.0, 0.0, 1.2],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_17;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_17,
+	primitiveA = Body_B,
+	primitiveB = Body_B,
+	start_point = [1.0, 1.0, 0.0],
+	end_point = [1.0, 0.0, 0.0],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_18;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_18,
+	primitiveA = Body_B,
+	primitiveB = Body_B,
+	start_point = [1.0, 1.0, 0.0],
+	end_point = [1.0, 1.0, 1.2],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_19;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_19,
+	primitiveA = Body_B,
+	primitiveB = Body_B,
+	start_point = [1.0, 0.0, 1.2],
+	end_point = [1.0, 1.0, 1.2],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_20;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_20,
+	primitiveA = Body_B,
+	primitiveB = Body_B,
+	start_point = [1.0, 0.0, 0.0],
+	end_point = [1.0, 0.0, 1.2],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_21;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_21,
+	primitiveA = Body_A,
+	primitiveB = Body_A,
+	start_point = [1.5, 0.0, 0.0],
+	end_point = [1.5, 0.0, 1.2],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_22;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_22,
+	primitiveA = Body_A,
+	primitiveB = Body_A,
+	start_point = [1.5, 0.0, 1.2],
+	end_point = [1.5, 2.0, 1.2],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_23;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_23,
+	primitiveA = Body_A,
+	primitiveB = Body_A,
+	start_point = [1.5, 2.0, 0.0],
+	end_point = [1.5, 2.0, 1.2],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_24;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_24,
+	primitiveA = Body_A,
+	primitiveB = Body_A,
+	start_point = [1.5, 2.0, 0.0],
+	end_point = [1.5, 0.0, 0.0],
+	connect_type = "FUSED");
+
