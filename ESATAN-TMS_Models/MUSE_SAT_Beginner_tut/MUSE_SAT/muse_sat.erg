@@ -1,0 +1,474 @@
+BEGIN_MODEL MUSE_SAT WORKBENCH_V1 ESARAD_GENERATED
+
+/* Start of independent variable block */
+
+/* --- 
+ --- */
+
+/* End of independent variable block - no errors */
+
+/* Start of geometry vectors and matrices declaration block */
+
+/* End of geometry vectors and matrices declaration block - no errors */
+
+/* Start of bound variable block */
+
+BULK MLI_foil;
+MLI_foil = [300.0, 900.0, 0.0];
+
+BULK Al_6061;
+Al_6061 = [2700.0, 900.0, 160.0];
+
+BULK GaAs;
+GaAs = [5300.0, 1000.0, 55.0];
+
+OPTICAL Low_e;
+DEFINE_OPTICAL (
+    optical = Low_e, 
+    ir_emiss = 0.1, 
+    ir_transm = 0.0, 
+    solar_absorb = 0.2, 
+    solar_transm = 0.0, 
+    ir_spec_refl = 0.0, 
+    solar_spec_refl = 0.0);
+
+OPTICAL Black;
+DEFINE_OPTICAL (
+    optical = Black, 
+    ir_emiss = 0.84, 
+    ir_transm = 0.0, 
+    solar_absorb = 0.97, 
+    solar_transm = 0.0, 
+    ir_spec_refl = 0.0, 
+    solar_spec_refl = 0.0);
+
+OPTICAL kapton;
+DEFINE_OPTICAL (
+    optical = kapton, 
+    ir_emiss = 0.61, 
+    ir_transm = 0.0, 
+    solar_absorb = 0.36, 
+    solar_transm = 0.0, 
+    ir_spec_refl = 0.0, 
+    solar_spec_refl = 0.0);
+
+OPTICAL Solar_cells;
+DEFINE_OPTICAL (
+    optical = Solar_cells, 
+    ir_emiss = 0.84, 
+    ir_transm = 0.0, 
+    solar_absorb = 0.75, 
+    solar_transm = 0.0, 
+    ir_spec_refl = 0.0, 
+    solar_spec_refl = 0.0);
+
+/* End of bound variable block - no errors */
+
+/* Start of primitive block */
+
+GEOMETRY Body_a;
+Body_a = SHELL_SCS_BOX(
+    height = 1.2, 
+    xmax = 1.5, 
+    ymax = 2.0, 
+    xmin = 0.0, 
+    ymin = 0.0, 
+    sense = -1, 
+    meshType1 = "regular", 
+    nodes1 = 2, 
+    ratio1 = 1.0, 
+    meshType2 = "regular", 
+    nodes2 = 2, 
+    ratio2 = 1.0, 
+    meshType3 = "regular", 
+    nodes3 = 2, 
+    ratio3 = 1.0, 
+    analysis_type = "Lumped Parameter", 
+    label1 = "Body_a_MLI", 
+    side1 = "Active", 
+    criticality1 = "NORMAL", 
+    nbase1 = 100, 
+    ndelta1 = 1, 
+    opt1 = Low_e, 
+    colour1 = "RED", 
+    label2 = "Body_a_int", 
+    side2 = "Active", 
+    criticality2 = "NORMAL", 
+    nbase2 = 150, 
+    ndelta2 = 1, 
+    opt2 = Black, 
+    colour2 = "BLUE_CYAN", 
+    composition = "DUAL", 
+    bulk = [-10000.00000000, -10000.00000000, -10000.00000000], 
+    thick = 0.0, 
+    bulk1 = MLI_foil, 
+    thick1 = 5.0e-04, 
+    bulk2 = Al_6061, 
+    thick2 = 2.0e-03, 
+    through_cond = "EFFECTIVE", 
+    conductance = 0.0, 
+    emittance = 0.03);
+
+GEOMETRY Body_b;
+Body_b = SHELL_SCS_BOX(
+    height = 1.2, 
+    xmax = 1.0, 
+    ymax = 1.0, 
+    xmin = 0.0, 
+    ymin = 0.0, 
+    sense = -1, 
+    meshType1 = "regular", 
+    nodes1 = 2, 
+    ratio1 = 1.0, 
+    meshType2 = "regular", 
+    nodes2 = 2, 
+    ratio2 = 1.0, 
+    meshType3 = "regular", 
+    nodes3 = 2, 
+    ratio3 = 1.0, 
+    analysis_type = "Lumped Parameter", 
+    label1 = "Body_b_MLI", 
+    side1 = "Active", 
+    criticality1 = "NORMAL", 
+    nbase1 = 200, 
+    ndelta1 = 1, 
+    opt1 = Low_e, 
+    colour1 = "BLUE", 
+    label2 = "Body_b_int", 
+    side2 = "Active", 
+    criticality2 = "NORMAL", 
+    nbase2 = 250, 
+    ndelta2 = 1, 
+    opt2 = Black, 
+    colour2 = "BLUE_CYAN", 
+    composition = "DUAL", 
+    bulk = [-10000.00000000, -10000.00000000, -10000.00000000], 
+    thick = 0.0, 
+    bulk1 = MLI_foil, 
+    thick1 = 5.0e-04, 
+    bulk2 = Al_6061, 
+    thick2 = 2.0e-03, 
+    through_cond = "EFFECTIVE", 
+    conductance = 0.0, 
+    emittance = 0.03);
+
+Body_b = TRANSLATE(
+    object_name = Body_b, 
+    x_dist = 0.25, 
+    y_dist = 2.001, 
+    clear = TRUE);
+
+GEOMETRY Solar_panel;
+Solar_panel = SHELL_SCS_RECTANGLE(
+    xmax = 4.65, 
+    ymax = 1.55, 
+    height = 0.0, 
+    xmin = 0.0, 
+    ymin = 0.0, 
+    sense = -1, 
+    meshType1 = "regular", 
+    nodes1 = 8, 
+    ratio1 = 1.0, 
+    meshType2 = "regular", 
+    nodes2 = 2, 
+    ratio2 = 1.0, 
+    analysis_type = "Lumped Parameter", 
+    label1 = "Solar_panel_support", 
+    side1 = "Active", 
+    criticality1 = "NORMAL", 
+    nbase1 = 300, 
+    ndelta1 = 1, 
+    opt1 = kapton, 
+    colour1 = "DARK_RED", 
+    label2 = "Solar_panel_cells", 
+    side2 = "Active", 
+    criticality2 = "NORMAL", 
+    nbase2 = 350, 
+    ndelta2 = 1, 
+    opt2 = Solar_cells, 
+    colour2 = "GREEN", 
+    composition = "DUAL", 
+    bulk = [-10000.00000000, -10000.00000000, -10000.00000000], 
+    thick = 0.0, 
+    bulk1 = Al_6061, 
+    thick1 = 1.0e-03, 
+    bulk2 = GaAs, 
+    thick2 = 1.0e-03, 
+    through_cond = "BULK", 
+    conductance = 0.0, 
+    emittance = 0.0);
+
+Solar_panel = ROTATE(
+    object_name = Solar_panel, 
+    x_ang = 90.0, 
+    clear = TRUE);
+
+Solar_panel = TRANSLATE(
+    object_name = Solar_panel, 
+    x_dist = -4.95, 
+    z_dist = -0.175);
+
+/* End of primitive block - no errors */
+
+/* Start of structure block */
+
+GEOMETRY Body;
+Body = Body_a + Body_b;
+
+MUSE_SAT = ASSEMBLE(
+    ref_comp = Body, 
+    moving_comp = Solar_panel, 
+    xt = 0.0, 
+    yt = 0.0, 
+    zt = 0.0, 
+    xr = 0.0, 
+    yr = 0.0, 
+    zr = 0.0, 
+    order = "xtytztxryrzr", 
+    orientation = "TRUE_SUN", 
+    point_vect = [0.0, 1.0, 0.0], 
+    rot_point = [-0.3, 0.0, 0.6], 
+    rot_axis = [1.0, 0.0, 0.0], 
+    gen_vect = [0.0, 0.0, 0.0], 
+    rot_min_ang = 0.0, 
+    rot_max_ang = 360.0, 
+    bisecting = FALSE, 
+    focus_point = [0.0, 0.0, 0.0], 
+    initial_angle = 0.0, 
+    rotation_rate = 0.0);
+
+/* End of structure block - no errors */
+
+/* Start of conductive interface block */
+
+CONDUCTIVE_INTERFACE ci_1;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_1, 
+    primitiveA = Body_a, 
+    primitiveB = Body_a, 
+    start_point = [0.0, 0.0, 1.2], 
+    end_point = [1.5, 0.0, 1.2], 
+    connect_type = "FUSED");
+
+CONDUCTIVE_INTERFACE ci_10;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_10, 
+    primitiveA = Body_b, 
+    primitiveB = Body_b, 
+    start_point = [0.0, 0.0, 0.0], 
+    end_point = [0.0, 0.0, 1.2], 
+    connect_type = "FUSED");
+
+CONDUCTIVE_INTERFACE ci_11;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_11, 
+    primitiveA = Body_b, 
+    primitiveB = Body_b, 
+    start_point = [0.0, 0.0, 1.2], 
+    end_point = [0.0, 1.0, 1.2], 
+    connect_type = "FUSED");
+
+CONDUCTIVE_INTERFACE ci_12;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_12, 
+    primitiveA = Body_b, 
+    primitiveB = Body_b, 
+    start_point = [0.0, 1.0, 0.0], 
+    end_point = [0.0, 1.0, 1.2], 
+    connect_type = "FUSED");
+
+CONDUCTIVE_INTERFACE ci_13;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_13, 
+    primitiveA = Body_b, 
+    primitiveB = Body_b, 
+    start_point = [1.0, 1.0, 0.0], 
+    end_point = [0.0, 1.0, 0.0], 
+    connect_type = "FUSED");
+
+CONDUCTIVE_INTERFACE ci_14;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_14, 
+    primitiveA = Body_b, 
+    primitiveB = Body_b, 
+    start_point = [0.0, 0.0, 0.0], 
+    end_point = [1.0, 0.0, 0.0], 
+    connect_type = "FUSED");
+
+CONDUCTIVE_INTERFACE ci_15;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_15, 
+    primitiveA = Body_b, 
+    primitiveB = Body_b, 
+    start_point = [0.0, 1.0, 1.2], 
+    end_point = [1.0, 1.0, 1.2], 
+    connect_type = "FUSED");
+
+CONDUCTIVE_INTERFACE ci_16;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_16, 
+    primitiveA = Body_b, 
+    primitiveB = Body_b, 
+    start_point = [0.0, 0.0, 1.2], 
+    end_point = [1.0, 0.0, 1.2], 
+    connect_type = "FUSED");
+
+CONDUCTIVE_INTERFACE ci_17;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_17, 
+    primitiveA = Body_b, 
+    primitiveB = Body_b, 
+    start_point = [1.0, 1.0, 0.0], 
+    end_point = [1.0, 0.0, 0.0], 
+    connect_type = "FUSED");
+
+CONDUCTIVE_INTERFACE ci_18;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_18, 
+    primitiveA = Body_b, 
+    primitiveB = Body_b, 
+    start_point = [1.0, 1.0, 0.0], 
+    end_point = [1.0, 1.0, 1.2], 
+    connect_type = "FUSED");
+
+CONDUCTIVE_INTERFACE ci_19;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_19, 
+    primitiveA = Body_b, 
+    primitiveB = Body_b, 
+    start_point = [1.0, 0.0, 1.2], 
+    end_point = [1.0, 1.0, 1.2], 
+    connect_type = "FUSED");
+
+CONDUCTIVE_INTERFACE ci_2;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_2, 
+    primitiveA = Body_a, 
+    primitiveB = Body_a, 
+    start_point = [0.0, 0.0, 0.0], 
+    end_point = [1.5, 0.0, 0.0], 
+    connect_type = "FUSED");
+
+CONDUCTIVE_INTERFACE ci_20;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_20, 
+    primitiveA = Body_b, 
+    primitiveB = Body_b, 
+    start_point = [1.0, 0.0, 0.0], 
+    end_point = [1.0, 0.0, 1.2], 
+    connect_type = "FUSED");
+
+CONDUCTIVE_INTERFACE ci_21;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_21, 
+    primitiveA = Body_a, 
+    primitiveB = Body_a, 
+    start_point = [1.5, 0.0, 0.0], 
+    end_point = [1.5, 0.0, 1.2], 
+    connect_type = "FUSED");
+
+CONDUCTIVE_INTERFACE ci_22;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_22, 
+    primitiveA = Body_a, 
+    primitiveB = Body_a, 
+    start_point = [1.5, 0.0, 1.2], 
+    end_point = [1.5, 2.0, 1.2], 
+    connect_type = "FUSED");
+
+CONDUCTIVE_INTERFACE ci_23;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_23, 
+    primitiveA = Body_a, 
+    primitiveB = Body_a, 
+    start_point = [1.5, 2.0, 0.0], 
+    end_point = [1.5, 2.0, 1.2], 
+    connect_type = "FUSED");
+
+CONDUCTIVE_INTERFACE ci_24;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_24, 
+    primitiveA = Body_a, 
+    primitiveB = Body_a, 
+    start_point = [1.5, 2.0, 0.0], 
+    end_point = [1.5, 0.0, 0.0], 
+    connect_type = "FUSED");
+
+CONDUCTIVE_INTERFACE ci_3;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_3, 
+    primitiveA = Body_a, 
+    primitiveB = Body_a, 
+    start_point = [1.5, 2.0, 1.2], 
+    end_point = [0.0, 2.0, 1.2], 
+    connect_type = "FUSED");
+
+CONDUCTIVE_INTERFACE ci_4;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_4, 
+    primitiveA = Body_a, 
+    primitiveB = Body_a, 
+    start_point = [0.0, 2.0, 1.2], 
+    end_point = [0.0, 0.0, 1.2], 
+    connect_type = "FUSED");
+
+CONDUCTIVE_INTERFACE ci_5;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_5, 
+    primitiveA = Body_a, 
+    primitiveB = Body_a, 
+    start_point = [1.5, 2.0, 0.0], 
+    end_point = [0.0, 2.0, 0.0], 
+    connect_type = "FUSED");
+
+CONDUCTIVE_INTERFACE ci_6;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_6, 
+    primitiveA = Body_a, 
+    primitiveB = Body_a, 
+    start_point = [0.0, 0.0, 0.0], 
+    end_point = [0.0, 0.0, 1.2], 
+    connect_type = "FUSED");
+
+CONDUCTIVE_INTERFACE ci_7;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_7, 
+    primitiveA = Body_a, 
+    primitiveB = Body_a, 
+    start_point = [0.0, 2.0, 0.0], 
+    end_point = [0.0, 2.0, 1.2], 
+    connect_type = "FUSED");
+
+CONDUCTIVE_INTERFACE ci_8;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_8, 
+    primitiveA = Body_a, 
+    primitiveB = Body_a, 
+    start_point = [0.0, 2.0, 0.0], 
+    end_point = [0.0, 0.0, 0.0], 
+    connect_type = "FUSED");
+
+CONDUCTIVE_INTERFACE ci_9;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_9, 
+    primitiveA = Body_b, 
+    primitiveB = Body_b, 
+    start_point = [0.0, 1.0, 0.0], 
+    end_point = [0.0, 0.0, 0.0], 
+    connect_type = "FUSED");
+
+/* End of conductive interface block - no errors */
+
+/* Start of group block */
+
+/* End of group block - no errors */
+
+/* Start of conductor block */
+
+/* End of conductor block - no errors */
+
+/* Start of contact zone block */
+
+/* End of contact zone block - no errors */
+
+END_MODEL

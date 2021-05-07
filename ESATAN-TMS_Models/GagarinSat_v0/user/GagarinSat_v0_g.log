@@ -27,3 +27,126 @@ DEFINE_OPTICAL(optical = IR_lens,
                ir_spec_refl = 0.0,
                solar_spec_refl = 0.0);
 
+/* ESATAN-TMS version 2020, run date 14:36 Fri 7 May 2021 */
+/* BEGIN_MODEL GagarinSat_v0 WORKBENCH_V1 */
+BULK CFRP;
+DEFINE_BULK(bulk = CFRP,
+               type = "Orthotropic",
+               description = "",
+               density = 1750.0,
+               sp_heat = 800.0,
+               cond1 = 42.0,
+               cond2 = 42.0,
+               cond3 = 5.0);
+
+OPTICAL Kapton_ITO;
+DEFINE_OPTICAL(optical = Kapton_ITO,
+               description = "",
+               ir_emiss = 0.8,
+               ir_transm = 0.0,
+               solar_absorb = 0.2,
+               solar_transm = 0.0,
+               ir_spec_refl = 0.0,
+               solar_spec_refl = 0.8);
+
+OPTICAL Solar_Cells;
+DEFINE_OPTICAL(optical = Solar_Cells,
+               description = "",
+               ir_emiss = 0.75,
+               ir_transm = 0.0,
+               solar_absorb = 0.75,
+               solar_transm = 0.0,
+               ir_spec_refl = 0.0,
+               solar_spec_refl = 0.0);
+
+OPTICAL OSR;
+DEFINE_OPTICAL(optical = OSR,
+               description = "",
+               ir_emiss = 0.8,
+               ir_transm = 0.0,
+               solar_absorb = .08,
+               solar_transm = 0.0,
+               ir_spec_refl = 0.0,
+               solar_spec_refl = 0.92);
+
+OPTICAL White_paint;
+DEFINE_OPTICAL(optical = White_paint,
+               description = "",
+               ir_emiss = 0.8,
+               ir_transm = 0.0,
+               solar_absorb = 0.2,
+               solar_transm = 0.0,
+               ir_spec_refl = 0.0,
+               solar_spec_refl = 0.0);
+
+OPTICAL Black_paint;
+DEFINE_OPTICAL(optical = Black_paint,
+               description = "",
+               ir_emiss = 0.9,
+               ir_transm = 0.0,
+               solar_absorb = 0.9,
+               solar_transm = 0.0,
+               ir_spec_refl = 0.0,
+               solar_spec_refl = 0.0);
+
+OPTICAL Al_anodized;
+DEFINE_OPTICAL(optical = Al_anodized,
+               description = "",
+               ir_emiss = 0.6,
+               ir_transm = 0.0,
+               solar_absorb = 0.2,
+               solar_transm = 0.0,
+               ir_spec_refl = 0.0,
+               solar_spec_refl = 0.0);
+
+BULK Al_6061;
+DEFINE_BULK(bulk = Al_6061,
+               type = "Isotropic",
+               description = "",
+               density = 2700.0,
+               sp_heat = 900.0,
+               cond = 160.0);
+
+BULK GaAs;
+DEFINE_BULK(bulk = GaAs,
+               type = "Isotropic",
+               description = "",
+               density = 5300.0,
+               sp_heat = 1000.0,
+               cond = 55.0);
+
+BULK Glass;
+DEFINE_BULK(bulk = Glass,
+               type = "Isotropic",
+               description = "",
+               density = 5330.0,
+               sp_heat = 310.0,
+               cond = 59.0);
+
+BULK MLI_foil;
+DEFINE_BULK(bulk = MLI_foil,
+               type = "Isotropic",
+               description = "",
+               density = 300.0,
+               sp_heat = 900.0,
+               cond = 0.0);
+
+/* END_MODEL */
+/* ESATAN-TMS version 2020, run date 16:52 Fri 7 May 2021 */
+/* BEGIN_MODEL GagarinSat_v0 WORKBENCH_V1 */
+BULK Al_2219;
+DEFINE_BULK(bulk = Al_2219,
+               type = "Isotropic",
+               description = "",
+               density = 2840.0,
+               sp_heat = 864.0,
+               cond = 121.0);
+
+BULK Al_7075;
+DEFINE_BULK(bulk = Al_7075,
+               type = "Isotropic",
+               description = "",
+               density = 2810.0,
+               sp_heat = 960.0,
+               cond = 130.0);
+

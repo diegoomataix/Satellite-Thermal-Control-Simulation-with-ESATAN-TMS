@@ -1,0 +1,82 @@
+BEGIN_MODEL MUSE_SAT WORKBENCH_V1 ESARAD_GENERATED
+
+BOUNDARY_CONDITION BC_body_b;
+BC_body_b = TOTAL_AREA_HEAT_LOAD (
+    reference = "Body_b:surface2", 
+    value = 50.0);
+
+BOUNDARY_CONDITION BC_body_a;
+BC_body_a = TOTAL_AREA_HEAT_LOAD (
+    reference = "Body_a:surface2", 
+    value = 75.0);
+
+ANALYSIS_CASE acase01;
+DEFINE_ANALYSIS_CASE(
+    analysis_case = acase01, 
+    solver = "ESATAN", 
+    template_file = "Template.tpl", 
+    analysis_file = "MUSE_SAT_acase01.d", 
+    radiative_case = rad01);
+
+SET_BOUNDARY_CONDITION (
+    analysis_case = acase01, 
+    boundary_condition = BC_body_a, 
+    applies = TRUE);
+
+SET_BOUNDARY_CONDITION (
+    analysis_case = acase01, 
+    boundary_condition = BC_body_b, 
+    applies = TRUE);
+
+GENERATE_TEMPLATE(
+    analysis_case = acase01, 
+    submodel_files = FALSE, 
+    maxmin = FALSE, 
+    execution_block = "
+C
+      TIMEND=6050.2473
+      OUTINT=605.02473
+      NLOOP=500
+      RELXCA=0.01
+      DTIMEI=10.0
+      CALL SOLCYC('SLCRNC',0.01D0,0.01D0,6050.2473D0,10,' ','NONE')
+C
+      CALL SLCRNC
+C
+", 
+    output_block = "      CALL PRNDTB(' ', 'L, T, QS, QE, QA, QI, C', CURRENT)
+C
+      CALL DMPTMD(' ', 'NODES, CONDUCTORS, CONSTANTS', CURRENT, ' ')
+
+");
+
+IMPORT_ANALYSIS_CASE_FILE(
+    analysis_case = acase01,
+    source_file_path = "C:\Users\Ignacio Torralbo\Desktop\EXPORTAR\muse_sat_acase01.tpl",
+    destination_file_name = "Template.tpl");
+
+GENERATE_ANALYSIS_FILE(
+    analysis_case = acase01, 
+    results = "GL,TRANS_HF,TRANS_REF", 
+    ref_averaged = TRUE, 
+    ref_cyclic = TRUE, 
+    ref_mf = 1.0, 
+    hf_averaged = TRUE, 
+    hf_cyclic = TRUE, 
+    hf_type = "S,A,P", 
+    title = "MUSE_SAT_acase01", 
+    dystor = 0, 
+    environment = 999999, 
+    environment_temperature = -270.0, 
+    inactive = 999997, 
+    area_mf = 1.0, 
+    segments = FALSE, 
+    acd_file = TRUE, 
+    ref_deviation = 5.0e-03, 
+    hf_deviation = 5.0e-03);
+
+RUN_ANALYSIS(
+    analysis_case = acase01, 
+    options = "PreProcess,Solve");
+
+END_MODEL
