@@ -4115,3 +4115,1122 @@ RAD_IR_Tel = TRANSLATE(
     x_dist = 0.015,
     y_dist = -0.16,
     z_dist = 0.375);
+Solar_Panles_xPlus = SHELL_SCS_RECTANGLE(
+    xmax = 1.0,
+    ymax = 0.325,
+    height = 0.0,
+    xmin = 0.0,
+    ymin = 0.0,
+    sense = -1,
+    colour1 = "YELLOW",
+    colour2 = "LAVENDER",
+    side1 = "Active",
+    nbase1 = 21000,
+    ndelta1_1 = 1,
+    side2 = "Active",
+    nbase2 = 20000,
+    ndelta2_1 = 1,
+    label1 = "SPS_CELLS",
+    label2 = "SPS_STR",
+    opt1 = Solar_Cells,
+    opt2 = Kapton_ITO,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    composition = "DUAL",
+    bulk1 = GaAs,
+    thick1 = 1.0e-03,
+    bulk2 = Al_7075,
+    thick2 = 1.0e-03,
+    meshType1 = "regular",
+    nodes1 = 8,
+    meshType2 = "regular",
+    nodes2 = 2,
+    analysis_type = "Lumped Parameter");
+
+Solar_Panles_xPlus = ROTATE(
+    object_name = Solar_Panles_xPlus,
+    x_ang = 90.0,
+    clear = TRUE);
+Solar_Panles_xPlus = TRANSLATE(
+    object_name = Solar_Panles_xPlus,
+    x_dist = 0.25,
+    y_dist = 0.1,
+    z_dist = 0.0875);
+GagarinSat_cfg2 = ASSEMBLE(
+    ref_comp = REFERENCE_BODY,
+    moving_comp = Solar_Panles_xPlus,
+    orientation = "TRUE_SUN",
+    rot_point = [0.25, 0.1, 0.25],
+    rot_axis = [1.0, 0.0, 0.0],
+    rot_min_ang = 0.0,
+    rot_max_ang = 360.0,
+    point_vect = [0.0, -1.0, 0.0]
+);
+GagarinSat_cfg2 = ASSEMBLE(
+    ref_comp = REFERENCE_BODY,
+    moving_comp = Solar_Panles_xPlus,
+    orientation = "TRUE_SUN",
+    rot_point = [0.25, 0.1, 0.45],
+    rot_axis = [1.0, 0.0, 0.0],
+    rot_min_ang = 0.0,
+    rot_max_ang = 360.0,
+    point_vect = [0.0, -1.0, 0.0]
+);
+GagarinSat_cfg2 = ASSEMBLE(
+    ref_comp = REFERENCE_BODY,
+    moving_comp = Solar_Panles_xPlus,
+    orientation = "TRUE_SUN",
+    rot_point = [0.25, 0.1, 0.475],
+    rot_axis = [1.0, 0.0, 0.0],
+    rot_min_ang = 0.0,
+    rot_max_ang = 360.0,
+    point_vect = [0.0, -1.0, 0.0]
+);
+Solar_Panles_xPlus = SHELL_SCS_RECTANGLE(
+    xmax = 1.0,
+    ymax = 0.325,
+    height = 0.0,
+    xmin = 0.0,
+    ymin = 0.0,
+    sense = -1,
+    colour1 = "YELLOW",
+    colour2 = "LAVENDER",
+    side1 = "Active",
+    nbase1 = 21000,
+    ndelta1_1 = 1,
+    side2 = "Active",
+    nbase2 = 20000,
+    ndelta2_1 = 1,
+    label1 = "SPS_CELLS",
+    label2 = "SPS_STR",
+    opt1 = Solar_Cells,
+    opt2 = Kapton_ITO,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    composition = "DUAL",
+    bulk1 = GaAs,
+    thick1 = 1.0e-03,
+    bulk2 = Al_7075,
+    thick2 = 1.0e-03,
+    meshType1 = "regular",
+    nodes1 = 8,
+    meshType2 = "regular",
+    nodes2 = 2,
+    analysis_type = "Lumped Parameter");
+
+Solar_Panles_xPlus = ROTATE(
+    object_name = Solar_Panles_xPlus,
+    x_ang = 90.0,
+    clear = TRUE);
+Solar_Panles_xPlus = TRANSLATE(
+    object_name = Solar_Panles_xPlus,
+    x_dist = 0.25,
+    y_dist = 0.1,
+    z_dist = 0.0875+0.2);
+Solar_Panles_xPlus = SHELL_SCS_RECTANGLE(
+    xmax = 1.0,
+    ymax = 0.325,
+    height = 0.0,
+    xmin = 0.0,
+    ymin = 0.0,
+    sense = -1,
+    colour1 = "YELLOW",
+    colour2 = "LAVENDER",
+    side1 = "Active",
+    nbase1 = 21000,
+    ndelta1_1 = 1,
+    side2 = "Active",
+    nbase2 = 20000,
+    ndelta2_1 = 1,
+    label1 = "SPS_CELLS",
+    label2 = "SPS_STR",
+    opt1 = Solar_Cells,
+    opt2 = Kapton_ITO,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    composition = "DUAL",
+    bulk1 = GaAs,
+    thick1 = 1.0e-03,
+    bulk2 = Al_7075,
+    thick2 = 1.0e-03,
+    meshType1 = "regular",
+    nodes1 = 8,
+    meshType2 = "regular",
+    nodes2 = 2,
+    analysis_type = "Lumped Parameter");
+
+Solar_Panles_xPlus = ROTATE(
+    object_name = Solar_Panles_xPlus,
+    x_ang = 90.0,
+    clear = TRUE);
+Solar_Panles_xPlus = TRANSLATE(
+    object_name = Solar_Panles_xPlus,
+    x_dist = 0.25,
+    y_dist = 0.1,
+    z_dist = 0.0875+0.25);
+Solar_Panles_xPlus = SHELL_SCS_RECTANGLE(
+    xmax = 1.0,
+    ymax = 0.325,
+    height = 0.0,
+    xmin = 0.0,
+    ymin = 0.0,
+    sense = -1,
+    colour1 = "YELLOW",
+    colour2 = "LAVENDER",
+    side1 = "Active",
+    nbase1 = 21000,
+    ndelta1_1 = 1,
+    side2 = "Active",
+    nbase2 = 20000,
+    ndelta2_1 = 1,
+    label1 = "SPS_CELLS",
+    label2 = "SPS_STR",
+    opt1 = Solar_Cells,
+    opt2 = Kapton_ITO,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    composition = "DUAL",
+    bulk1 = GaAs,
+    thick1 = 1.0e-03,
+    bulk2 = Al_7075,
+    thick2 = 1.0e-03,
+    meshType1 = "regular",
+    nodes1 = 8,
+    meshType2 = "regular",
+    nodes2 = 2,
+    analysis_type = "Lumped Parameter");
+
+Solar_Panles_xPlus = ROTATE(
+    object_name = Solar_Panles_xPlus,
+    x_ang = 90.0,
+    clear = TRUE);
+Solar_Panles_xPlus = TRANSLATE(
+    object_name = Solar_Panles_xPlus,
+    x_dist = 0.25,
+    y_dist = 0.1,
+    z_dist = 0.0875+0.225);
+GagarinSat_cfg2 = ASSEMBLE(
+    ref_comp = REFERENCE_BODY,
+    moving_comp = Solar_Panles_xPlus,
+    orientation = "TRUE_SUN",
+    rot_point = [0.25, 0., 0.475],
+    rot_axis = [1.0, 0.0, 0.0],
+    rot_min_ang = 0.0,
+    rot_max_ang = 360.0,
+    point_vect = [0.0, -1.0, 0.0]
+);
+Solar_Panles_xPlus = SHELL_SCS_RECTANGLE(
+    xmax = 1.0,
+    ymax = 0.325,
+    height = 0.0,
+    xmin = 0.0,
+    ymin = 0.0,
+    sense = -1,
+    colour1 = "YELLOW",
+    colour2 = "LAVENDER",
+    side1 = "Active",
+    nbase1 = 21000,
+    ndelta1_1 = 1,
+    side2 = "Active",
+    nbase2 = 20000,
+    ndelta2_1 = 1,
+    label1 = "SPS_CELLS",
+    label2 = "SPS_STR",
+    opt1 = Solar_Cells,
+    opt2 = Kapton_ITO,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    composition = "DUAL",
+    bulk1 = GaAs,
+    thick1 = 1.0e-03,
+    bulk2 = Al_7075,
+    thick2 = 1.0e-03,
+    meshType1 = "regular",
+    nodes1 = 8,
+    meshType2 = "regular",
+    nodes2 = 2,
+    analysis_type = "Lumped Parameter");
+
+Solar_Panles_xPlus = ROTATE(
+    object_name = Solar_Panles_xPlus,
+    x_ang = 90.0,
+    clear = TRUE);
+Solar_Panles_xPlus = TRANSLATE(
+    object_name = Solar_Panles_xPlus,
+    x_dist = 0.25,
+    z_dist = 0.3125);
+REFERENCE_BODY = REFERENCE_BODY + MLI_IR_TEL;
+GEOMETRY NewCombine1;
+REFERENCE_BODY = REFERENCE_BODY + NewCombine1;
+NewCombine1 = MLI_IR_TEL + MLI_RAD_CUTTED;
+RENAME(old_name = "NewCombine1", new_name = "MLI_assembly");
+DELETE ci_14;
+DELETE ci_7;
+DELETE ci_20;
+DELETE ci_18;
+DELETE ci_2;
+DELETE ci_3;
+DELETE ci_12;
+DELETE ci_22;
+DELETE ci_34;
+DELETE ci_32;
+DELETE ci_10;
+DELETE ci_23;
+DELETE ci_31;
+DELETE ci_1;
+DELETE ci_26;
+DELETE ci_11;
+DELETE ci_35;
+DELETE ci_21;
+DELETE ci_13;
+DELETE ci_25;
+DELETE ci_27;
+DELETE ci_4;
+DELETE ci_9;
+DELETE ci_6;
+DELETE ci_15;
+DELETE ci_36;
+DELETE ci_33;
+DELETE ci_17;
+DELETE ci_30;
+DELETE ci_29;
+DELETE ci_8;
+DELETE ci_16;
+DELETE ci_28;
+DELETE ci_24;
+DELETE ci_5;
+DELETE ci_19;
+
+CONDUCTIVE_INTERFACE ci_1;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_1,
+	primitiveA = Panels,
+	primitiveB = Panels,
+	start_point = [0.0, 0.0, 0.0],
+	end_point = [0.4, 0.0, 0.0],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_2;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_2,
+	primitiveA = Panels,
+	primitiveB = Panels,
+	start_point = [0.0, 0.0, 0.25000000000000006],
+	end_point = [0.4, 0.0, 0.25000000000000006],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_3;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_3,
+	primitiveA = Panels,
+	primitiveB = Panels,
+	start_point = [0.4, 0.3, 0.0],
+	end_point = [0.0, 0.3, 0.0],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_4;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_4,
+	primitiveA = Panels,
+	primitiveB = Panels,
+	start_point = [0.4, 0.3, 0.25000000000000006],
+	end_point = [0.0, 0.3, 0.25000000000000006],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_5;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_5,
+	primitiveA = Panels,
+	primitiveB = Panels,
+	start_point = [0.0, 0.3, 0.25000000000000006],
+	end_point = [0.0, 0.0, 0.25000000000000006],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_6;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_6,
+	primitiveA = Panels,
+	primitiveB = Panels,
+	start_point = [0.0, 0.3, 0.0],
+	end_point = [0.0, 0.3, 0.25000000000000006],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_7;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_7,
+	primitiveA = Panels,
+	primitiveB = Panels,
+	start_point = [0.0, 0.0, 0.0],
+	end_point = [0.0, 0.0, 0.25000000000000006],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_8;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_8,
+	primitiveA = Panels,
+	primitiveB = Panels,
+	start_point = [0.0, 0.3, 0.0],
+	end_point = [0.0, 0.0, 0.0],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_9;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_9,
+	primitiveA = Electronic_Box,
+	primitiveB = Electronic_Box,
+	start_point = [0.0, 0.15, 0.040000000000000036],
+	end_point = [0.15, 0.15, 0.040000000000000036],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_10;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_10,
+	primitiveA = Electronic_Box,
+	primitiveB = Electronic_Box,
+	start_point = [0.0, 0.15, 0.0],
+	end_point = [0.0, 0.0, 0.0],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_11;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_11,
+	primitiveA = Electronic_Box,
+	primitiveB = Electronic_Box,
+	start_point = [0.0, 0.0, 0.040000000000000036],
+	end_point = [0.0, 0.15, 0.040000000000000036],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_12;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_12,
+	primitiveA = Electronic_Box,
+	primitiveB = Electronic_Box,
+	start_point = [0.0, 0.15, 0.0],
+	end_point = [0.0, 0.15, 0.040000000000000036],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_13;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_13,
+	primitiveA = Electronic_Box,
+	primitiveB = Electronic_Box,
+	start_point = [0.15, 0.15, 0.0],
+	end_point = [0.0, 0.15, 0.0],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_14;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_14,
+	primitiveA = Electronic_Box,
+	primitiveB = Electronic_Box,
+	start_point = [0.0, 0.0, 0.0],
+	end_point = [0.15, 0.0, 0.0],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_15;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_15,
+	primitiveA = Electronic_Box,
+	primitiveB = Electronic_Box,
+	start_point = [0.0, 0.0, 0.0],
+	end_point = [0.0, 0.0, 0.040000000000000036],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_16;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_16,
+	primitiveA = Electronic_Box,
+	primitiveB = Electronic_Box,
+	start_point = [0.0, 0.0, 0.040000000000000036],
+	end_point = [0.15, 0.0, 0.040000000000000036],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_17;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_17,
+	primitiveA = Electronic_Box,
+	primitiveB = Electronic_Box,
+	start_point = [0.15, 0.0, 0.0],
+	end_point = [0.15, 0.0, 0.040000000000000036],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_18;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_18,
+	primitiveA = Electronic_Box,
+	primitiveB = Electronic_Box,
+	start_point = [0.15, 0.0, 0.040000000000000036],
+	end_point = [0.15, 0.15, 0.040000000000000036],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_19;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_19,
+	primitiveA = Electronic_Box,
+	primitiveB = Electronic_Box,
+	start_point = [0.15, 0.15, 0.0],
+	end_point = [0.15, 0.15, 0.040000000000000036],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_20;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_20,
+	primitiveA = Electronic_Box,
+	primitiveB = Electronic_Box,
+	start_point = [0.15, 0.15, 0.0],
+	end_point = [0.15, 0.0, 0.0],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_21;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_21,
+	primitiveA = Panels,
+	primitiveB = Panels,
+	start_point = [0.4, 0.0, 0.0],
+	end_point = [0.4, 0.0, 0.25000000000000006],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_22;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_22,
+	primitiveA = Panels,
+	primitiveB = Panels,
+	start_point = [0.4, 0.0, 0.25000000000000006],
+	end_point = [0.4, 0.3, 0.25000000000000006],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_23;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_23,
+	primitiveA = Panels,
+	primitiveB = Panels,
+	start_point = [0.4, 0.3, 0.0],
+	end_point = [0.4, 0.3, 0.25000000000000006],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_24;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_24,
+	primitiveA = Panels,
+	primitiveB = Panels,
+	start_point = [0.4, 0.3, 0.0],
+	end_point = [0.4, 0.0, 0.0],
+	connect_type = "FUSED");
+
+
+CONDUCTIVE_INTERFACE ci_25;
+DEFINE_CONDUCTIVE_INTERFACE(
+	conductive_interface = ci_25,
+	primitiveA = IR_TEL_STR,
+	primitiveB = IR_TEL_STR_2,
+	start_point = [0.125, 0.0, 0.0],
+	end_point = [0.125, -3.061616997868383E-17, 0.0],
+	connect_type = "FUSED");
+
+EBox_Plate_bottom = DEFINE_CONTACT_ZONE(
+source_reference = "Electronic_Box:surface1",
+destination_reference = "Body_plate_1:surface1",
+contact_conductance = 300.0,
+maximum_gap = 0.01,
+number_sample_points = 10000);
+
+DELETE Tel_Elec_Plate2;
+IR_TEL_CCD = SHELL_SCS_DISC(
+    rmax = 0.07,
+    rmin = 0.0,
+    height = 0.0,
+    angmin = 0.0,
+    angmax = 360.0,
+    sense = -1,
+    colour1 = "RED",
+    colour2 = "RED",
+    side1 = "Active",
+    nbase1 = 41000,
+    ndelta1_1 = 1,
+    side2 = "Active",
+    nbase2 = 41000,
+    ndelta2_1 = 1,
+    label1 = "IR_TEL_CCD",
+    label2 = "IR_TEL_CCD",
+    opt1 = CCD_Detector,
+    opt2 = CCD_Detector,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    bulk = Al_6061,
+    thick = 1.0e-03,
+    meshType1 = "regular",
+    nodes1 = 2,
+    meshType2 = "regular",
+    nodes2 = 2,
+    analysis_type = "Lumped Parameter");
+
+IR_TEL_CCD = TRANSLATE(
+    object_name = IR_TEL_CCD,
+    z_dist = 0.31,
+    clear = TRUE);
+IR_TEL_CCD = SHELL_SCS_DISC(
+    rmax = 0.07,
+    rmin = 0.0,
+    height = 0.0,
+    angmin = 0.0,
+    angmax = 360.0,
+    sense = -1,
+    colour1 = "RED",
+    colour2 = "RED",
+    side1 = "Active",
+    nbase1 = 41000,
+    ndelta1_1 = 1,
+    side2 = "Active",
+    nbase2 = 41000,
+    ndelta2_1 = 1,
+    label1 = "IR_TEL_CCD",
+    label2 = "IR_TEL_CCD",
+    opt1 = CCD_Detector,
+    opt2 = CCD_Detector,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    bulk = Al_6061,
+    thick = 1.0e-03,
+    meshType1 = "regular",
+    nodes1 = 2,
+    meshType2 = "regular",
+    nodes2 = 1,
+    analysis_type = "Lumped Parameter");
+
+IR_TEL_CCD = TRANSLATE(
+    object_name = IR_TEL_CCD,
+    z_dist = 0.31,
+    clear = TRUE);
+IR_TEL_CCD = SHELL_SCS_DISC(
+    rmax = 0.07,
+    rmin = 0.0,
+    height = 0.0,
+    angmin = 0.0,
+    angmax = 360.0,
+    sense = -1,
+    colour1 = "RED",
+    colour2 = "RED",
+    side1 = "Active",
+    nbase1 = 41000,
+    ndelta1_1 = 1,
+    side2 = "Active",
+    nbase2 = 41000,
+    ndelta2_1 = 1,
+    label1 = "IR_TEL_CCD",
+    label2 = "IR_TEL_CCD",
+    opt1 = CCD_Detector,
+    opt2 = CCD_Detector,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    bulk = Al_6061,
+    thick = 1.0e-03,
+    meshType1 = "regular",
+    nodes1 = 4,
+    meshType2 = "regular",
+    nodes2 = 1,
+    analysis_type = "Lumped Parameter");
+
+IR_TEL_CCD = TRANSLATE(
+    object_name = IR_TEL_CCD,
+    z_dist = 0.31,
+    clear = TRUE);
+DELETE IR_Tel_CCD_IR_Tel_Focus;
+DELETE IR_Tel_Focus_IR_Tel_STR;
+DELETE Panel_xypos_Plate2_2;
+DELETE Panel_xypos_Plate2_1;
+DELETE Panel_xyneg_Plate2_1;
+DELETE Panel_xyneg_Plate2_2;
+DELETE Plate2_Panel_xyneg_1;
+DELETE Plate2_Panel_xyneg_2;
+DELETE Plate2_Panel_xypos_1;
+DELETE Plate2_Panel_xypos_2;
+DELETE Plate_Panel_xyneg_2;
+DELETE Plate_Panel_xyneg_1;
+CCD_Panel_xyneg_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_CCD:face2",
+    destination_reference = "Panels:face44",
+    conductor_override = 0.1);
+
+CCD_Panel_xyneg_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_CCD:face1",
+    destination_reference = "Panels:face43",
+    conductor_override = 0.1);
+
+CCD_Panel_xyneg_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_CCD:face3",
+    destination_reference = "Panels:face41",
+    conductor_override = 0.1);
+
+CONDUCTOR CCD_Panel_xyneg_2;
+CCD_Panel_xyneg_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_CCD:face5",
+    destination_reference = "Panels:face45",
+    conductor_override = 0.1);
+
+CCD_Panel_xypos_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_CCD:face1",
+    destination_reference = "Panels:face43",
+    conductor_override = 0.1);
+
+CONDUCTOR CCD_Panel_xypos_2;
+CCD_Panel_xypos_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_CCD:face7",
+    destination_reference = "Panels:face47",
+    conductor_override = 0.1);
+
+IR_Tel_Lens_IR_Tel_Obj = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_LENS:face1",
+    destination_reference = "IR_TEL_OBJ:face2",
+    conductivity = 160.0,
+    shape_factor = 2.12);
+
+IR_Tel_Lens_IR_Tel_Obj = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_LENS:face1",
+    destination_reference = "IR_TEL_OBJ:surface2",
+    conductivity = 160.0,
+    shape_factor = 2.12);
+
+IR_Tel_Lens_IR_Tel_Obj = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_LENS:face1",
+    destination_reference = "IR_TEL_OBJ:surface2",
+    conductivity = 160.0,
+    shape_factor = 0.04908 / 0.01);
+
+IR_Tel_Obj_IR_Tel_STR = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_OBJ:face1",
+    destination_reference = "IR_TEL_STR:face3",
+    conductivity = 160.0,
+    shape_factor = 2.1136);
+
+IR_TEL_STR = SHELL_SCS_CYLINDER(
+    radius = 0.125,
+    hmax = 0.35,
+    hmin = 0.0,
+    angmin = 0.0,
+    angmax = 360.0,
+    sense = -1,
+    colour1 = "PALE_BLUE",
+    colour2 = "VERY_DARK_GREY",
+    side1 = "Active",
+    nbase1 = 40000,
+    ndelta1_1 = 1,
+    side2 = "Active",
+    nbase2 = 40500,
+    ndelta2_1 = 1,
+    label1 = "IR_TEL_STR_ext",
+    label2 = "IR_TEL_STR_int",
+    opt1 = Al_anodized_blck,
+    opt2 = Al_anodized,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    bulk = Al_6061,
+    thick = 1.0e-03,
+    meshType1 = "regular",
+    nodes1 = 2,
+    meshType2 = "regular",
+    nodes2 = 1,
+    analysis_type = "Lumped Parameter");
+
+IR_TEL_STR = TRANSLATE(
+    object_name = IR_TEL_STR,
+    clear = TRUE);
+IR_Tel_Obj_IR_Tel_STR = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_OBJ:face1",
+    destination_reference = "IR_TEL_STR:surface2",
+    conductivity = 160.0,
+    shape_factor = 2.1136);
+
+CONDUCTOR IR_Tel_Obj_IR_Tel_STR_1;
+IR_Tel_Obj_IR_Tel_STR_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_OBJ:face1",
+    destination_reference = "IR_TEL_STR:face2",
+    conductivity = 160.0,
+    shape_factor = 2.1136);
+
+DELETE IR_Tel_Obj_IR_Tel_STR;
+CONDUCTOR IR_Tel_Obj_IR_Tel_STR_2;
+IR_Tel_Obj_IR_Tel_STR_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_OBJ:face3",
+    destination_reference = "IR_TEL_STR:face4",
+    conductivity = 160.0,
+    shape_factor = 2.1136);
+
+Panel_xyneg_Plate_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face46",
+    destination_reference = "Body_plate_1:face6",
+    conductor_override = 0.1);
+
+Panel_xyneg_Plate_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face34",
+    destination_reference = "Body_plate_1:face6",
+    conductor_override = 0.1);
+
+Panel_xyneg_Plate_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face48",
+    destination_reference = "Body_plate_1:face2",
+    conductor_override = 0.1);
+
+Panel_xyneg_Plate_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face36",
+    destination_reference = "Body_plate_1:face2",
+    conductor_override = 0.1);
+
+Panel_xyneg_RAD_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face43",
+    destination_reference = "RAD_IR_Tel:surface1",
+    conductor_override = 0.1);
+
+DELETE Panel_xyneg_RAD_1;
+DELETE Panel_xypos_RAD_1;
+Panel_xyneg_Plate_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face36",
+    destination_reference = "Body_plate_1:face2",
+    conductor_override = 0.1);
+
+Panel_xypos_Plate_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face24",
+    destination_reference = "Body_plate_1:face8",
+    conductor_override = 0.1);
+
+Panel_xypos_Plate_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face20",
+    destination_reference = "Body_plate_1:face8",
+    conductor_override = 0.1);
+
+Panel_xypos_Plate_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face18",
+    destination_reference = "Body_plate_1:face4",
+    conductor_override = 0.1);
+
+Panel_xypos_SolarPanel_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face29",
+    destination_reference = "Solar_Panles_xPlus:face17",
+    conductor_override = 0.1);
+
+Panel_xypos_SolarPanel_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face23",
+    destination_reference = "Solar_Panles_xPlus:face17",
+    conductor_override = 0.1);
+
+Panel_xypos_SolarPanel_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face31",
+    destination_reference = "Solar_Panles_xPlus:face18",
+    conductor_override = 0.1);
+
+Panel_xypos_SolarPanel_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face21",
+    destination_reference = "Solar_Panles_xPlus:face18",
+    conductor_override = 0.1);
+
+Panel_xypos_SolarPanel_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face21",
+    destination_reference = "Solar_Panles_xPlus:face17",
+    conductor_override = 0.1);
+
+Panel_xypos_SolarPanel_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face23",
+    destination_reference = "Solar_Panles_xPlus:face18",
+    conductor_override = 0.1);
+
+Panel_xypos_SolarPanel_3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face17",
+    destination_reference = "Solar_Panles_xPlus:face1",
+    conductor_override = 0.1);
+
+Panel_xypos_SolarPanel_4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face19",
+    destination_reference = "Solar_Panles_xPlus:face2",
+    conductor_override = 0.1);
+
+Plate1_PLD1_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Payload_1",
+    destination_reference = "Body_plate_1:face3",
+    conductivity = 160.0,
+    shape_factor = 13.31);
+
+Plate1_PLD1_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Payload_1",
+    destination_reference = "Panels:face46",
+    conductivity = 160.0,
+    shape_factor = 13.31);
+
+CONDUCTOR Plate1_PLD1_2;
+Plate1_PLD1_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Payload_1",
+    destination_reference = "Panels:face42",
+    conductivity = 160.0,
+    shape_factor = 13.31);
+
+Plate1_PLD2_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Payload_2",
+    destination_reference = "Panels:face48",
+    conductivity = 160.0,
+    shape_factor = 12.1);
+
+CONDUCTOR Plate1_PLD2_2;
+Plate1_PLD2_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Payload_2",
+    destination_reference = "Panels:face44",
+    conductivity = 160.0,
+    shape_factor = 12.1);
+
+Plate_Panel_xypos_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_1:face7",
+    destination_reference = "Panels:face28",
+    conductor_override = 0.1);
+
+Plate_Panel_xypos_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_1:face7",
+    destination_reference = "Panels:face24",
+    conductor_override = 0.1);
+
+Plate_Panel_xypos_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_1:face3",
+    destination_reference = "Panels:face22",
+    conductor_override = 0.1);
+
+CONDUCTOR Plate_Panel_xyneg_1;
+Plate_Panel_xyneg_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_1:face5",
+    destination_reference = "Panels:face38",
+    conductor_override = 0.1);
+
+CONDUCTOR Plate_Panel_xyneg_2;
+Plate_Panel_xyneg_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_1:face1",
+    destination_reference = "Panels:face40",
+    conductor_override = 0.1);
+
+CONDUCTOR IR_Tel_Obj_IR_Tel_CCD_1;
+IR_Tel_Obj_IR_Tel_CCD_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_OBJ:face2",
+    destination_reference = "IR_TEL_CCD:surface2",
+    conductivity = 160.0,
+    shape_factor = 2.1136);
+
+CONDUCTOR IR_Tel_Obj_IR_Tel_CCD_2;
+IR_Tel_Obj_IR_Tel_CCD_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_OBJ:face1",
+    destination_reference = "IR_TEL_CCD:surface2",
+    conductivity = 160.0,
+    shape_factor = 2.1136);
+
+IR_Tel_Obj_IR_Tel_CCD_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_OBJ:face4",
+    destination_reference = "IR_TEL_CCD:surface2",
+    conductivity = 160.0,
+    shape_factor = 2.1136);
+
+RAD_IR_Tel = SHELL_SCS_RECTANGLE(
+    xmax = 0.18,
+    ymax = 0.2,
+    height = 0.0,
+    xmin = 0.0,
+    ymin = 0.0,
+    sense = -1,
+    colour1 = "PALE_BLUE",
+    colour2 = "PALE_BLUE",
+    side1 = "Active",
+    nbase1 = 60000,
+    ndelta1_1 = 1,
+    side2 = "Active",
+    nbase2 = 60000,
+    ndelta2_1 = 1,
+    label1 = "RAD",
+    label2 = "RAD",
+    opt1 = SSM,
+    opt2 = SSM,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    bulk = Radiator,
+    thick = 0.01,
+    meshType1 = "regular",
+    nodes1 = 2,
+    meshType2 = "regular",
+    nodes2 = 2,
+    analysis_type = "Lumped Parameter");
+
+RAD_IR_Tel = ROTATE(
+    object_name = RAD_IR_Tel,
+    x_ang = 90.0,
+    clear = TRUE);
+RAD_IR_Tel = TRANSLATE(
+    object_name = RAD_IR_Tel,
+    x_dist = 0.015,
+    y_dist = -0.16,
+    z_dist = 0.375);
+RAD_IR_Tel = SHELL_SCS_RECTANGLE(
+    xmax = 0.18,
+    ymax = 0.2,
+    height = 0.0,
+    xmin = 0.0,
+    ymin = 0.0,
+    sense = -1,
+    colour1 = "PALE_BLUE",
+    colour2 = "PALE_BLUE",
+    side1 = "Active",
+    nbase1 = 60000,
+    ndelta1_1 = 1,
+    side2 = "Active",
+    nbase2 = 60000,
+    ndelta2_1 = 1,
+    label1 = "RAD",
+    label2 = "RAD",
+    opt1 = SSM,
+    opt2 = SSM,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    bulk = Radiator,
+    thick = 0.01,
+    meshType1 = "regular",
+    nodes1 = 3,
+    meshType2 = "regular",
+    nodes2 = 3,
+    analysis_type = "Lumped Parameter");
+
+RAD_IR_Tel = ROTATE(
+    object_name = RAD_IR_Tel,
+    x_ang = 90.0,
+    clear = TRUE);
+RAD_IR_Tel = TRANSLATE(
+    object_name = RAD_IR_Tel,
+    x_dist = 0.015,
+    y_dist = -0.16,
+    z_dist = 0.375);
+CONDUCTOR CCD_RAD_1;
+CCD_RAD_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_CCD:face7",
+    destination_reference = "RAD_IR_Tel:surface2",
+    conductor_override = 0.1);
+
+CCD_RAD_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_CCD:face7",
+    destination_reference = "RAD_IR_Tel:face10",
+    conductor_override = 0.1);
+
+CONDUCTOR CCD_RAD_2;
+CCD_RAD_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_CCD:face5",
+    destination_reference = "RAD_IR_Tel:face10",
+    conductor_override = 0.1);
+
+CCD_RAD_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_CCD:face1",
+    destination_reference = "RAD_IR_Tel:face10",
+    conductor_override = 0.1);
+
+CONDUCTOR CCD_RAD_3;
+CCD_RAD_3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_CCD:face5",
+    destination_reference = "RAD_IR_Tel:face10",
+    conductor_override = 0.1);
+
+CONDUCTOR CCD_RAD_4;
+CCD_RAD_4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_CCD:face3",
+    destination_reference = "RAD_IR_Tel:face10",
+    conductor_override = 0.1);
+
+Solar_Panles_xPlus = SHELL_SCS_RECTANGLE(
+    xmax = 1.0,
+    ymax = 0.325,
+    height = 0.0,
+    xmin = 0.0,
+    ymin = 0.0,
+    sense = -1,
+    colour1 = "YELLOW",
+    colour2 = "LAVENDER",
+    side1 = "Active",
+    nbase1 = 21000,
+    ndelta1_1 = 1,
+    side2 = "Active",
+    nbase2 = 20000,
+    ndelta2_1 = 1,
+    label1 = "SPS_CELLS",
+    label2 = "SPS_STR",
+    opt1 = Solar_Cells,
+    opt2 = VDA_Kapton,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    composition = "DUAL",
+    bulk1 = GaAs,
+    thick1 = 1.0e-03,
+    bulk2 = Al_7075,
+    thick2 = 1.0e-03,
+    meshType1 = "regular",
+    nodes1 = 8,
+    meshType2 = "regular",
+    nodes2 = 2,
+    analysis_type = "Lumped Parameter");
+
+Solar_Panles_xPlus = ROTATE(
+    object_name = Solar_Panles_xPlus,
+    x_ang = 90.0,
+    clear = TRUE);
+Solar_Panles_xPlus = TRANSLATE(
+    object_name = Solar_Panles_xPlus,
+    x_dist = 0.25,
+    z_dist = 0.3125);
+Solar_Panles_xPlus = SHELL_SCS_RECTANGLE(
+    xmax = 1.0,
+    ymax = 0.325,
+    height = 0.0,
+    xmin = 0.0,
+    ymin = 0.0,
+    sense = -1,
+    colour1 = "YELLOW",
+    colour2 = "LAVENDER",
+    side1 = "Active",
+    nbase1 = 21000,
+    ndelta1_1 = 1,
+    side2 = "Active",
+    nbase2 = 20000,
+    ndelta2_1 = 1,
+    label1 = "SPS_CELLS",
+    label2 = "SPS_STR",
+    opt1 = Solar_Cells,
+    opt2 = Kapton_ITO,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    composition = "DUAL",
+    bulk1 = GaAs,
+    thick1 = 1.0e-03,
+    bulk2 = Al_7075,
+    thick2 = 1.0e-03,
+    meshType1 = "regular",
+    nodes1 = 8,
+    meshType2 = "regular",
+    nodes2 = 2,
+    analysis_type = "Lumped Parameter");
+
+Solar_Panles_xPlus = ROTATE(
+    object_name = Solar_Panles_xPlus,
+    x_ang = 90.0,
+    clear = TRUE);
+Solar_Panles_xPlus = TRANSLATE(
+    object_name = Solar_Panles_xPlus,
+    x_dist = 0.25,
+    z_dist = 0.3125);
