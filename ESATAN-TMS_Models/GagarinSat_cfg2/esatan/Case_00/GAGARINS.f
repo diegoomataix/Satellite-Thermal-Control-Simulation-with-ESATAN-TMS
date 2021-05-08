@@ -6,10 +6,10 @@ C
 C   
       MNAME = 'GAGARINSAT_CFG2_CASE_00 '                                        
 C   
-      FLG(1) = 129                                                              
-      FLG(2) = 209                                                              
+      FLG(1) = 145                                                              
+      FLG(2) = 237                                                              
       FLG(3) = 0                                                                
-      FLG(4) = 1372                                                             
+      FLG(4) = 1538                                                             
       FLG(5) = 0                                                                
       FLG(6) = 1                                                                
       FLG(7) = 0                                                                
@@ -29,11 +29,11 @@ C
       FLG(21) = 0                                                               
       FLG(22) = 0                                                               
       FLG(23) = 0                                                               
-      FLG(24) = 7120                                                            
+      FLG(24) = 7992                                                            
       FLG(25) = 2                                                               
       FLG(26) = 3                                                               
       FLG(27) = 133                                                             
-      FLG(28) = 1003383                                                         
+      FLG(28) = 1003801                                                         
       FLG(29) = 1                                                               
       FLG(30) = 0                                                               
       FLG(31) = 0                                                               
@@ -44,7 +44,7 @@ C
       FLG(36) = 1                                                               
       FLG(37) = 0                                                               
       FLG(38) = 0                                                               
-      FLG(39) = 2744                                                            
+      FLG(39) = 3076                                                            
       FLG(40) = 0                                                               
       FLG(41) = 0                                                               
       CALL SVMNAM(MNAME)                                                        
