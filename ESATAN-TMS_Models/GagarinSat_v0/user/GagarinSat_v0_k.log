@@ -2,7 +2,7 @@
 BEGIN_MODEL GagarinSat_v0 WORKBENCH_V1 ;
 /* ESATAN-TMS version 2020, run date 13:33 Fri 7 May 2021 */
 /* BEGIN_MODEL GagarinSat_v0 WORKBENCH_V1 */ ;
-/* /* END_MODEL */ */
+/* /* /* END_MODEL */ */ */
 /* ESATAN-TMS version 2020, run date 16:35 Fri 7 May 2021 */
 /* BEGIN_MODEL GagarinSat_v0 WORKBENCH_V1 */ ;
 /* ESATAN-TMS version 2020, run date 1:13 Sat 8 May 2021 */
@@ -186,3 +186,6 @@ FOR (orbit_index = 1;
 END_FOR
 DELETE radiative_case_error_flag;
 
+/* ESATAN-TMS version 2020, run date 11:05 Sat 8 May 2021 */
+/* BEGIN_MODEL GagarinSat_v0 WORKBENCH_V1 */ ;
+END_MODEL

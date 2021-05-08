@@ -234,7 +234,7 @@ DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
         asm_axes = TRUE,
         points = FALSE);
 
-/* /* END_MODEL */ */
+/* /* /* END_MODEL */ */ */
 /* ESATAN-TMS version 2020, run date 16:35 Fri 7 May 2021 */
 /* BEGIN_MODEL GagarinSat_v0 WORKBENCH_V1 */ ;
 RADIATIVE_PRE_PROCESS_OVERLAY(source = "GEOMETRY",
@@ -12590,3 +12590,1184 @@ DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
         points = FALSE);
 
 END_FOR
+RADIATIVE_PRE_PROCESS_OVERLAY(
+    source= "GEOMETRY"
+);
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+RESET_VIEW();
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+LOAD_EXTERNAL_RESULTS (
+   type = "TMD",
+   file = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\GagarinSat_v0\esatan\Case_00\GAGARINSAT_V0_CASE_00.TMD");
+RADIATIVE_PRE_PROCESS_OVERLAY(source = "GEOMETRY",
+                              display = "MODEL_ONLY");
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type= "Thermal_Node",
+    start_time = 0.0,
+    end_time = 6059.29,
+    cycle = 1,
+    radiative_case = Rad_Case_00,
+    analysis_case = Case_00,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+     planet_scale = 0.646,
+     model_scale = 0.604,
+     draw_periapsis = TRUE,
+     draw_asc_node = TRUE
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = -17.7069453657777,
+    max = 134.0339138473279,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_v0.RANGE = "default_range";
+GagarinSat_v0.SHADE = "continuous_shade";
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_00);
+DRAW_PERIAPSIS(orbit = Rad_Case_00.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_00.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_Case_00,
+            time = vis_orbit_times[1],
+            scale = 0.646,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= 11;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.604 * (Rad_Case_00.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+END_FOR
+/* ESATAN-TMS version 2020, run date 11:05 Sat 8 May 2021 */
+/* BEGIN_MODEL GagarinSat_v0 WORKBENCH_V1 */ ;
+RADIATIVE_PRE_PROCESS_OVERLAY(source = "GEOMETRY",
+                              display = "MODEL_ONLY");
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+RESET_VIEW();
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+LOAD_EXTERNAL_RESULTS (
+   type = "TMD",
+   file = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\GagarinSat_v0\esatan\Case_00\GAGARINSAT_V0_CASE_00.TMD");
+RADIATIVE_PRE_PROCESS_OVERLAY(source = "GEOMETRY",
+                              display = "MODEL_ONLY");
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type= "Thermal_Node",
+    start_time = 0.0,
+    end_time = 6059.29,
+    cycle = 1,
+    radiative_case = Rad_Case_00,
+    analysis_case = Case_00,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+     draw_periapsis = TRUE,
+     draw_asc_node = TRUE
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = -17.71712729793616,
+    max = 144.06614401822196,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_v0.RANGE = "default_range";
+GagarinSat_v0.SHADE = "continuous_shade";
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_00);
+DRAW_PERIAPSIS(orbit = Rad_Case_00.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_00.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_Case_00,
+            time = vis_orbit_times[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.02 * (Rad_Case_00.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type= "Thermal_Node",
+    start_time = 0.0,
+    end_time = 6059.29,
+    cycle = 1,
+    radiative_case = Rad_Case_00,
+    analysis_case = Case_00,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+     planet_scale = 0.582,
+     model_scale = 0.492,
+     draw_periapsis = TRUE,
+     draw_asc_node = TRUE
+);
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_v0.RANGE = "default_range";
+GagarinSat_v0.SHADE = "continuous_shade";
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_00);
+DRAW_PERIAPSIS(orbit = Rad_Case_00.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_00.ORBIT);
+DRAW_PLANET(radiative_case = Rad_Case_00,
+            time = vis_orbit_times[vis_orbit_index],
+            scale = 0.582,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.492 * (Rad_Case_00.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_v0.RANGE = "default_range";
+GagarinSat_v0.SHADE = "continuous_shade";
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_00);
+DRAW_PERIAPSIS(orbit = Rad_Case_00.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_00.ORBIT);
+DRAW_PLANET(radiative_case = Rad_Case_00,
+            time = vis_orbit_times[1],
+            scale = 0.582,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= 11;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.492 * (Rad_Case_00.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+END_FOR
+DEFINE_RANGE(
+    range = default_range,
+    min = -17.71712729793616,
+    max = 142.4837496264474,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_v0.RANGE = "default_range";
+GagarinSat_v0.SHADE = "continuous_shade";
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_00);
+DRAW_PERIAPSIS(orbit = Rad_Case_00.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_00.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_Case_00,
+            time = vis_orbit_times[1],
+            scale = 0.582,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= 11;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.492 * (Rad_Case_00.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+END_FOR
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_v0.RANGE = "default_range";
+GagarinSat_v0.SHADE = "continuous_shade";
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_00);
+DRAW_PERIAPSIS(orbit = Rad_Case_00.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_00.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_Case_00,
+            time = vis_orbit_times[1],
+            scale = 0.582,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= 11;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.492 * (Rad_Case_00.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+END_FOR
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_v0.RANGE = "default_range";
+GagarinSat_v0.SHADE = "continuous_shade";
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_00);
+DRAW_PERIAPSIS(orbit = Rad_Case_00.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_00.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_Case_00,
+            time = vis_orbit_times[vis_orbit_index],
+            scale = 0.582,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.492 * (Rad_Case_00.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_v0.RANGE = "default_range";
+GagarinSat_v0.SHADE = "continuous_shade";
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_00);
+DRAW_PERIAPSIS(orbit = Rad_Case_00.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_00.ORBIT);
+DRAW_PLANET(radiative_case = Rad_Case_00,
+            time = vis_orbit_times[vis_orbit_index],
+            scale = 0.582,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.492 * (Rad_Case_00.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+RADIATIVE_PRE_PROCESS_OVERLAY(
+    source= "GEOMETRY",
+    display = "ORBITAL",
+    radiative_case = Rad_Case_00,
+     planet_scale = 0.582,
+     model_scale = 0.492,
+     draw_periapsis = TRUE,
+     draw_asc_node = TRUE
+);
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_Case_00.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_Case_00.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_00.ORBIT);
+DRAW_PLANET(radiative_case = Rad_Case_00,
+            time = Rad_Case_00.ORBIT_TIMES[vis_orbit_index],
+            scale = 0.582,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_Case_00.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_Case_00.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.492 * (Rad_Case_00.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_Case_00,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+RADIATIVE_PRE_PROCESS_OVERLAY(
+    source= "GEOMETRY"
+);
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+RESET_VIEW();
+
+THERMAL_PRE_PROCESS_OVERLAY(
+    result_type = "CONDUCTIVE_INTERFACE"
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 0.0,
+    type = "LINEAR"
+);
+
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 0.0,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = conductive_interface_shade,
+    discrete = "conductiveinterface[1]",
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_v0.DISCRETE = "conductiveinterface[1]";
+GagarinSat_v0.SHADE = "conductive_interface_shade";
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Conductive Interfaces",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+THERMAL_PRE_PROCESS_OVERLAY(
+    result_type = "CONDUCTIVE_INTERFACE"
+);
+CLEAR();
+
+KEY(shade = conductive_interface_shade,
+    discrete = "conductiveinterface[1]",
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_v0.DISCRETE = "conductiveinterface[1]";
+GagarinSat_v0.SHADE = "conductive_interface_shade";
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Conductive Interfaces",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+RADIATIVE_PRE_PROCESS_OVERLAY(
+    source= "ACTIVITY"
+);
+CLEAR();
+
+KEY(shade = activity_shade,
+    discrete = "activity[1]",
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_v0.DISCRETE = "activity[1]";
+GagarinSat_v0.SHADE = "activity_shade";
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Activity",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+RADIATIVE_PRE_PROCESS_OVERLAY(
+    source= "GEOMETRY"
+);
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+LOAD_EXTERNAL_RESULTS (
+   type = "TMD",
+   file = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\GagarinSat_v0\esatan\Case_00\GAGARINSAT_V0_CASE_00.TMD");
+RADIATIVE_PRE_PROCESS_OVERLAY(source = "GEOMETRY",
+                              display = "MODEL_ONLY");
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type= "Thermal_Node",
+    start_time = 0.0,
+    end_time = 6059.29,
+    cycle = 1,
+    radiative_case = Rad_Case_00,
+    analysis_case = Case_00,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+     planet_scale = 0.582,
+     model_scale = 0.492,
+     draw_periapsis = TRUE,
+     draw_asc_node = TRUE
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = -17.71712729793616,
+    max = 142.4837496264474,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_v0.RANGE = "default_range";
+GagarinSat_v0.SHADE = "continuous_shade";
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_00);
+DRAW_PERIAPSIS(orbit = Rad_Case_00.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_00.ORBIT);
+DRAW_PLANET(radiative_case = Rad_Case_00,
+            time = vis_orbit_times[1],
+            scale = 0.582,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= 11;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.492 * (Rad_Case_00.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+END_FOR
+RADIATIVE_PRE_PROCESS_OVERLAY(
+    source= "GEOMETRY",
+    display = "ORBITAL",
+    radiative_case = Rad_Case_00,
+     planet_scale = 0.582,
+     model_scale = 0.492,
+     draw_periapsis = TRUE,
+     draw_asc_node = TRUE
+);
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(orbit = Rad_Case_00.ORBIT);
+DRAW_PERIAPSIS(orbit = Rad_Case_00.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_00.ORBIT);
+DRAW_PLANET(radiative_case = Rad_Case_00,
+            time = Rad_Case_00.ORBIT_TIMES[1],
+            scale = 0.582,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= Rad_Case_00.NUM_ORBIT_POSITIONS;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = Rad_Case_00.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_Case_00.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.492 * (Rad_Case_00.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_Case_00,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+END_FOR
+RADIATIVE_PRE_PROCESS_OVERLAY(
+    source= "GEOMETRY"
+);
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+RESET_VIEW();
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_v0.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+END_MODEL

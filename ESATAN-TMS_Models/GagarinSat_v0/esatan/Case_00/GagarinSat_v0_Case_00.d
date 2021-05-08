@@ -1,5 +1,5 @@
 $MODEL GagarinSat_v0_Case_00, ACDFILE
-# ESATAN-TMS 2020, run date 3:34 Sat 8 May 2021
+# ESATAN-TMS 2020, run date 11:08 Sat 8 May 2021
 # Model name: GagarinSat_v0        Analysis case: Case_00
 # 
 # template file: Template.tpl
@@ -623,7 +623,7 @@ C
      A = 1.0E+20, ALP = 1.0, EPS = 1.0;
 #
   $CONDUCTORS
-# ESATAN-TMS 2020, run date 3:34 Sat 8 May 2021
+# ESATAN-TMS 2020, run date 11:08 Sat 8 May 2021
 # Model name: GagarinSat_v0        Radiative conductors
     GR(1, 10000) = 2.195691D-05;
     GR(1, 10001) = 2.134899D-05;
@@ -2138,7 +2138,7 @@ C
     GR(43000, 44000) = 7.056934D-04;
     GR(43000, 99999) = 1.801714D-02;
     GR(44000, 99999) = 1.063077D-03;
-# ESATAN-TMS 2020, run date 3:34 Sat 8 May 2021
+# ESATAN-TMS 2020, run date 11:08 Sat 8 May 2021
 # Model name: GagarinSat_v0        Generated conductors
     GL(1,41000) = 8.D-03 / ((5.D-04 / k_Al_6061) + (5.D-04 / k_Al_6061)); # from primitive IR_TEL_CCD
     GL(10000,10001) = k_Al_7075 * 9.999822D-04; # from primitive Panels
@@ -2387,7 +2387,7 @@ C Boundary Condition Total Area Heat Load - OBDH
       QI30015 = 4.076087D-01
 C
 C Boundary Condition Total Area Heat Load - PLD1_RW
-      QI:INS_PLD1:31000 = 1.D+01
+      QI:INS_PLD1:31000 = 3.D+00
 C
 C Boundary Condition Total Area Heat Load - PLD2_ATCS
       QI:INS_PLD1:31000 = QI:INS_PLD1:31000 + 2.D+00
@@ -2400,10 +2400,9 @@ C
       NLOOP=100
       RELXCA=0.01
       DTIMEI=1.0
-      CALL SOLCYC('SLCRNC',0.1D0,0.01D0,6059.2857D0,100,' ','NONE')
+      CALL SOLCYC('SLCRNC',0.1D0,0.05D0,6059.2857D0,100,' ','NONE')
 C
       CALL SLCRNC
-C
 C
   $VARIABLES1
 C
@@ -2429,7 +2428,7 @@ C Boundary Condition Total Area Heat Load - OBDH
       QI30015 = 4.076087D-01
 C
 C Boundary Condition Total Area Heat Load - PLD1_RW
-      QI:INS_PLD1:31000 = 1.D+01
+      QI:INS_PLD1:31000 = 3.D+00
 C
 C Boundary Condition Total Area Heat Load - PLD2_ATCS
       QI:INS_PLD1:31000 = QI:INS_PLD1:31000 + 2.D+00

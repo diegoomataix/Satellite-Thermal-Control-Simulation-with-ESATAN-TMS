@@ -131,7 +131,7 @@ DEFINE_BULK(bulk = MLI_foil,
                sp_heat = 900.0,
                cond = 0.0);
 
-/* /* END_MODEL */ */
+/* /* /* END_MODEL */ */ */
 /* ESATAN-TMS version 2020, run date 16:52 Fri 7 May 2021 */
 /* BEGIN_MODEL GagarinSat_v0 WORKBENCH_V1 */
 BULK Al_2219;
@@ -12470,3 +12470,151 @@ Payload_1 = TRANSLATE(
     y_dist = 0.1,
     z_dist = 0.15025,
     clear = TRUE);
+/* ESATAN-TMS version 2020, run date 13:29 Sat 8 May 2021 */
+/* BEGIN_MODEL GagarinSat_v0 WORKBENCH_V1 */
+IR_Tel_Obj_IR_Tel_STR = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_OBJ:face1",
+    destination_reference = "IR_TEL_STR:face3",
+    conductor_override = 0.1);
+
+Plate2_Panel_xyneg_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face5",
+    destination_reference = "Panels:face54",
+    conductor_override = 0.1);
+
+Plate2_Panel_xyneg_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face1",
+    destination_reference = "Panels:face56",
+    conductor_override = 0.1);
+
+Plate2_Panel_xypos_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face7",
+    destination_reference = "Panels:face32",
+    conductor_override = 0.1);
+
+Plate2_Panel_xypos_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face3",
+    destination_reference = "Panels:face30",
+    conductor_override = 0.1);
+
+Plate_Panel_xyneg_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_1:face5",
+    destination_reference = "Panels:face50",
+    conductor_override = 0.1);
+
+Plate_Panel_xyneg_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_1:face1",
+    destination_reference = "Panels:face52",
+    conductor_override = 0.1);
+
+Plate_Panel_xypos_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_1:face7",
+    destination_reference = "Panels:face28",
+    conductor_override = 0.1);
+
+Plate_Panel_xypos_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_1:face3",
+    destination_reference = "Panels:face26",
+    conductor_override = 0.1);
+
+Panel_xyneg_Plate2_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face50",
+    destination_reference = "Body_plate_2:face6",
+    conductor_override = 0.1);
+
+Panel_xyneg_Plate2_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face52",
+    destination_reference = "Body_plate_2:face2",
+    conductor_override = 0.1);
+
+Panel_xyneg_Plate_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face46",
+    destination_reference = "Body_plate_1:face6",
+    conductor_override = 0.1);
+
+Panel_xyneg_Plate_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face48",
+    destination_reference = "Body_plate_1:face2",
+    conductor_override = 0.1);
+
+Panel_xypos_Plate2_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face28",
+    destination_reference = "Body_plate_2:face8",
+    conductor_override = 0.1);
+
+Panel_xypos_SolarPanel_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face29",
+    destination_reference = "Solar_Panles_xPlus:face17",
+    conductor_override = 0.1);
+
+Panel_xypos_SolarPanel_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face31",
+    destination_reference = "Solar_Panles_xPlus:face18",
+    conductor_override = 0.1);
+
+Panel_xypos_Plate2_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face26",
+    destination_reference = "Body_plate_2:face4",
+    conductor_override = 0.1);
+
+Panel_xypos_Plate_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face24",
+    destination_reference = "Body_plate_1:face8",
+    conductor_override = 0.1);
+
+Panel_xypos_Plate_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face22",
+    destination_reference = "Body_plate_1:face4",
+    conductor_override = 0.1);
+
+Plate1_PLD1_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Payload_1",
+    destination_reference = "Body_plate_1:face3",
+    conductor_override = 0.1);
+
+Plate1_PLD2_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Payload_2",
+    destination_reference = "Body_plate_1:face1",
+    conductor_override = 0.1);
+
+CONDUCTOR Panel_xypos_SolarPanel_3;
+Panel_xypos_SolarPanel_3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "MLI:face25",
+    destination_reference = "Solar_Panles_xPlus:face1",
+    conductor_override = 0.1);
+
+CONDUCTOR Panel_xypos_SolarPanel_4;
+Panel_xypos_SolarPanel_4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "MLI:face27",
+    destination_reference = "Solar_Panles_xPlus:face2",
+    conductor_override = 0.1);
+
+IR_Tel_Lens_IR_Tel_Obj = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_LENS:face1",
+    destination_reference = "IR_TEL_OBJ:face2",
+    conductor_override = 0.1);
+
+IR_Tel_Obj_IR_Tel_STR = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_OBJ:face1",
+    destination_reference = "IR_TEL_STR:face3",
+    conductor_override = 0.1);
+
+Plate2_IR_Tel_STR_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face1",
+    destination_reference = "IR_TEL_STR:face9",
+    conductor_override = 0.1);
+
+Plate2_IR_Tel_STR_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face3",
+    destination_reference = "IR_TEL_STR:face5",
+    conductor_override = 0.1);
+
+CONTACT_ZONE Tel_Elec_Plate2;
+Tel_Elec_Plate2 = DEFINE_CONTACT_ZONE(
+source_reference = "IR_TEL_STR:surface1",
+destination_reference = "Body_plate_2:surface1",
+contact_conductance = 300.0,
+maximum_gap = 0.01,
+number_sample_points = 10000);
+
+END_MODEL
