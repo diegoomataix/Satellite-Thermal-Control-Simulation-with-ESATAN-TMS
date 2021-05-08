@@ -734,7 +734,7 @@
                 </seriesproperties>
             </seriespropertiescollection>
             <titletext>Attribute Chart 2</titletext>
-            <viewport height="814" width="469"/>
+            <viewport height="814" width="595"/>
             <zoomselection2d x="0" y="0">
                 <domainzoom lower="0.0" upper="0.0"/>
                 <rangezoom lower="0.0" upper="0.0"/>

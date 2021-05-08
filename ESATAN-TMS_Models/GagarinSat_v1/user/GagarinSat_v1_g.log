@@ -56,3 +56,4 @@ Plate1_PLD2_1 = CONDUCTIVE_CONDUCTOR(
     conductivity = 160.0,
     shape_factor = 0.0121 / 0.001);
 
+END_MODEL

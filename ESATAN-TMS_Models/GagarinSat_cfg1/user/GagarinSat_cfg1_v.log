@@ -1,0 +1,21 @@
+/* ESATAN-TMS version 2020, run date 18:54 Sat 8 May 2021 */
+BEGIN_MODEL GagarinSat_cfg1 WORKBENCH_V1 ;
+RADIATIVE_PRE_PROCESS_OVERLAY(source = "GEOMETRY",
+                              display = "MODEL_ONLY");
+CLEAR();
+
+GagarinSat_cfg1.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+RESET_VIEW();
+
+END_MODEL

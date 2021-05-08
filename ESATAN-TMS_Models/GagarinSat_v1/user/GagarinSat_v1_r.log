@@ -2,3 +2,4 @@
 BEGIN_MODEL GagarinSat_v1 WORKBENCH_V1 ;
 REPORT_ANALYSIS_CASE(analysis_case_name = "Case_00");
 
+END_MODEL
