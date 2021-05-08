@@ -7,3 +7,5 @@ BEGIN_MODEL GagarinSat_v0 WORKBENCH_V1 ;
 /* BEGIN_MODEL GagarinSat_v0 WORKBENCH_V1 */ ;
 /* ESATAN-TMS version 2020, run date 1:13 Sat 8 May 2021 */
 /* BEGIN_MODEL GagarinSat_v0 WORKBENCH_V1 */ ;
+REPORT_SYMBOL(symbol_name = "EBox_Plate_bottom");
+
