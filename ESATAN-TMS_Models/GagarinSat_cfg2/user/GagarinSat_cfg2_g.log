@@ -7127,3 +7127,29 @@ RAD_Ins = TRANSLATE(
     x_dist = -0.21,
     y_dist = -0.125,
     z_dist = 0.375);
+Panel_xyneg_Plate_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face34",
+    destination_reference = "Body_plate_1:face6",
+    conductor_override = 0.1);
+
+Panel_xyneg_Plate_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face36",
+    destination_reference = "Body_plate_1:face2",
+    conductor_override = 0.1);
+
+Panel_xypos_Plate_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face20",
+    destination_reference = "Body_plate_1:face8",
+    conductor_override = 0.1);
+
+Panel_xypos_Plate_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face18",
+    destination_reference = "Body_plate_1:face4",
+    conductor_override = 0.1);
+
+Plate_Panel_xypos_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_1:face7",
+    destination_reference = "Panels:face24",
+    conductor_override = 0.1);
+
+END_MODEL

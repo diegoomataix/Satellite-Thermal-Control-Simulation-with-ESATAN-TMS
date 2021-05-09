@@ -1,5 +1,5 @@
 $MODEL GagarinSat_cfg2_Case_00, GLOBALFILE = _GLOBAL_FILE, ACDFILE
-# ESATAN-TMS 2020, run date 2:24 Sun 9 May 2021
+# ESATAN-TMS 2020, run date 2:29 Sun 9 May 2021
 # Model name: GagarinSat_cfg2        Analysis case: Case_00
 # 
 # template file: Template.tpl
@@ -642,7 +642,7 @@ C
      A = 1.0E+20, ALP = 1.0, EPS = 1.0;
 #
   $CONDUCTORS
-# ESATAN-TMS 2020, run date 2:24 Sun 9 May 2021
+# ESATAN-TMS 2020, run date 2:29 Sun 9 May 2021
 # Model name: GagarinSat_cfg2        Radiative conductors
     GR(1, 3) = 2.843917D-06;
     GR(1, 7) = 2.520106D-05;
@@ -2798,7 +2798,7 @@ C
     GR(61007, 61008) = 3.430032D-05;
     GR(61007, 99999) = 4.444444D-03;
     GR(61008, 99999) = 4.444444D-03;
-# ESATAN-TMS 2020, run date 2:24 Sun 9 May 2021
+# ESATAN-TMS 2020, run date 2:29 Sun 9 May 2021
 # Model name: GagarinSat_cfg2        Generated conductors
     GL(10000,10001) = k_Al_7075 * 1.499952D-03; # from primitive Panels
     GL(10000,10002) = k_Al_7075 * 2.666515D-03; # from primitive Panels

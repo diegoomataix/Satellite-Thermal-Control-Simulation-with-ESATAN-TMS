@@ -367,3 +367,4 @@ FOR (orbit_index = 1;
 END_FOR
 DELETE radiative_case_error_flag;
 
+END_MODEL

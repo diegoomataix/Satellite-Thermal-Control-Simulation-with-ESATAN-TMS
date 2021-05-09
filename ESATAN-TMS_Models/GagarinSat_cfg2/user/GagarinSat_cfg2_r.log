@@ -8,3 +8,6 @@ BEGIN_MODEL GagarinSat_cfg2 WORKBENCH_V1 ;
 /* BEGIN_MODEL GagarinSat_cfg2 WORKBENCH_V1 */ ;
 REPORT_OBJECT(object_name = IR_TEL_CCD);
 
+REPORT_ANALYSIS_CASE(analysis_case_name = "Case_00");
+
+END_MODEL

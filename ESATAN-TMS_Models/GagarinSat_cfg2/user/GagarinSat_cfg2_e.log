@@ -2325,3 +2325,16 @@ END_IF
 
 
 DELETE analysis_case_error_flag;
+GENERATE_ANALYSIS_FILE(
+    analysis_case = Case_00,
+    results = "GL,TRANS_HF,TRANS_REF",
+    title = "GagarinSat_cfg2_Case_00",
+    ref_averaged = TRUE,
+    ref_cyclic = TRUE,
+    hf_type = "S,A,P",
+    hf_averaged = TRUE,
+    hf_cyclic = TRUE,
+    environment = 99999,
+    inactive = 99998,
+    acd_file = TRUE);
+END_MODEL
