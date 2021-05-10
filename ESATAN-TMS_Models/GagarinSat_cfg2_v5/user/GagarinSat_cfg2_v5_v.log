@@ -1,0 +1,1720 @@
+/* ESATAN-TMS version 2020, run date 16:24 Mon 10 May 2021 */
+BEGIN_MODEL GagarinSat_cfg2_v5 WORKBENCH_V1 ;
+RADIATIVE_PRE_PROCESS_OVERLAY(source = "GEOMETRY",
+                              display = "MODEL_ONLY");
+CLEAR();
+
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+RESET_VIEW();
+
+CLEAR();
+
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+RADIATIVE_PRE_PROCESS_OVERLAY(
+    source = "GEOMETRY",
+    display = "ORBITAL",
+    radiative_case = Rad_Case_02,
+    model_scale = 0.1,
+    draw_model = TRUE,
+    planet_scale = 1.0,
+    draw_planet = TRUE);
+CLEAR();
+
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "",
+         x = 0.02,
+         y = 0.95);
+DRAW_ORBIT(orbit = Rad_Case_02.ORBIT);
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_Case_02,
+            time = Rad_Case_02.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_Case_02.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_Case_02.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.1 * (Rad_Case_02.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_Case_02,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+CLEAR();
+
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "",
+         x = 0.02,
+         y = 0.95);
+DRAW_ORBIT(orbit = Rad_Case_02.ORBIT);
+DRAW_PLANET(radiative_case = Rad_Case_02,
+            time = Rad_Case_02.ORBIT_TIMES[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = Rad_Case_02.ORBIT_POSITIONS[vis_orbit_index],
+        time = Rad_Case_02.ORBIT_TIMES[vis_orbit_index],
+        scale = 0.1 * (Rad_Case_02.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        radiative_case = Rad_Case_02,
+        orbit_position = vis_orbit_index,
+        spin_position = 0);
+
+LOAD_EXTERNAL_RESULTS (
+   type = "TMD",
+   file = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\GagarinSat_cfg2_v5\esatan\Case_02\GAGARINSAT_CFG2_V5_CASE_.TMD");
+RADIATIVE_PRE_PROCESS_OVERLAY(source = "GEOMETRY",
+                              display = "MODEL_ONLY");
+CLEAR();
+
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+RESET_VIEW();
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type= "Thermal_Node",
+    start_time = 0.0,
+    end_time = 6059.29,
+    cycle = 1,
+    radiative_case = Rad_Case_02,
+    analysis_case = Case_02,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+     planet_scale = 0.137,
+     model_scale = 0.741,
+     draw_periapsis = TRUE,
+     draw_asc_node = TRUE
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = -28.012878208094694,
+    max = 137.57372961646013,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_02);
+DRAW_PERIAPSIS(orbit = Rad_Case_02.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_02.ORBIT);
+DRAW_PLANET(radiative_case = Rad_Case_02,
+            time = vis_orbit_times[vis_orbit_index],
+            scale = 0.137,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.741 * (Rad_Case_02.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+DEFINE_RANGE(
+    range = default_range,
+    min = -13.525323362550566,
+    max = -12.639630627459516,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_02);
+DRAW_PERIAPSIS(orbit = Rad_Case_02.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_02.ORBIT);
+DRAW_PLANET(radiative_case = Rad_Case_02,
+            time = vis_orbit_times[vis_orbit_index],
+            scale = 0.137,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.741 * (Rad_Case_02.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type = "Thermal_Node",
+    time_step = 0.0,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+    radiative_case = Rad_Case_02
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = -12.86806330231451,
+    max = -12.8680440348225,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+RESET_VIEW();
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type = "Thermal_Node",
+    time_step = 3635.57,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+    radiative_case = Rad_Case_02
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = -13.01563951502401,
+    max = -13.015621465407177,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type= "Thermal_Node",
+    start_time = 0.0,
+    end_time = 6059.29,
+    cycle = 1,
+    radiative_case = Rad_Case_02,
+    analysis_case = Case_02,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+     planet_scale = 0.137,
+     model_scale = 0.741,
+     draw_periapsis = TRUE,
+     draw_asc_node = TRUE
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = -13.525323362550566,
+    max = -12.639630627459516,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_02);
+DRAW_PERIAPSIS(orbit = Rad_Case_02.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_02.ORBIT);
+DRAW_PLANET(radiative_case = Rad_Case_02,
+            time = vis_orbit_times[1],
+            scale = 0.137,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= 11;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.741 * (Rad_Case_02.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+END_FOR
+DEFINE_RANGE(
+    range = default_range,
+    min = -28.012878208094694,
+    max = 137.57372961646013,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_02);
+DRAW_PERIAPSIS(orbit = Rad_Case_02.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_02.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_Case_02,
+            time = vis_orbit_times[1],
+            scale = 0.137,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= 11;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.741 * (Rad_Case_02.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+END_FOR
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_02);
+DRAW_PERIAPSIS(orbit = Rad_Case_02.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_02.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_Case_02,
+            time = vis_orbit_times[1],
+            scale = 0.137,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= 11;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.741 * (Rad_Case_02.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+END_FOR
+DEFINE_RANGE(
+    range = default_range,
+    min = -17.68535986403651,
+    max = 58.76181380995506,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_02);
+DRAW_PERIAPSIS(orbit = Rad_Case_02.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_02.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_Case_02,
+            time = vis_orbit_times[1],
+            scale = 0.137,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= 11;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.741 * (Rad_Case_02.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+END_FOR
+DEFINE_RANGE(
+    range = default_range,
+    min = -16.75815836267403,
+    max = 32.45669364000584,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_02);
+DRAW_PERIAPSIS(orbit = Rad_Case_02.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_02.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_Case_02,
+            time = vis_orbit_times[1],
+            scale = 0.137,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= 11;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.741 * (Rad_Case_02.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+END_FOR
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type = "Thermal_Node",
+    time_step = 3635.57,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+    radiative_case = Rad_Case_02
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = -16.114240563080976,
+    max = 31.36491164209827,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+RESET_VIEW();
+
+DEFINE_RANGE(
+    range = default_range,
+    min = -16.114240563080976,
+    max = 35.63285929538067,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+DEFINE_RANGE(
+    range = default_range,
+    min = -16.114240563080976,
+    max = 39.956689833138334,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+DEFINE_RANGE(
+    range = default_range,
+    min = 27.680015442734895,
+    max = 27.961700857657615,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+DEFINE_RANGE(
+    range = default_range,
+    min = -16.114240563080976,
+    max = 115.39153913003597,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+DEFINE_RANGE(
+    range = default_range,
+    min = -16.114240563080976,
+    max = 57.35694557888043,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+DEFINE_RANGE(
+    range = default_range,
+    min = -16.114240563080976,
+    max = 35.63285929538067,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+DEFINE_RANGE(
+    range = default_range,
+    min = 29.18851010948849,
+    max = 35.63285929538067,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+DEFINE_RANGE(
+    range = default_range,
+    min = 21.010562266178095,
+    max = 35.63285929538067,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+DEFINE_RANGE(
+    range = default_range,
+    min = 21.010562266178095,
+    max = 57.35694557888043,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+DEFINE_RANGE(
+    range = default_range,
+    min = -16.114240563080976,
+    max = 115.39153913003597,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+DEFINE_RANGE(
+    range = default_range,
+    min = -16.114240563080976,
+    max = 104.95172051343486,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v5.RANGE = "default_range";
+GagarinSat_cfg2_v5.SHADE = "continuous_shade";
+GagarinSat_cfg2_v5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+END_MODEL

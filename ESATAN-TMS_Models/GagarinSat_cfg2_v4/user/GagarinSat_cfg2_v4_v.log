@@ -433,3 +433,341 @@ DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
         points = FALSE);
 
 END_FOR
+DELETE vis_items_key;
+STRING vis_items_key[13] = {"Solar_Cells",
+    "Al_anodized",
+    "Goldised_Kapton",
+    "Al_anodized_blck",
+    "SSM",
+    "OSR",
+    "Kapton_ITO",
+    "CCD_Detector",
+    "IR_lens",
+    "Al_7075_Polished",
+    "VDA_Kapton",
+    "White_paint",
+    "Black_paint"};
+RADIATIVE_PRE_PROCESS_OVERLAY(
+    source= "THERMO_OPTICAL"
+);
+CLEAR();
+
+DELETE vis_items_key;
+STRING vis_items_key[2] = {"CCD_Detector",
+    "Goldised_Kapton"};
+KEY(shade = vis_item_shade,
+    discrete = "vis_items_key[1]",
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v4.DISCRETE = "vis_items_key[1]";
+GagarinSat_cfg2_v4.SHADE = "vis_item_shade";
+GagarinSat_cfg2_v4.NODES = FALSE;
+
+ANNOTATE(string = "Thermo Optical Properties",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+RESET_VIEW();
+
+CLEAR();
+
+DELETE vis_items_key;
+STRING vis_items_key[11] = {"Al_7075_Polished",
+    "Al_anodized_blck",
+    "Black_paint",
+    "CCD_Detector",
+    "Goldised_Kapton",
+    "IR_lens",
+    "Kapton_ITO",
+    "OSR",
+    "SSM",
+    "Solar_Cells",
+    "VDA_Kapton"};
+KEY(shade = vis_item_shade,
+    discrete = "vis_items_key[1]",
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v4.DISCRETE = "vis_items_key[1]";
+GagarinSat_cfg2_v4.SHADE = "vis_item_shade";
+GagarinSat_cfg2_v4.NODES = FALSE;
+
+ANNOTATE(string = "Thermo Optical Properties",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+KEY(shade = vis_item_shade,
+    discrete = "vis_items_key[1]",
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v4.DISCRETE = "vis_items_key[1]";
+GagarinSat_cfg2_v4.SHADE = "vis_item_shade";
+GagarinSat_cfg2_v4.NODES = FALSE;
+
+ANNOTATE(string = "Thermo Optical Properties",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+KEY(shade = vis_item_shade,
+    discrete = "vis_items_key[1]",
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v4.DISCRETE = "vis_items_key[1]";
+GagarinSat_cfg2_v4.SHADE = "vis_item_shade";
+GagarinSat_cfg2_v4.NODES = FALSE;
+
+ANNOTATE(string = "Thermo Optical Properties",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+KEY(shade = vis_item_shade,
+    discrete = "vis_items_key[1]",
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v4.DISCRETE = "vis_items_key[1]";
+GagarinSat_cfg2_v4.SHADE = "vis_item_shade";
+GagarinSat_cfg2_v4.NODES = FALSE;
+
+ANNOTATE(string = "Thermo Optical Properties",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+KEY(shade = vis_item_shade,
+    discrete = "vis_items_key[1]",
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v4.DISCRETE = "vis_items_key[1]";
+GagarinSat_cfg2_v4.SHADE = "vis_item_shade";
+GagarinSat_cfg2_v4.NODES = FALSE;
+
+ANNOTATE(string = "Thermo Optical Properties",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+KEY(shade = vis_item_shade,
+    discrete = "vis_items_key[1]",
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v4.DISCRETE = "vis_items_key[1]";
+GagarinSat_cfg2_v4.SHADE = "vis_item_shade";
+GagarinSat_cfg2_v4.NODES = FALSE;
+
+ANNOTATE(string = "Thermo Optical Properties",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+KEY(shade = vis_item_shade,
+    discrete = "vis_items_key[1]",
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v4.DISCRETE = "vis_items_key[1]";
+GagarinSat_cfg2_v4.SHADE = "vis_item_shade";
+GagarinSat_cfg2_v4.NODES = FALSE;
+
+ANNOTATE(string = "Thermo Optical Properties",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+KEY(shade = vis_item_shade,
+    discrete = "vis_items_key[1]",
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v4.DISCRETE = "vis_items_key[1]";
+GagarinSat_cfg2_v4.SHADE = "vis_item_shade";
+GagarinSat_cfg2_v4.NODES = FALSE;
+
+ANNOTATE(string = "Thermo Optical Properties",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+KEY(shade = vis_item_shade,
+    discrete = "vis_items_key[1]",
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v4.DISCRETE = "vis_items_key[1]";
+GagarinSat_cfg2_v4.SHADE = "vis_item_shade";
+GagarinSat_cfg2_v4.NODES = FALSE;
+
+ANNOTATE(string = "Thermo Optical Properties",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+KEY(shade = vis_item_shade,
+    discrete = "vis_items_key[1]",
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v4.DISCRETE = "vis_items_key[1]";
+GagarinSat_cfg2_v4.SHADE = "vis_item_shade";
+GagarinSat_cfg2_v4.NODES = FALSE;
+
+ANNOTATE(string = "Thermo Optical Properties",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+DELETE vis_items_key;
+STRING vis_items_key[10] = {"Al_anodized_blck",
+    "Black_paint",
+    "CCD_Detector",
+    "Goldised_Kapton",
+    "IR_lens",
+    "Kapton_ITO",
+    "OSR",
+    "SSM",
+    "Solar_Cells",
+    "VDA_Kapton"};
+KEY(shade = vis_item_shade,
+    discrete = "vis_items_key[1]",
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v4.DISCRETE = "vis_items_key[1]";
+GagarinSat_cfg2_v4.SHADE = "vis_item_shade";
+GagarinSat_cfg2_v4.NODES = FALSE;
+
+ANNOTATE(string = "Thermo Optical Properties",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type= "Heat_Flux_Sum",
+    start_time = 0.0,
+    end_time = 6059.29,
+    cycle = 1,
+    radiative_case = Rad_Case_02,
+    analysis_case = Case_02,
+    solar_hf="Total_Solar_Heat_Source",
+    fixed_scale = FALSE,
+    average = TRUE
+
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 1.0769682828620592E-137,
+    max = 602.6708989545506,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg2_v4.RANGE = "default_range";
+GagarinSat_cfg2_v4.SHADE = "continuous_shade";
+GagarinSat_cfg2_v4.NODES = FALSE;
+
+ANNOTATE(string = "Heat Flux (W/m2) Total Solar Heat Source",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+END_MODEL
