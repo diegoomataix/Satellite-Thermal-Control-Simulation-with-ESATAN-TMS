@@ -1687,7 +1687,7 @@
                 <acasetmd id="1">
                     <casename>Case_01</casename>
                     <filename>GAGARINSAT_CFG2_V3_CASE_.TMD</filename>
-                    <lastversion/>
+                    <lastversion>10 May       2021 14:08:00 [11]</lastversion>
                 </acasetmd>
             </datasources>
             <attributes>
@@ -1696,12 +1696,46 @@
                 <attribute datasourcetype="TMD" datatype="DOUBLE" displaytype="SCALE_DISPLAY" id="4" name="Temperature" type="ENTITY_ATTRIBUTE" visible="true"/>
                 <attribute datasourcetype="TMD" datatype="DOUBLE" displaytype="SCALE_DISPLAY" id="5" name="Average Temperature" type="CONTAINER_ATTRIBUTE" visible="true"/>
             </attributes>
-            <referencedelements/>
-            <chartelements/>
-            <dataseriesmap/>
+            <referencedelements>
+                <geometry id="6" visible="true">
+                    <name>IR_TEL_CCD</name>
+                </geometry>
+            </referencedelements>
+            <chartelements>
+                <element id="6"/>
+            </chartelements>
+            <dataseriesmap>
+                <dataseries type="VALUE">
+                    <parts attribute="5" datasource="1" element="6"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="-12.867154241332631"/>
+                        <dataseriesvalue domain="605.9285888671875" range="-13.112309081132842"/>
+                        <dataseriesvalue domain="1211.857177734375" range="-13.55573692534839"/>
+                        <dataseriesvalue domain="1817.7857666015625" range="-13.69931330470348"/>
+                        <dataseriesvalue domain="2423.71435546875" range="-13.553497051487687"/>
+                        <dataseriesvalue domain="3029.6429443359375" range="-13.343116908464772"/>
+                        <dataseriesvalue domain="3635.571533203125" range="-13.121729063669395"/>
+                        <dataseriesvalue domain="4241.5001220703125" range="-12.980132742558583"/>
+                        <dataseriesvalue domain="4847.4287109375" range="-12.768237691975337"/>
+                        <dataseriesvalue domain="5453.3572998046875" range="-12.683690517440448"/>
+                        <dataseriesvalue domain="6059.28564453125" range="-12.818222604701079"/>
+                    </dataseriesvalues>
+                </dataseries>
+            </dataseriesmap>
         </commondata>
         <dualaxisviewmodel>
-            <seriespropertiescollection/>
+            <seriespropertiescollection>
+                <seriesproperties>
+                    <key>Value : Case_01 : TMD : GAGARINSAT_CFG2_V3_CASE_ : Average Temperature : IR_TEL_CCD</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>0</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-65536</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+            </seriespropertiescollection>
             <titletext>Attribute Chart 14</titletext>
             <viewport height="814" width="335"/>
             <zoomselection2d x="0" y="0">
