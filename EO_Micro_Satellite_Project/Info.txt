@@ -1,0 +1,24 @@
+Por cierto, para ESATAN esto puede ser medio útil: 
+de los archivos del propio ESATAN (file-help), el workbench getting started guide 
+tiene el ejemplo de un satélite (model 1) 
+y con eso se puede hacer parte del trabajo (me parece), en el thermal training manual el 
+ejercicio 1 y 3 están bien para ver cómo se definen los GL que también puede ser necesario. 
+Por último está el thermal user manual, que creo que está más centrado en modificar por código, 
+de ahí puede ser interesante la función setqs y fluxgl fluxgr para comprobar cosas
+
+
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+
+
+C
+      TIMEND=6059.2857
+      OUTINT=605.92857
+      NLOOP=100
+      RELXCA=0.01
+      DTIMEI=1.0
+      CALL SOLCYC('SLCRNC',0.1D0,0.05D0,6059.2857D0,100,' ','NONE')
+C
+      CALL SLCRNC
+C
