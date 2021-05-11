@@ -1,0 +1,3 @@
+/* ESATAN-TMS version 2020, run date 21:11 Mon 10 May 2021 */
+BEGIN_MODEL GagarinSat_cfg3 WORKBENCH_V1 ;
+END_MODEL

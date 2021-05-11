@@ -1121,3 +1121,560 @@ Plate_Panel_xypos_4 = CONDUCTIVE_CONDUCTOR(
     destination_reference = "Panels:face40",
     conductor_override = 0.1);
 
+CONDUCTOR Plate2_Panel_xyneg_1;
+Plate2_Panel_xyneg_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face5",
+    destination_reference = "Panels:face54",
+    conductor_override = 0.1);
+
+CONDUCTOR Plate2_Panel_xyneg_2;
+Plate2_Panel_xyneg_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face7",
+    destination_reference = "Panels:face32",
+    conductor_override = 0.1);
+
+CONDUCTOR Plate2_Panel_xyneg_3;
+Plate2_Panel_xyneg_3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face5",
+    destination_reference = "Panels:face44",
+    conductor_override = 0.1);
+
+CONDUCTOR Plate2_Panel_xyneg_4;
+Plate2_Panel_xyneg_4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face5",
+    destination_reference = "Panels:face44",
+    conductor_override = 0.1);
+
+Plate2_Panel_xyneg_4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face7",
+    destination_reference = "Panels:face42",
+    conductor_override = 0.1);
+
+CONDUCTOR Plate2_Panel_xypos_1;
+Plate2_Panel_xypos_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face1",
+    destination_reference = "Panels:face56",
+    conductor_override = 0.1);
+
+CONDUCTOR Plate2_Panel_xypos_2;
+Plate2_Panel_xypos_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face1",
+    destination_reference = "Panels:face56",
+    conductor_override = 0.1);
+
+Plate2_Panel_xypos_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face3",
+    destination_reference = "Panels:face30",
+    conductor_override = 0.1);
+
+CONDUCTOR Plate2_Panel_xypos_3;
+Plate2_Panel_xypos_3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face1",
+    destination_reference = "Panels:face18",
+    conductor_override = 0.1);
+
+CONDUCTOR Plate2_Panel_xypos_4;
+Plate2_Panel_xypos_4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face3",
+    destination_reference = "Panels:face20",
+    conductor_override = 0.1);
+
+CONDUCTOR Plate2_PLD1_1;
+Plate2_PLD1_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Payload_1",
+    destination_reference = "Body_plate_1:face5",
+    conductivity = 160.0,
+    shape_factor = 13.31);
+
+CONDUCTOR Plate2_PLD1_2;
+Plate2_PLD1_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Payload_1",
+    destination_reference = "Body_plate_1:face1",
+    conductivity = 160.0,
+    shape_factor = 13.31);
+
+CONDUCTOR Plate2_PLD2_1;
+Plate2_PLD2_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Payload_2",
+    destination_reference = "Body_plate_1:face7",
+    conductivity = 160.0,
+    shape_factor = 12.1);
+
+CONDUCTOR Plate2_PLD2_2;
+Plate2_PLD2_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Payload_2",
+    destination_reference = "Body_plate_1:face3",
+    conductivity = 160.0,
+    shape_factor = 12.1);
+
+DELETE Plate1_PLD2_2;
+DELETE Plate1_PLD2_1;
+DELETE Plate1_PLD1_2;
+DELETE Plate1_PLD1_1;
+CONDUCTOR Panel_xyneg_Plate2_1;
+Panel_xyneg_Plate2_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face52",
+    destination_reference = "Body_plate_2:face2",
+    conductor_override = 0.1);
+
+CONDUCTOR Panel_xyneg_Plate2_2;
+Panel_xyneg_Plate2_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face2",
+    destination_reference = "Panels:face14",
+    conductor_override = 0.1);
+
+CONDUCTOR Panel_xyneg_Plate2_3;
+Panel_xyneg_Plate2_3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face4",
+    destination_reference = "Panels:face26",
+    conductor_override = 0.1);
+
+CONDUCTOR Panel_xyneg_Plate2_4;
+Panel_xyneg_Plate2_4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face4",
+    destination_reference = "Panels:face16",
+    conductor_override = 0.1);
+
+Panel_xyneg_Plate2_3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face6",
+    destination_reference = "Panels:face50",
+    conductor_override = 0.1);
+
+Panel_xyneg_Plate2_4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face6",
+    destination_reference = "Panels:face40",
+    conductor_override = 0.1);
+
+CONDUCTOR Panel_xypos_Plate2_1;
+Panel_xypos_Plate2_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face4",
+    destination_reference = "Panels:face26",
+    conductor_override = 0.1);
+
+CONDUCTOR Panel_xypos_Plate2_2;
+Panel_xypos_Plate2_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face4",
+    destination_reference = "Panels:face16",
+    conductor_override = 0.1);
+
+CONDUCTOR Panel_xypos_Plate2_3;
+Panel_xypos_Plate2_3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face8",
+    destination_reference = "Panels:face28",
+    conductor_override = 0.1);
+
+CONDUCTOR Panel_xypos_Plate2_4;
+Panel_xypos_Plate2_4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face8",
+    destination_reference = "Panels:face38",
+    conductor_override = 0.1);
+
+CONDUCTOR RAD_IR_Tel_Support1;
+RAD_IR_Tel_Support1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face31",
+    destination_reference = "RAD_IR_Tel:face18",
+    conductor_override = 0.001);
+
+CONDUCTOR RAD_IR_Tel_Support2;
+RAD_IR_Tel_Support2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "RAD_IR_Tel:face14",
+    destination_reference = "Panels:face29",
+    conductor_override = 0.001);
+
+CONDUCTOR RAD_IR_Tel_Support3;
+RAD_IR_Tel_Support3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "RAD_IR_Tel:face8",
+    destination_reference = "Panels:face25",
+    conductor_override = 0.001);
+
+CONDUCTOR RAD_IR_Tel_Support4;
+RAD_IR_Tel_Support4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face23",
+    destination_reference = "RAD_IR_Tel:face12",
+    conductor_override = 0.001);
+
+RAD_IR_Tel_Support3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face21",
+    destination_reference = "RAD_IR_Tel:face8",
+    conductor_override = 1.0e-03);
+
+RAD_IR_Tel_Support2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face29",
+    destination_reference = "RAD_IR_Tel:face14",
+    conductor_override = 1.0e-03);
+
+CONDUCTOR RAD_Ins_Support1;
+RAD_Ins_Support1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face55",
+    destination_reference = "RAD_Ins:face13",
+    conductor_override = 1.0e-03);
+
+CONDUCTOR RAD_Ins_Support2;
+RAD_Ins_Support2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face53",
+    destination_reference = "RAD_Ins:face17",
+    conductor_override = 1.0e-03);
+
+CONDUCTOR RAD_Ins_Support3;
+RAD_Ins_Support3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face47",
+    destination_reference = "RAD_Ins:face1",
+    conductor_override = 1.0e-03);
+
+CONDUCTOR RAD_Ins_Support4;
+RAD_Ins_Support4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face45",
+    destination_reference = "RAD_Ins:face5",
+    conductor_override = 1.0e-03);
+
+CCD_Panel_xyneg_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_CCD:face1",
+    destination_reference = "Panels:face61",
+    conductor_override = 0.00073421);
+
+CCD_Panel_xyneg_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_CCD:face1",
+    destination_reference = "Panels:face57",
+    conductor_override = 0.00073421);
+
+CCD_Panel_xypos_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_CCD:face1",
+    destination_reference = "Panels:face63",
+    conductor_override = 0.00073421);
+
+CCD_Panel_xypos_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_CCD:face1",
+    destination_reference = "Panels:face59",
+    conductor_override = 0.00073421);
+
+CCD_RAD_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_CCD:surface1",
+    destination_reference = "RAD_IR_Tel:face10",
+    conductor_override = 2692.79370);
+
+EBox_RAD_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Electronic_Box:face5",
+    destination_reference = "RAD_Ins:face9",
+    conductor_override = 2976.25);
+
+EBox_RAD_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Electronic_Box:face1",
+    destination_reference = "RAD_Ins:face9",
+    conductor_override = 2976.25);
+
+EBox_RAD_3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Electronic_Box:face7",
+    destination_reference = "RAD_Ins:face9",
+    conductor_override = 2976.25);
+
+EBox_RAD_4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Electronic_Box:face3",
+    destination_reference = "RAD_Ins:face9",
+    conductor_override = 2976.25);
+
+IR_Tel_Lens_IR_Tel_Obj = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_LENS:face1",
+    destination_reference = "IR_TEL_OBJ:surface2",
+    conductor_override = 0.001519);
+
+IR_Tel_Obj_IR_Tel_CCD_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_OBJ:face2",
+    destination_reference = "IR_TEL_CCD:surface2",
+    conductor_override = 0.000918);
+
+IR_Tel_Obj_IR_Tel_CCD_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_OBJ:face4",
+    destination_reference = "IR_TEL_CCD:surface2",
+    conductor_override = 0.000918);
+
+IR_Tel_Obj_IR_Tel_STR_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_OBJ:face1",
+    destination_reference = "IR_TEL_STR:face2",
+    conductor_override = 0.002091);
+
+IR_Tel_Obj_IR_Tel_STR_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_OBJ:face3",
+    destination_reference = "IR_TEL_STR:face4",
+    conductor_override = 0.002091);
+
+IR_Tel_STR_Panel_inf_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_STR:face3",
+    destination_reference = "Panels:face61",
+    conductor_override = 0.011812);
+
+IR_Tel_STR_Panel_inf_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_STR:face3",
+    destination_reference = "Panels:face63",
+    conductor_override = 0.011812);
+
+IR_Tel_STR_Panel_inf_3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_STR:face1",
+    destination_reference = "Panels:face57",
+    conductor_override = 0.011812);
+
+IR_Tel_STR_Panel_inf_4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_STR:face1",
+    destination_reference = "Panels:face59",
+    conductor_override = 0.011812);
+
+PLD1_RAD_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Payload_1",
+    destination_reference = "RAD_Ins:face9",
+    conductor_override = 892.50);
+
+PLD2_RAD_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Payload_2",
+    destination_reference = "RAD_Ins:face9",
+    conductor_override = 316.69);
+
+Panel_xyneg_Plate2_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face52",
+    destination_reference = "Body_plate_2:face2",
+    conductor_override = 0.057485);
+
+Panel_xyneg_Plate2_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face2",
+    destination_reference = "Panels:face14",
+    conductor_override = 0.057485);
+
+Panel_xyneg_Plate2_3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face6",
+    destination_reference = "Panels:face50",
+    conductor_override = 0.070244);
+
+Panel_xyneg_Plate2_4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face6",
+    destination_reference = "Panels:face40",
+    conductor_override = 0.070244);
+
+Panel_xyneg_Plate_3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face10",
+    destination_reference = "Body_plate_1:face2",
+    conductor_override = 0.070244);
+
+Panel_xyneg_Plate_4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face36",
+    destination_reference = "Body_plate_1:face6",
+    conductor_override = 0.070244);
+
+Panel_xyneg_Plate_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face46",
+    destination_reference = "Body_plate_1:face6",
+    conductor_override = 0.057485);
+
+Panel_xyneg_Plate_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face48",
+    destination_reference = "Body_plate_1:face2",
+    conductor_override = 0.057485);
+
+Panel_xypos_Plate2_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face4",
+    destination_reference = "Panels:face16",
+    conductor_override = 0.057485);
+
+Panel_xypos_Plate2_4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face8",
+    destination_reference = "Panels:face38",
+    conductor_override = 0.057485);
+
+Panel_xypos_Plate2_3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face8",
+    destination_reference = "Panels:face28",
+    conductor_override = 0.057485);
+
+Panel_xypos_Plate2_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face4",
+    destination_reference = "Panels:face26",
+    conductor_override = 0.057485);
+
+Panel_xypos_Plate2_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face4",
+    destination_reference = "Panels:face16",
+    conductor_override = 0.070244);
+
+Panel_xypos_Plate2_4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face8",
+    destination_reference = "Panels:face38",
+    conductor_override = 0.070244);
+
+Panel_xypos_Plate_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face22",
+    destination_reference = "Body_plate_1:face4",
+    conductor_override = 0.057485);
+
+Panel_xypos_Plate_3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face12",
+    destination_reference = "Body_plate_1:face4",
+    conductor_override = 0.057485);
+
+Panel_xypos_Plate_3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face12",
+    destination_reference = "Body_plate_1:face4",
+    conductor_override = 0.070244);
+
+Panel_xypos_Plate_4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face34",
+    destination_reference = "Body_plate_1:face8",
+    conductor_override = 0.057485);
+
+Panel_xypos_Plate_4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face34",
+    destination_reference = "Body_plate_1:face8",
+    conductor_override = 0.070244);
+
+Panel_xypos_Plate_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face24",
+    destination_reference = "Body_plate_1:face8",
+    conductor_override = 0.057485);
+
+Panel_xypos_SolarPanel_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face31",
+    destination_reference = "Solar_Panles_xPlus:face2",
+    conductor_override = 0.25);
+
+Plate2_PLD1_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Payload_1",
+    destination_reference = "Body_plate_1:face5",
+    conductor_override = 1.6);
+
+Plate2_PLD1_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Payload_1",
+    destination_reference = "Body_plate_1:face1",
+    conductor_override = 1.6);
+
+Plate2_PLD2_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Payload_2",
+    destination_reference = "Body_plate_1:face7",
+    conductor_override = 0.2);
+
+Plate2_PLD2_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Payload_2",
+    destination_reference = "Body_plate_1:face3",
+    conductor_override = 0.2);
+
+Plate2_Panel_xyneg_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face5",
+    destination_reference = "Panels:face54",
+    conductor_override = 0.057485);
+
+Plate2_Panel_xyneg_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face7",
+    destination_reference = "Panels:face32",
+    conductor_override = 0.057485);
+
+Plate2_Panel_xyneg_3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face5",
+    destination_reference = "Panels:face44",
+    conductor_override = 0.070244);
+
+Plate2_Panel_xyneg_4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face7",
+    destination_reference = "Panels:face42",
+    conductor_override = 0.070244);
+
+Plate2_Panel_xypos_3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face1",
+    destination_reference = "Panels:face18",
+    conductor_override = 0.070244);
+
+Plate2_Panel_xypos_4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face3",
+    destination_reference = "Panels:face20",
+    conductor_override = 0.070244);
+
+Plate2_Panel_xypos_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face1",
+    destination_reference = "Panels:face56",
+    conductor_override = 0.057485);
+
+Plate2_Panel_xypos_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_2:face3",
+    destination_reference = "Panels:face30",
+    conductor_override = 0.057485);
+
+Plate_Panel_xyneg_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_1:face3",
+    destination_reference = "Panels:face26",
+    conductor_override = 0.057485);
+
+Plate_Panel_xyneg_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_1:face1",
+    destination_reference = "Panels:face52",
+    conductor_override = 0.057485);
+
+Plate_Panel_xyneg_3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_1:face3",
+    destination_reference = "Panels:face16",
+    conductor_override = 0.070244);
+
+Plate_Panel_xyneg_4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_1:face1",
+    destination_reference = "Panels:face14",
+    conductor_override = 0.070244);
+
+Plate_Panel_xypos_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_1:face7",
+    destination_reference = "Panels:face28",
+    conductor_override = 0.057485);
+
+Plate_Panel_xypos_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_1:face5",
+    destination_reference = "Panels:face50",
+    conductor_override = 0.057485);
+
+Plate_Panel_xypos_3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_1:face7",
+    destination_reference = "Panels:face38",
+    conductor_override = 0.070244);
+
+Plate_Panel_xypos_4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Body_plate_1:face5",
+    destination_reference = "Panels:face40",
+    conductor_override = 0.070244);
+
+RAD_IR_Tel_Support1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face31",
+    destination_reference = "RAD_IR_Tel:face18",
+    conductor_override = 0.00008);
+
+RAD_IR_Tel_Support2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face29",
+    destination_reference = "RAD_IR_Tel:face14",
+    conductor_override = 0.00008);
+
+RAD_IR_Tel_Support3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face21",
+    destination_reference = "RAD_IR_Tel:face8",
+    conductor_override = 0.00008);
+
+RAD_IR_Tel_Support4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face23",
+    destination_reference = "RAD_IR_Tel:face12",
+    conductor_override = 0.00008);
+
+RAD_Ins_Support1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face55",
+    destination_reference = "RAD_Ins:face13",
+    conductor_override = 0.00008);
+
+RAD_Ins_Support2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face53",
+    destination_reference = "RAD_Ins:face17",
+    conductor_override = 0.00008);
+
+RAD_Ins_Support3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face47",
+    destination_reference = "RAD_Ins:face1",
+    conductor_override = 0.00008);
+
+RAD_Ins_Support4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face45",
+    destination_reference = "RAD_Ins:face5",
+    conductor_override = 0.00008);
+
+RAD_Ins_Support4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face45",
+    destination_reference = "RAD_Ins:face5",
+    conductor_override = 0.00008);
+
+END_MODEL

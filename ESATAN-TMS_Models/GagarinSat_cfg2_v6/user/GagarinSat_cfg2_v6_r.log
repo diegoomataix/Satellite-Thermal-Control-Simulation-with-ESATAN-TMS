@@ -1,2 +1,53 @@
 /* ESATAN-TMS version 2020, run date 18:17 Mon 10 May 2021 */
 BEGIN_MODEL GagarinSat_cfg2_v6 WORKBENCH_V1 ;
+REPORT_SYMBOL(symbol_name = "ci_2");
+
+REPORT_SYMBOL(symbol_name = "ci_7");
+
+REPORT_SYMBOL(symbol_name = "ci_12");
+
+REPORT_SYMBOL(symbol_name = "ci_8");
+
+REPORT_SYMBOL(symbol_name = "ci_23");
+
+REPORT_SYMBOL(symbol_name = "ci_16");
+
+REPORT_SYMBOL(symbol_name = "ci_20");
+
+REPORT_SYMBOL(symbol_name = "ci_1");
+
+REPORT_SYMBOL(symbol_name = "ci_22");
+
+REPORT_SYMBOL(symbol_name = "ci_24");
+
+REPORT_SYMBOL(symbol_name = "ci_25");
+
+REPORT_SYMBOL(symbol_name = "ci_10");
+
+REPORT_SYMBOL(symbol_name = "ci_15");
+
+REPORT_SYMBOL(symbol_name = "ci_14");
+
+REPORT_SYMBOL(symbol_name = "ci_6");
+
+REPORT_SYMBOL(symbol_name = "ci_5");
+
+REPORT_SYMBOL(symbol_name = "ci_19");
+
+REPORT_SYMBOL(symbol_name = "ci_17");
+
+REPORT_SYMBOL(symbol_name = "ci_21");
+
+REPORT_SYMBOL(symbol_name = "ci_13");
+
+REPORT_SYMBOL(symbol_name = "ci_18");
+
+REPORT_SYMBOL(symbol_name = "ci_11");
+
+REPORT_SYMBOL(symbol_name = "ci_3");
+
+REPORT_SYMBOL(symbol_name = "ci_9");
+
+REPORT_SYMBOL(symbol_name = "ci_4");
+
+VALIDATE_CONDUCTIVE_INTERFACES();VALIDATE_CONDUCTIVE_INTERFACES();END_MODEL
