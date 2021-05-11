@@ -5310,3 +5310,28 @@ RAD_IR_TEL = TRANSLATE(
     object_name = RAD_IR_TEL,
     x_dist = -0.211,
     z_dist = 0.55);
+/* ESATAN-TMS version 2020, run date 23:14 Tue 11 May 2021 */
+/* BEGIN_MODEL GagarinSat_cfg5 WORKBENCH_V1 */
+STR_RAD_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face60",
+    destination_reference = "RAD_STR:surface2",
+    conductor_override = 3.6719);
+
+STR_RAD_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face64",
+    destination_reference = "RAD_STR:surface2",
+    conductor_override = 3.6719);
+
+STR_RAD_3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face62",
+    destination_reference = "RAD_STR:surface2",
+    conductor_override = 3.6719);
+
+STR_RAD_4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "Panels:face58",
+    destination_reference = "RAD_STR:surface2",
+    conductor_override = 3.6719);
+
+/* ESATAN-TMS version 2020, run date 23:46 Tue 11 May 2021 */
+/* BEGIN_MODEL GagarinSat_cfg5 WORKBENCH_V1 */
+END_MODEL

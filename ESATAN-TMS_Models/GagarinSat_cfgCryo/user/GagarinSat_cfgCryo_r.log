@@ -1,0 +1,4 @@
+/* ESATAN-TMS version 2020, run date 23:46 Tue 11 May 2021 */
+BEGIN_MODEL GagarinSat_cfgCryo WORKBENCH_V1 ;
+REPORT_SYMBOL(symbol_name = "CryoCool_Diss_Support1");
+

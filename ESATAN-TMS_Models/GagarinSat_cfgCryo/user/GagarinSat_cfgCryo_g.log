@@ -1,0 +1,452 @@
+/* ESATAN-TMS version 2020, run date 23:49 Tue 11 May 2021 */
+BEGIN_MODEL GagarinSat_cfgCryo WORKBENCH_V1
+GEOMETRY CCD_CryoCool_Sink;
+CCD_CryoCool_Sink = NON_GEOMETRIC_THERMAL_NODE(
+    capacitance_override = 0.0);
+
+CCD_CryoCool_Sink = TRANSLATE(
+    object_name = CCD_CryoCool_Sink,
+    z_dist = 0.31,
+    clear = TRUE);
+CCD_CryoCool_Sink = NON_GEOMETRIC_THERMAL_NODE(
+    origin = [0., 0., 0.],
+    radius = 0.04,
+    capacitance_override = 0.0);
+
+CCD_CryoCool_Sink = TRANSLATE(
+    object_name = CCD_CryoCool_Sink,
+    z_dist = 0.31,
+    clear = TRUE);
+CCD_CryoCool_Sink = NON_GEOMETRIC_THERMAL_NODE(
+    origin = [0., 0., 0.],
+    radius = 0.04,
+    capacitance_override = 0.0);
+
+CCD_CryoCool_Sink = TRANSLATE(
+    object_name = CCD_CryoCool_Sink,
+    z_dist = 0.31+0.04,
+    clear = TRUE);
+GEOMETRY CCD_CryoCool_Diss;
+CCD_CryoCool_Diss = NON_GEOMETRIC_THERMAL_NODE(
+    origin = [0., 0., 0.],
+    radius = 0.04,
+    capacitance_override = 0.0);
+
+CCD_CryoCool_Diss = TRANSLATE(
+    object_name = CCD_CryoCool_Diss,
+    z_dist = 0.31+0.04+0.125,
+    clear = TRUE);
+CCD_CryoCool_Diss = NON_GEOMETRIC_THERMAL_NODE(
+    origin = [0., 0., 0.],
+    radius = 0.04,
+    capacitance_override = 0.0);
+
+CCD_CryoCool_Diss = TRANSLATE(
+    object_name = CCD_CryoCool_Diss,
+    z_dist = 0.31+0.04+0.135,
+    clear = TRUE);
+CCD_CryoCool_Diss = NON_GEOMETRIC_THERMAL_NODE(
+    origin = [0., 0., 0.],
+    radius = 0.04,
+    capacitance_override = 0.0);
+
+CCD_CryoCool_Diss = TRANSLATE(
+    object_name = CCD_CryoCool_Diss,
+    z_dist = 0.31+0.04+0.16,
+    clear = TRUE);
+CCD_CryoCool_Diss = NON_GEOMETRIC_THERMAL_NODE(
+    origin = [0., 0., 0.],
+    radius = 0.04,
+    capacitance_override = 0.0);
+
+CCD_CryoCool_Diss = TRANSLATE(
+    object_name = CCD_CryoCool_Diss,
+    z_dist = 0.31+0.04+0.165,
+    clear = TRUE);
+CCD_CryoCool_Diss = NON_GEOMETRIC_THERMAL_NODE(
+    origin = [0.0, 0.0, 0.0],
+    radius = 0.04,
+    node_number = 0,
+    volume = 0.0,
+    capacitance_override = 0.0,
+    colour1 = "BLUE_CYAN",
+    colour2 = "BLUE_CYAN");
+
+CCD_CryoCool_Diss = TRANSLATE(
+    object_name = CCD_CryoCool_Diss,
+    z_dist = 0.52,
+    clear = TRUE);
+CCD_CryoCool_Diss = NON_GEOMETRIC_THERMAL_NODE(
+    origin = [0.0, 0.0, 0.0],
+    radius = 0.04,
+    node_number = 0,
+    volume = 0.0,
+    capacitance_override = 0.0,
+    colour1 = "BLUE_CYAN",
+    colour2 = "BLUE_CYAN");
+
+CCD_CryoCool_Diss = TRANSLATE(
+    object_name = CCD_CryoCool_Diss,
+    z_dist = 0.505,
+    clear = TRUE);
+CCD_CryoCool_Diss = NON_GEOMETRIC_THERMAL_NODE(
+    origin = [0.0, 0.0, 0.0],
+    radius = 0.04,
+    node_number = 0,
+    volume = 0.0,
+    capacitance_override = 0.0,
+    colour1 = "BLUE_CYAN",
+    colour2 = "BLUE_CYAN");
+
+CCD_CryoCool_Diss = TRANSLATE(
+    object_name = CCD_CryoCool_Diss,
+    z_dist = 0.51,
+    clear = TRUE);
+CCD_CryoCool_Diss = NON_GEOMETRIC_THERMAL_NODE(
+    origin = [0.0, 0.0, 0.0],
+    radius = 0.04,
+    node_number = 0,
+    volume = 0.0,
+    capacitance_override = 0.0,
+    colour1 = "BLUE_CYAN",
+    colour2 = "BLUE_CYAN");
+
+CCD_CryoCool_Diss = TRANSLATE(
+    object_name = CCD_CryoCool_Diss,
+    z_dist = 0.515,
+    clear = TRUE);
+CCD_CryoCool_Diss = NON_GEOMETRIC_THERMAL_NODE(
+    origin = [0.0, 0.0, 0.0],
+    radius = 0.04,
+    node_number = 0,
+    volume = 0.0,
+    capacitance_override = 0.0,
+    colour1 = "BLUE_CYAN",
+    colour2 = "BLUE_CYAN");
+
+CCD_CryoCool_Diss = TRANSLATE(
+    object_name = CCD_CryoCool_Diss,
+    z_dist = 0.512,
+    clear = TRUE);
+DELETE CCD_RAD_1;
+CONDUCTOR CryoCool_Diss_RAD;
+CryoCool_Diss_RAD = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_CCD:face1",
+    destination_reference = "CCD_CryoCool_Sink",
+    conductor_override = 176.4);
+
+CryoCool_Diss_RAD = CONDUCTIVE_CONDUCTOR(
+    source_reference = "CCD_CryoCool_Diss",
+    destination_reference = "RAD_IR_TEL_2:face1",
+    conductor_override = 42.076);
+
+CONDUCTOR CCD_to_CryoCool_Sink;
+CCD_to_CryoCool_Sink = CONDUCTIVE_CONDUCTOR(
+    source_reference = "IR_TEL_CCD:face1",
+    destination_reference = "CCD_CryoCool_Sink",
+    conductor_override = 176.71);
+
+CCD_CryoCool_Sink = NON_GEOMETRIC_THERMAL_NODE(
+    origin = [0.0, 0.0, 0.0],
+    radius = 0.04,
+    node_number = 0,
+    volume = 2.97160e-4,
+    bulk = Al_6061,
+    capacitance_override = -10000.0,
+    colour1 = "BLUE_CYAN",
+    colour2 = "BLUE_CYAN");
+
+CCD_CryoCool_Sink = TRANSLATE(
+    object_name = CCD_CryoCool_Sink,
+    z_dist = 0.35,
+    clear = TRUE);
+CCD_CryoCool_Diss = NON_GEOMETRIC_THERMAL_NODE(
+    origin = [0.0, 0.0, 0.0],
+    radius = 0.04,
+    node_number = 0,
+    volume = 2.97160e-4,
+    bulk = Copper,
+    capacitance_override = -10000.0,
+    colour1 = "BLUE_CYAN",
+    colour2 = "BLUE_CYAN");
+
+CCD_CryoCool_Diss = TRANSLATE(
+    object_name = CCD_CryoCool_Diss,
+    z_dist = 0.512,
+    clear = TRUE);
+CCD_CryoCool_Sink = NON_GEOMETRIC_THERMAL_NODE(
+    origin = [0.0, 0.0, 0.0],
+    radius = 0.04,
+    node_number = 0,
+    volume = 2.9716e-04,
+    bulk = Copper,
+    capacitance_override = -10000.0,
+    colour1 = "BLUE_CYAN",
+    colour2 = "BLUE_CYAN");
+
+CCD_CryoCool_Sink = TRANSLATE(
+    object_name = CCD_CryoCool_Sink,
+    z_dist = 0.35,
+    clear = TRUE);
+CCD_CryoCool_Sink = NON_GEOMETRIC_THERMAL_NODE(
+    origin = [0.0, 0.0, 0.0],
+    radius = 0.04,
+    node_number = 70500,
+    volume = 2.9716e-04,
+    bulk = Copper,
+    capacitance_override = -10000.0,
+    colour1 = "BLUE_CYAN",
+    colour2 = "BLUE_CYAN");
+
+CCD_CryoCool_Sink = TRANSLATE(
+    object_name = CCD_CryoCool_Sink,
+    z_dist = 0.35,
+    clear = TRUE);
+CCD_CryoCool_Diss = NON_GEOMETRIC_THERMAL_NODE(
+    origin = [0.0, 0.0, 0.0],
+    radius = 0.04,
+    node_number = 70500,
+    volume = 2.9716e-04,
+    bulk = Copper,
+    capacitance_override = -10000.0,
+    colour1 = "BLUE_CYAN",
+    colour2 = "BLUE_CYAN");
+
+CCD_CryoCool_Diss = TRANSLATE(
+    object_name = CCD_CryoCool_Diss,
+    z_dist = 0.512,
+    clear = TRUE);
+CCD_CryoCool_Diss = NON_GEOMETRIC_THERMAL_NODE(
+    origin = [0.0, 0.0, 0.0],
+    radius = 0.04,
+    node_number = 71000,
+    volume = 2.9716e-04,
+    bulk = Copper,
+    capacitance_override = -10000.0,
+    colour1 = "BLUE_CYAN",
+    colour2 = "BLUE_CYAN");
+
+CCD_CryoCool_Diss = TRANSLATE(
+    object_name = CCD_CryoCool_Diss,
+    z_dist = 0.512,
+    clear = TRUE);
+CCD_CryoCool_Diss = NON_GEOMETRIC_THERMAL_NODE(
+    origin = [0.0, 0.0, 0.0],
+    radius = 0.04,
+    node_number = 71000,
+    volume = 2.9716e-04,
+    bulk = Copper,
+    capacitance_override = -10000.0,
+    colour1 = "RED",
+    colour2 = "RED");
+
+CCD_CryoCool_Diss = TRANSLATE(
+    object_name = CCD_CryoCool_Diss,
+    z_dist = 0.512,
+    clear = TRUE);
+REFERENCE_BODY = REFERENCE_BODY + CCD_CryoCool_Diss + CCD_CryoCool_Sink;
+GEOMETRY NewCombine1;
+REFERENCE_BODY = REFERENCE_BODY + NewCombine1;
+NewCombine1 = CCD_CryoCool_Sink + CCD_CryoCool_Diss;
+RENAME(old_name = "NewCombine1", new_name = "CryoCooler");
+Solar_Panles_xPlus = SHELL_SCS_RECTANGLE(
+    xmax = 0.8625,
+    ymax = 0.3,
+    height = 0.0,
+    xmin = 0.0,
+    ymin = 0.0,
+    sense = -1,
+    colour1 = "YELLOW",
+    colour2 = "LAVENDER",
+    side1 = "Active",
+    nbase1 = 21000,
+    ndelta1_1 = 1,
+    side2 = "Active",
+    nbase2 = 20000,
+    ndelta2_1 = 1,
+    label1 = "SPS_CELLS",
+    label2 = "SPS_STR",
+    opt1 = Solar_Cells,
+    opt2 = Kapton_ITO,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    composition = "DUAL",
+    bulk1 = GaAs,
+    thick1 = 1.0e-03,
+    bulk2 = Al_7075,
+    thick2 = 1.0e-03,
+    meshType1 = "regular",
+    nodes1 = 8,
+    meshType2 = "regular",
+    nodes2 = 2,
+    analysis_type = "Lumped Parameter");
+
+Solar_Panles_xPlus = ROTATE(
+    object_name = Solar_Panles_xPlus,
+    x_ang = 90.0,
+    clear = TRUE);
+Solar_Panles_xPlus = TRANSLATE(
+    object_name = Solar_Panles_xPlus,
+    x_dist = 0.25,
+    z_dist = 0.56);
+RAD_IR_TEL = SHELL_SCS_CONE(
+    semi_ang = 45.0,
+    hmax = 0.2,
+    hmin = 0.1385,
+    angmin = 0.0,
+    angmax = 360.0,
+    sense = -1,
+    colour1 = "PURPLE",
+    colour2 = "PALE_BLUE",
+    side1 = "Active",
+    nbase1 = 61000,
+    ndelta1_1 = 1,
+    side2 = "Conductive",
+    nbase2 = 61000,
+    ndelta2_1 = 1,
+    label1 = "RAD_Ins",
+    label2 = "RAD_Ins",
+    opt1 = OSR,
+    opt2 = OSR,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    bulk = Copper,
+    thick = 5.0e-03,
+    meshType1 = "regular",
+    nodes1 = 1,
+    meshType2 = "regular",
+    nodes2 = 3,
+    analysis_type = "Lumped Parameter");
+
+RAD_IR_TEL = ROTATE(
+    object_name = RAD_IR_TEL,
+    x_ang = 90.0,
+    z_ang = -90.0,
+    clear = TRUE);
+RAD_IR_TEL = TRANSLATE(
+    object_name = RAD_IR_TEL,
+    x_dist = -0.211,
+    z_dist = 0.55);
+DELETE_GEOMETRY (geometry = RAD_STR, recursive = FALSE, unassign = FALSE);
+DELETE_GEOMETRY (geometry = RAD_CUTTER_STR, recursive = FALSE, unassign = FALSE);
+DELETE STR_RAD_3;
+DELETE STR_RAD_2;
+DELETE RAD_STR_Support2;
+DELETE RAD_STR_Support4;
+DELETE RAD_STR_Support1;
+DELETE STR_RAD_4;
+DELETE RAD_STR_Support3;
+DELETE STR_RAD_1;
+CONDUCTOR CryoCool_Sink_Support;
+CryoCool_Sink_Support = CONDUCTIVE_CONDUCTOR(
+    source_reference = "CCD_CryoCool_Sink",
+    destination_reference = "IR_TEL_STR:face2",
+    conductor_override = 0.10053096);
+
+CONDUCTOR CryoCool_Sink_Support2;
+CryoCool_Sink_Support2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "CCD_CryoCool_Sink",
+    destination_reference = "IR_TEL_STR:face4",
+    conductor_override = 0.10053096);
+
+DELETE CryoCool_Sink_Support;
+CryoCool_Sink_Support2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "CCD_CryoCool_Sink",
+    destination_reference = "IR_TEL_STR:face4",
+    conductor_override = 0.0080424771);
+
+CONDUCTOR CryoCool_Sink_Support1;
+CryoCool_Sink_Support1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "CCD_CryoCool_Sink",
+    destination_reference = "IR_TEL_STR:face2",
+    conductor_override = 0.0080424771);
+
+CONDUCTOR CryoCool_Diss_Support1;
+CryoCool_Diss_Support1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "CCD_CryoCool_Diss",
+    destination_reference = "Body_plate_1:face5",
+    conductor_override = 0.02010619298);
+
+CONDUCTOR CryoCool_Diss_Support2;
+CryoCool_Diss_Support2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "CCD_CryoCool_Diss",
+    destination_reference = "Body_plate_1:face7",
+    conductor_override = 0.02010619298);
+
+CONDUCTOR CryoCool_Diss_Support3;
+CryoCool_Diss_Support3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "CCD_CryoCool_Diss",
+    destination_reference = "Body_plate_1:face1",
+    conductor_override = 0.02010619298);
+
+CONDUCTOR CryoCool_Diss_Support4;
+CryoCool_Diss_Support4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "CCD_CryoCool_Diss",
+    destination_reference = "Body_plate_1:face1",
+    conductor_override = 0.02010619298);
+
+CryoCool_Diss_Support4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "CCD_CryoCool_Diss",
+    destination_reference = "Body_plate_1:face1",
+    conductor_override = 0.02010619);
+
+CryoCool_Diss_Support4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "CCD_CryoCool_Diss",
+    destination_reference = "Body_plate_1:face3",
+    conductor_override = 0.02010619);
+
+CryoCool_Diss_Support3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "CCD_CryoCool_Diss",
+    destination_reference = "Body_plate_1:face1",
+    conductor_override = 0.02010619);
+
+CryoCool_Diss_Support2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "CCD_CryoCool_Diss",
+    destination_reference = "Body_plate_1:face7",
+    conductor_override = 0.02010619);
+
+CryoCool_Diss_Support1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "CCD_CryoCool_Diss",
+    destination_reference = "Body_plate_1:face5",
+    conductor_override = 0.02010619);
+
+CryoCool_Diss_Support1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "CCD_CryoCool_Diss",
+    destination_reference = "Body_plate_1:face5",
+    conductor_override = 0.0050265482);
+
+CryoCool_Diss_Support2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "CCD_CryoCool_Diss",
+    destination_reference = "Body_plate_1:face7",
+    conductor_override = 0.0050265482);
+
+CryoCool_Diss_Support3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "CCD_CryoCool_Diss",
+    destination_reference = "Body_plate_1:face1",
+    conductor_override = 0.0050265482);
+
+CryoCool_Diss_Support4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "CCD_CryoCool_Diss",
+    destination_reference = "Body_plate_1:face3",
+    conductor_override = 0.0050265482);
+
+CryoCool_Diss_Support1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "CCD_CryoCool_Diss",
+    destination_reference = "Body_plate_1:face5",
+    conductor_override = 0.010053096);
+
+CryoCool_Diss_Support2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "CCD_CryoCool_Diss",
+    destination_reference = "Body_plate_1:face7",
+    conductor_override = 0.010053096);
+
+CryoCool_Diss_Support3 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "CCD_CryoCool_Diss",
+    destination_reference = "Body_plate_1:face1",
+    conductor_override = 0.010053096);
+
+CryoCool_Diss_Support4 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "CCD_CryoCool_Diss",
+    destination_reference = "Body_plate_1:face3",
+    conductor_override = 0.010053096);
+

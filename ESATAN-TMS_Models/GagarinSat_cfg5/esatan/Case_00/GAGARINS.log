@@ -2,11 +2,11 @@
 #@@> ESATAN-TMS  2020                    November  2019
 #@@> ITP Engines UK - www.esatan-tms.com
 #@@>
-#@@> Run date: 11 May       2021  22:46:30
+#@@> Run date: 11 May       2021  23:17:32
 #@@>
 
 $MODEL GagarinSat_cfg5_Case_00, GLOBALFILE = _GLOBAL_FILE, ACDFILE
-# ESATAN-TMS 2020, run date 22:46 Tue 11 May 2021
+# ESATAN-TMS 2020, run date 23:17 Tue 11 May 2021
 # Model name: GagarinSat_cfg5        Analysis case: Case_00
 #
 # template file: Template.tpl
@@ -804,7 +804,7 @@ C
      A = 1.0E+20, ALP = 1.0, EPS = 1.0;
 #
   $CONDUCTORS
-# ESATAN-TMS 2020, run date 22:46 Tue 11 May 2021
+# ESATAN-TMS 2020, run date 23:17 Tue 11 May 2021
 # Model name: GagarinSat_cfg5        Radiative conductors
     GR(1, 10000) = 7.050863D-03;
     GR(1, 10001) = 7.014093D-03;
@@ -4133,16 +4133,16 @@ C
     GR(61002, 64000) = 8.682994D-04;
     GR(61002, 99999) = 5.729361D-02;
     GR(64000, 99999) = 7.637697D-02;
-# ESATAN-TMS 2020, run date 22:46 Tue 11 May 2021
+# ESATAN-TMS 2020, run date 23:17 Tue 11 May 2021
 # Model name: GagarinSat_cfg5        Generated conductors
     GL(1,10000) = 8.D-05; # from conductor RAD_STR_Support1
     GL(1,10001) = 8.D-05; # from conductor RAD_STR_Support4
     GL(1,10002) = 8.D-05; # from conductor RAD_STR_Support2
     GL(1,10003) = 8.D-05; # from conductor RAD_STR_Support3
-    GL(1,51045) = 3.6719D+00; # from conductor STR_RAD_1
-    GL(1,51047) = 3.6719D+00; # from conductor STR_RAD_2
-    GL(1,51051) = 3.6719D+00; # from conductor STR_RAD_3
-    GL(1,51053) = 3.6719D+00; # from conductor STR_RAD_4
+    GL(1,10028) = 3.6719D+00; # from conductor STR_RAD_4
+    GL(1,10029) = 3.6719D+00; # from conductor STR_RAD_1
+    GL(1,10030) = 3.6719D+00; # from conductor STR_RAD_3
+    GL(1,10031) = 3.6719D+00; # from conductor STR_RAD_2
     GL(10000,10001) = k_Al_6061 * 1.499952D-03; # from primitive Panels
     GL(10000,10002) = k_Al_6061 * 2.666515D-03; # from primitive Panels
     GL(10000,10008) = 1.0 / ((1.0 / (5.333029D-03 * k_Al_6061)) + (1.0 / (4.D-04 * 2.D+02)) +
