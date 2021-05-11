@@ -1,15 +1,15 @@
-      PROGRAM GAGARINSAT_CFG2_V3_CASE_                                          
+      PROGRAM GAGARINSAT_CFG5_CASE_01                                           
 C   
       INCLUDE 'GAGARINS.h'                                                      
 C   
       CHARACTER MNAME * 24                                                      
 C   
-      MNAME = 'GAGARINSAT_CFG2_V3_CASE_'                                        
+      MNAME = 'GAGARINSAT_CFG5_CASE_01 '                                        
 C   
-      FLG(1) = 136                                                              
-      FLG(2) = 224                                                              
+      FLG(1) = 171                                                              
+      FLG(2) = 263                                                              
       FLG(3) = 0                                                                
-      FLG(4) = 2335                                                             
+      FLG(4) = 3343                                                             
       FLG(5) = 0                                                                
       FLG(6) = 1                                                                
       FLG(7) = 0                                                                
@@ -29,11 +29,11 @@ C
       FLG(21) = 0                                                               
       FLG(22) = 0                                                               
       FLG(23) = 0                                                               
-      FLG(24) = 11074                                                           
+      FLG(24) = 15472                                                           
       FLG(25) = 2                                                               
       FLG(26) = 3                                                               
       FLG(27) = 133                                                             
-      FLG(28) = 1004457                                                         
+      FLG(28) = 1005994                                                         
       FLG(29) = 1                                                               
       FLG(30) = 0                                                               
       FLG(31) = 0                                                               
@@ -44,7 +44,7 @@ C
       FLG(36) = 1                                                               
       FLG(37) = 0                                                               
       FLG(38) = 0                                                               
-      FLG(39) = 4670                                                            
+      FLG(39) = 6686                                                            
       FLG(40) = 0                                                               
       FLG(41) = 0                                                               
       CALL SVMNAM(MNAME)                                                        
@@ -71,6 +71,8 @@ C
       LOGICAL HTFLAG                                                    
       HTFLAG = .TRUE.                                                   
       IG(2) = 2                                                         
+      CALL SETNDR(' ','T_MIN',1.0D10,2)                                 
+      CALL SETNDR(' ','T_MAX',-1.0D10,2)                                
       CALL GM0002(HTFLAG)                                               
       CALL FINITS(' ' , -    2)                                         
       RETURN                                                            
@@ -90,6 +92,7 @@ C
       SUBROUTINE V20002                                                 
       INCLUDE 'GAGARINS.h'
       IG(2) = 2                                                         
+      CALL STORMM('T','T_MIN','TIM_MIN','T_MAX','TIM_MAX')              
       RETURN                                                            
       END                                                               
       SUBROUTINE IN0003                                                 
@@ -97,6 +100,8 @@ C
       LOGICAL HTFLAG                                                    
       HTFLAG = .TRUE.                                                   
       IG(2) = 3                                                         
+      CALL SETNDR(' ','T_MIN',1.0D10,3)                                 
+      CALL SETNDR(' ','T_MAX',-1.0D10,3)                                
       CALL GM0003(HTFLAG)                                               
       CALL FINITS(' ' , -    3)                                         
       RETURN                                                            
@@ -116,6 +121,7 @@ C
       SUBROUTINE V20003                                                 
       INCLUDE 'GAGARINS.h'
       IG(2) = 3                                                         
+      CALL STORMM('T','T_MIN','TIM_MIN','T_MAX','TIM_MAX')              
       RETURN                                                            
       END                                                               
       SUBROUTINE IN0001                                                 
@@ -126,32 +132,31 @@ C
       CALL IN0002                                                       
       CALL IN0003                                                       
       IG(2) = 1                                                         
+      CALL SETNDR(' ','T_MIN',1.0D10,1)                                 
+      CALL SETNDR(' ','T_MAX',-1.0D10,1)                                
       CALL GM0001(HTFLAG)                                               
       CALL FINITS(' ' , -    1)                                         
       CALL SETNDR(' ','T_MIN',1.0D10,1)                                 
       CALL SETNDR(' ','T_MAX',-1.0D10,1)                                
-      QI(MD(3,1)+103)=3.75D-02                                          
-      QI(MD(3,1)+104)=3.75D-02                                          
-      QI(MD(3,1)+105)=3.75D-02                                          
-      QI(MD(3,1)+106)=3.75D-02                                          
-      QI(MD(3,1)+85)=4.076087D-01                                       
-      QI(MD(3,1)+86)=4.076087D-01                                       
-      QI(MD(3,1)+87)=4.076087D-01                                       
-      QI(MD(3,1)+88)=4.076087D-01                                       
-      QI(MD(3,1)+89)=2.173913D-01                                       
-      QI(MD(3,1)+90)=2.173913D-01                                       
-      QI(MD(3,1)+91)=2.173913D-01                                       
-      QI(MD(3,1)+92)=2.173913D-01                                       
-      QI(MD(3,1)+93)=2.173913D-01                                       
-      QI(MD(3,1)+94)=2.173913D-01                                       
-      QI(MD(3,1)+95)=2.173913D-01                                       
-      QI(MD(3,1)+96)=2.173913D-01                                       
-      QI(MD(3,1)+97)=4.076087D-01                                       
-      QI(MD(3,1)+98)=4.076087D-01                                       
-      QI(MD(3,1)+99)=4.076087D-01                                       
-      QI(MD(3,1)+100)=4.076087D-01                                      
-      QI(MD(3,3)+1)=1.D+00                                              
-      QI(MD(3,3)+1)=QI(MD(3,3)+1)+2.D+00                                
+      QI(MD(3,1)+92)=1.D-01                                             
+      QI(MD(3,1)+74)=1.304348D+00                                       
+      QI(MD(3,1)+75)=1.304348D+00                                       
+      QI(MD(3,1)+76)=1.304348D+00                                       
+      QI(MD(3,1)+77)=1.304348D+00                                       
+      QI(MD(3,1)+78)=6.956522D-01                                       
+      QI(MD(3,1)+79)=6.956522D-01                                       
+      QI(MD(3,1)+80)=6.956522D-01                                       
+      QI(MD(3,1)+81)=6.956522D-01                                       
+      QI(MD(3,1)+82)=6.956522D-01                                       
+      QI(MD(3,1)+83)=6.956522D-01                                       
+      QI(MD(3,1)+84)=6.956522D-01                                       
+      QI(MD(3,1)+85)=6.956522D-01                                       
+      QI(MD(3,1)+86)=1.304348D+00                                       
+      QI(MD(3,1)+87)=1.304348D+00                                       
+      QI(MD(3,1)+88)=1.304348D+00                                       
+      QI(MD(3,1)+89)=1.304348D+00                                       
+      QI(MD(3,3)+1)=2.D+00                                              
+      QI(MD(3,2)+1)=4.D+00                                              
       OPBLOK = ' '                                                      
       RETURN                                                            
       END                                                               
@@ -168,28 +173,25 @@ C
       CALL V10002                                                       
       CALL V10003                                                       
       IG(2) = 1                                                         
-      QI(MD(3,1)+103)=3.75D-02                                          
-      QI(MD(3,1)+104)=3.75D-02                                          
-      QI(MD(3,1)+105)=3.75D-02                                          
-      QI(MD(3,1)+106)=3.75D-02                                          
-      QI(MD(3,1)+85)=4.076087D-01                                       
-      QI(MD(3,1)+86)=4.076087D-01                                       
-      QI(MD(3,1)+87)=4.076087D-01                                       
-      QI(MD(3,1)+88)=4.076087D-01                                       
-      QI(MD(3,1)+89)=2.173913D-01                                       
-      QI(MD(3,1)+90)=2.173913D-01                                       
-      QI(MD(3,1)+91)=2.173913D-01                                       
-      QI(MD(3,1)+92)=2.173913D-01                                       
-      QI(MD(3,1)+93)=2.173913D-01                                       
-      QI(MD(3,1)+94)=2.173913D-01                                       
-      QI(MD(3,1)+95)=2.173913D-01                                       
-      QI(MD(3,1)+96)=2.173913D-01                                       
-      QI(MD(3,1)+97)=4.076087D-01                                       
-      QI(MD(3,1)+98)=4.076087D-01                                       
-      QI(MD(3,1)+99)=4.076087D-01                                       
-      QI(MD(3,1)+100)=4.076087D-01                                      
-      QI(MD(3,3)+1)=1.D+00                                              
-      QI(MD(3,3)+1)=QI(MD(3,3)+1)+2.D+00                                
+      QI(MD(3,1)+92)=1.D-01                                             
+      QI(MD(3,1)+74)=1.304348D+00                                       
+      QI(MD(3,1)+75)=1.304348D+00                                       
+      QI(MD(3,1)+76)=1.304348D+00                                       
+      QI(MD(3,1)+77)=1.304348D+00                                       
+      QI(MD(3,1)+78)=6.956522D-01                                       
+      QI(MD(3,1)+79)=6.956522D-01                                       
+      QI(MD(3,1)+80)=6.956522D-01                                       
+      QI(MD(3,1)+81)=6.956522D-01                                       
+      QI(MD(3,1)+82)=6.956522D-01                                       
+      QI(MD(3,1)+83)=6.956522D-01                                       
+      QI(MD(3,1)+84)=6.956522D-01                                       
+      QI(MD(3,1)+85)=6.956522D-01                                       
+      QI(MD(3,1)+86)=1.304348D+00                                       
+      QI(MD(3,1)+87)=1.304348D+00                                       
+      QI(MD(3,1)+88)=1.304348D+00                                       
+      QI(MD(3,1)+89)=1.304348D+00                                       
+      QI(MD(3,3)+1)=2.D+00                                              
+      QI(MD(3,2)+1)=4.D+00                                              
       CALL GM0001(HTFLAG)                                               
       OPBLOK = ' '                                                      
       RETURN                                                            
@@ -210,6 +212,7 @@ C
       CALL V20003                                                       
       IG(2) = 1                                                         
       CALL STORMM('T','T_MIN','TIM_MIN','T_MAX','TIM_MAX')              
+      CALL STORMM('T','T_MIN','TIM_MIN','T_MAX','TIM_MAX')              
       OPBLOK = ' '                                                      
       CALL PARWRT('VARIABLES2')                                         
       RETURN                                                            
@@ -221,7 +224,7 @@ C
       IG(4)=100                                                         
       RG(13)=0.01                                                       
       RG(3)=1.0                                                         
-      CALL SOLCYC('SLCRNC',0.1D0,0.05D0,6059.2857D0,10,' ','NONE')      
+      CALL SOLCYC('SLCRNC',0.1D0,0.1D0,6059.2857D0,100,' ','NONE')      
       CALL SLCRNC                                                       
       CALL PRNDTB(' ','T_MIN,TIM_MIN,T_MAX,TIM_MAX',1)                  
       RETURN                                                            

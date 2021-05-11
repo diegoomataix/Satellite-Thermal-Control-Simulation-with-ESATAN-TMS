@@ -1,5 +1,0 @@
-/* ESATAN-TMS version 2020, run date 13:36 Sat 8 May 2021 */
-BEGIN_MODEL GagarinSat_v1 WORKBENCH_V1 ;
-REPORT_ANALYSIS_CASE(analysis_case_name = "Case_00");
-
-END_MODEL

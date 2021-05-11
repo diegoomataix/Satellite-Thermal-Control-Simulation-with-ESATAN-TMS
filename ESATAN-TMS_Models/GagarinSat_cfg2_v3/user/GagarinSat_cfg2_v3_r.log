@@ -1,5 +1,0 @@
-/* ESATAN-TMS version 2020, run date 22:54 Sun 9 May 2021 */
-BEGIN_MODEL GagarinSat_cfg2_v3 WORKBENCH_V1 ;
-/* ESATAN-TMS version 2020, run date 11:09 Mon 10 May 2021 */
-/* BEGIN_MODEL GagarinSat_cfg2_v3 WORKBENCH_V1 */ ;
-VALIDATE_CONDUCTIVE_INTERFACES();END_MODEL

@@ -1734,3 +1734,3500 @@ END_IF
 
 
 DELETE analysis_case_error_flag;
+OBDH = TOTAL_AREA_HEAT_LOAD(
+    reference = "Electronic_Box:surface1",
+    value = 16.0);
+
+PLD2_ATCS = TOTAL_AREA_HEAT_LOAD(
+    reference = "Payload_2",
+    value = 4.0);
+
+PLD1_RW = TOTAL_AREA_HEAT_LOAD(
+    reference = "Payload_1",
+    value = 2.0);
+
+
+INTEGER analysis_case_error_flag = 0;
+
+DEFINE_ANALYSIS_CASE (
+    analysis_case = Case_00,
+    solver = "ESATAN",
+    working_directory = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\GagarinSat_cfg5\esatan\Case_00",
+    analysis_file = "GagarinSat_v0_Case_00.d",
+    error_code =  analysis_case_error_flag,
+    analysis_case_type = "Single Radiative Case",
+    radiative_case = Rad_Case_00);
+
+IF (analysis_case_error_flag == 0) THEN
+    GENERATE_TEMPLATE (
+        analysis_case = Case_00,
+        submodel_files = FALSE,
+        maxmin = TRUE,
+        error_code =  analysis_case_error_flag,
+        execution_block = 
+"
+C
+      TIMEND=6059.2857
+      OUTINT=605.92857
+      NLOOP=100
+      RELXCA=0.01
+      DTIMEI=1.0
+      CALL SOLCYC('SLCRNC',0.1D0,0.1D0,6059.2857D0,100,' ','NONE')
+C
+      CALL SLCRNC
+C",
+        output_block = 
+"      CALL PRNDTB(' ', 'L, T, QS, QE, QA, QI, C', CURRENT)
+C
+      CALL DMPTMD(' ', 'NODES, CONDUCTORS, CONSTANTS', CURRENT, ' ')
+",
+        update = TRUE);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_00,
+        boundary_condition = OBDH,
+        applies = TRUE);
+
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_00,
+        boundary_condition = PLD1_RW,
+        applies = TRUE);
+
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_00,
+        boundary_condition = CCD,
+        applies = TRUE);
+
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_00,
+        boundary_condition = PLD2_ATCS,
+        applies = TRUE);
+
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    UNSET_HF_MULTIPLIERS(analysis_case = Case_00);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_IR_Tel_Support3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_IR_Tel_Support4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_IR_Tel_Support1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_IR_Tel_Support2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = EBox_RAD_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = EBox_RAD_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xypos_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xypos_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = EBox_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xypos_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = EBox_RAD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xypos_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_Ins_block_to_cone_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_Ins_block_to_cone_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Lens_IR_Tel_Obj,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = PLD2_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Obj_IR_Tel_CCD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Obj_IR_Tel_CCD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Obj_IR_Tel_STR_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Obj_IR_Tel_STR_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = STR_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = STR_RAD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = STR_RAD_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = STR_RAD_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_STR_Panel_inf_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_PLD2_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xyneg_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_STR_Panel_inf_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_STR_Panel_inf_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_STR_Panel_inf_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_SolarPanel_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_SolarPanel_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_Ins_Support2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_Ins_Support1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xyneg_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xyneg_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_PLD2_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xyneg_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xypos_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xypos_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xypos_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xypos_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_STR_Support3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_STR_Support4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_STR_Support1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_STR_Support2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_5,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_PLD1_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate2_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_PLD1_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate2_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = CCD_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate2_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate2_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate2_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = PLD1_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xyneg_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate2_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xyneg_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate2_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate2_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xyneg_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xyneg_3,
+        applies = TRUE);
+
+    SET_CONTACT_ZONE(
+        analysis_case = Case_00,
+        contact_zone = EBox_Plate_bottom,
+        applies = TRUE);
+
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    GENERATE_ANALYSIS_FILE (
+        analysis_case = Case_00,
+        title = "GagarinSat_cfg5_Case_00",
+        error_code =  analysis_case_error_flag,
+        results = "GL,TRANS_HF,TRANS_REF",
+        ref_averaged = TRUE,
+        ref_cyclic = TRUE,
+        hf_type = "S,A,P",
+        hf_averaged = TRUE,
+        hf_cyclic = TRUE,
+        environment = 99999,
+        environment_temperature = -270.0,
+        inactive = 99998);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    RUN_ANALYSIS(
+        analysis_case = Case_00);
+END_IF
+
+
+DELETE analysis_case_error_flag;
+GENERATE_ANALYSIS_FILE(
+    analysis_case = Case_00,
+    results = "GL,TRANS_HF,TRANS_REF",
+    title = "GagarinSat_cfg5_Case_00",
+    ref_averaged = TRUE,
+    ref_cyclic = TRUE,
+    hf_type = "S,A,P",
+    hf_averaged = TRUE,
+    hf_cyclic = TRUE,
+    environment = 99999,
+    inactive = 99998,
+    acd_file = TRUE);
+
+INTEGER analysis_case_error_flag = 0;
+
+DEFINE_ANALYSIS_CASE (
+    analysis_case = Case_00,
+    solver = "ESATAN",
+    working_directory = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\GagarinSat_cfg5\esatan\Case_00",
+    analysis_file = "GagarinSat_v0_Case_00.d",
+    error_code =  analysis_case_error_flag,
+    analysis_case_type = "Single Radiative Case",
+    radiative_case = Rad_Case_00);
+
+IF (analysis_case_error_flag == 0) THEN
+    GENERATE_TEMPLATE (
+        analysis_case = Case_00,
+        submodel_files = FALSE,
+        maxmin = TRUE,
+        error_code =  analysis_case_error_flag,
+        execution_block = 
+"
+C
+      TIMEND=6059.2857
+      OUTINT=605.92857
+      NLOOP=100
+      RELXCA=0.01
+      DTIMEI=1.0
+      CALL SOLCYC('SLCRNC',0.1D0,0.1D0,6059.2857D0,100,' ','NONE')
+C
+      CALL SLCRNC
+C",
+        output_block = 
+"      CALL PRNDTB(' ', 'L, T, QS, QE, QA, QI, C', CURRENT)
+C
+      CALL DMPTMD(' ', 'NODES, CONDUCTORS, CONSTANTS', CURRENT, ' ')
+",
+        update = TRUE);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_00,
+        boundary_condition = OBDH,
+        applies = TRUE);
+
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_00,
+        boundary_condition = PLD1_RW,
+        applies = TRUE);
+
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_00,
+        boundary_condition = CCD,
+        applies = TRUE);
+
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_00,
+        boundary_condition = PLD2_ATCS,
+        applies = TRUE);
+
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    UNSET_HF_MULTIPLIERS(analysis_case = Case_00);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_IR_Tel_Support3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_IR_Tel_Support4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_IR_Tel_Support1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_IR_Tel_Support2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = EBox_RAD_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = EBox_RAD_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xypos_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xypos_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = EBox_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xypos_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = EBox_RAD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xypos_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_Ins_block_to_cone_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_Ins_block_to_cone_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Lens_IR_Tel_Obj,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = PLD2_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Obj_IR_Tel_CCD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Obj_IR_Tel_CCD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Obj_IR_Tel_STR_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Obj_IR_Tel_STR_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = STR_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = STR_RAD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = STR_RAD_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = STR_RAD_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_STR_Panel_inf_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_PLD2_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xyneg_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_STR_Panel_inf_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_STR_Panel_inf_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_STR_Panel_inf_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_SolarPanel_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_SolarPanel_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_Ins_Support2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_Ins_Support1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xyneg_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xyneg_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_PLD2_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xyneg_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xypos_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xypos_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xypos_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xypos_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_STR_Support3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_STR_Support4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_STR_Support1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_STR_Support2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_5,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_PLD1_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate2_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_PLD1_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate2_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = CCD_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate2_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate2_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate2_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = PLD1_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xyneg_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate2_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xyneg_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate2_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate2_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xyneg_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xyneg_3,
+        applies = TRUE);
+
+    SET_CONTACT_ZONE(
+        analysis_case = Case_00,
+        contact_zone = EBox_Plate_bottom,
+        applies = TRUE);
+
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    GENERATE_ANALYSIS_FILE (
+        analysis_case = Case_00,
+        title = "GagarinSat_cfg5_Case_00",
+        error_code =  analysis_case_error_flag,
+        results = "GL,TRANS_HF,TRANS_REF",
+        ref_averaged = TRUE,
+        ref_cyclic = TRUE,
+        hf_type = "S,A,P",
+        hf_averaged = TRUE,
+        hf_cyclic = TRUE,
+        environment = 99999,
+        environment_temperature = -270.0,
+        inactive = 99998);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    RUN_ANALYSIS(
+        analysis_case = Case_00);
+END_IF
+
+
+DELETE analysis_case_error_flag;
+
+INTEGER analysis_case_error_flag = 0;
+
+DEFINE_ANALYSIS_CASE (
+    analysis_case = Case_00,
+    solver = "ESATAN",
+    working_directory = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\GagarinSat_cfg5\esatan\Case_00",
+    analysis_file = "GagarinSat_v0_Case_00.d",
+    error_code =  analysis_case_error_flag,
+    analysis_case_type = "Single Radiative Case",
+    radiative_case = Rad_Case_00);
+
+IF (analysis_case_error_flag == 0) THEN
+    GENERATE_TEMPLATE (
+        analysis_case = Case_00,
+        submodel_files = FALSE,
+        maxmin = TRUE,
+        error_code =  analysis_case_error_flag,
+        execution_block = 
+"
+C
+      TIMEND=6059.2857
+      OUTINT=605.92857
+      NLOOP=100
+      RELXCA=0.01
+      DTIMEI=1.0
+      CALL SOLCYC('SLCRNC',0.1D0,0.1D0,6059.2857D0,100,' ','NONE')
+C
+      CALL SLCRNC
+C",
+        output_block = 
+"      CALL PRNDTB(' ', 'L, T, QS, QE, QA, QI, C', CURRENT)
+C
+      CALL DMPTMD(' ', 'NODES, CONDUCTORS, CONSTANTS', CURRENT, ' ')
+",
+        update = TRUE);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    UNSET_HF_MULTIPLIERS(analysis_case = Case_00);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    GENERATE_ANALYSIS_FILE (
+        analysis_case = Case_00,
+        title = "GagarinSat_cfg5_Case_00",
+        error_code =  analysis_case_error_flag,
+        results = "GL,TRANS_HF,TRANS_REF",
+        ref_averaged = TRUE,
+        ref_cyclic = TRUE,
+        hf_type = "S,A,P",
+        hf_averaged = TRUE,
+        hf_cyclic = TRUE,
+        environment = 99999,
+        environment_temperature = -270.0,
+        inactive = 99998);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    RUN_ANALYSIS(
+        analysis_case = Case_00);
+END_IF
+
+
+DELETE analysis_case_error_flag;
+
+INTEGER analysis_case_error_flag = 0;
+
+DEFINE_ANALYSIS_CASE (
+    analysis_case = Case_00,
+    solver = "ESATAN",
+    working_directory = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\GagarinSat_cfg5\esatan\Case_00",
+    analysis_file = "GagarinSat_v0_Case_00.d",
+    error_code =  analysis_case_error_flag,
+    analysis_case_type = "Single Radiative Case",
+    radiative_case = Rad_Case_00);
+
+IF (analysis_case_error_flag == 0) THEN
+    GENERATE_TEMPLATE (
+        analysis_case = Case_00,
+        submodel_files = FALSE,
+        maxmin = TRUE,
+        error_code =  analysis_case_error_flag,
+        execution_block = 
+"
+C
+      TIMEND=6059.2857
+      OUTINT=605.92857
+      NLOOP=100
+      RELXCA=0.01
+      DTIMEI=1.0
+      CALL SOLCYC('SLCRNC',0.1D0,0.1D0,6059.2857D0,100,' ','NONE')
+C
+      CALL SLCRNC
+C",
+        output_block = 
+"      CALL PRNDTB(' ', 'L, T, QS, QE, QA, QI, C', CURRENT)
+C
+      CALL DMPTMD(' ', 'NODES, CONDUCTORS, CONSTANTS', CURRENT, ' ')
+",
+        update = TRUE);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_00,
+        boundary_condition = OBDH,
+        applies = TRUE);
+
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_00,
+        boundary_condition = PLD1_RW,
+        applies = TRUE);
+
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_00,
+        boundary_condition = CCD,
+        applies = TRUE);
+
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_00,
+        boundary_condition = PLD2_ATCS,
+        applies = TRUE);
+
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    UNSET_HF_MULTIPLIERS(analysis_case = Case_00);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_IR_Tel_Support3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_IR_Tel_Support4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_IR_Tel_Support1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_IR_Tel_Support2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = EBox_RAD_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = EBox_RAD_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xypos_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xypos_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = EBox_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xypos_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = EBox_RAD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xypos_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_Ins_block_to_cone_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_Ins_block_to_cone_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Lens_IR_Tel_Obj,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = PLD2_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Obj_IR_Tel_CCD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Obj_IR_Tel_CCD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Obj_IR_Tel_STR_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Obj_IR_Tel_STR_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = STR_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = STR_RAD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = STR_RAD_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = STR_RAD_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_STR_Panel_inf_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_PLD2_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xyneg_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_STR_Panel_inf_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_STR_Panel_inf_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_STR_Panel_inf_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_SolarPanel_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_SolarPanel_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_Ins_Support2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_Ins_Support1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xyneg_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xyneg_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_PLD2_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xyneg_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xypos_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xypos_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xypos_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xypos_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_STR_Support3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_STR_Support4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_STR_Support1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_STR_Support2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_5,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_PLD1_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate2_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_PLD1_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate2_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = CCD_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate2_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate2_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate2_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = PLD1_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xyneg_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate2_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xyneg_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate2_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate2_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xyneg_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xyneg_3,
+        applies = TRUE);
+
+    SET_CONTACT_ZONE(
+        analysis_case = Case_00,
+        contact_zone = EBox_Plate_bottom,
+        applies = TRUE);
+
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    GENERATE_ANALYSIS_FILE (
+        analysis_case = Case_00,
+        title = "GagarinSat_cfg5_Case_00",
+        error_code =  analysis_case_error_flag,
+        results = "GL,TRANS_HF,TRANS_REF",
+        ref_averaged = TRUE,
+        ref_cyclic = TRUE,
+        hf_type = "S,A,P",
+        hf_averaged = TRUE,
+        hf_cyclic = TRUE,
+        environment = 99999,
+        environment_temperature = -270.0,
+        inactive = 99998);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    RUN_ANALYSIS(
+        analysis_case = Case_00);
+END_IF
+
+
+DELETE analysis_case_error_flag;
+
+INTEGER analysis_case_error_flag = 0;
+
+DEFINE_ANALYSIS_CASE (
+    analysis_case = Case_00,
+    solver = "ESATAN",
+    working_directory = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\GagarinSat_cfg5\esatan\Case_00",
+    analysis_file = "GagarinSat_v0_Case_00.d",
+    error_code =  analysis_case_error_flag,
+    analysis_case_type = "Single Radiative Case",
+    radiative_case = Rad_Case_00);
+
+IF (analysis_case_error_flag == 0) THEN
+    GENERATE_TEMPLATE (
+        analysis_case = Case_00,
+        submodel_files = FALSE,
+        maxmin = TRUE,
+        error_code =  analysis_case_error_flag,
+        execution_block = 
+"
+C
+      TIMEND=6059.2857
+      OUTINT=605.92857
+      NLOOP=100
+      RELXCA=0.01
+      DTIMEI=1.0
+      CALL SOLCYC('SLCRNC',0.1D0,0.1D0,6059.2857D0,100,' ','NONE')
+C
+      CALL SLCRNC
+C",
+        output_block = 
+"      CALL PRNDTB(' ', 'L, T, QS, QE, QA, QI, C', CURRENT)
+C
+      CALL DMPTMD(' ', 'NODES, CONDUCTORS, CONSTANTS', CURRENT, ' ')
+",
+        update = TRUE);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_00,
+        boundary_condition = OBDH,
+        applies = TRUE);
+
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_00,
+        boundary_condition = PLD1_RW,
+        applies = TRUE);
+
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_00,
+        boundary_condition = CCD,
+        applies = TRUE);
+
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_00,
+        boundary_condition = PLD2_ATCS,
+        applies = TRUE);
+
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    UNSET_HF_MULTIPLIERS(analysis_case = Case_00);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_IR_Tel_Support3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_IR_Tel_Support4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_IR_Tel_Support1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_IR_Tel_Support2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = EBox_RAD_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = EBox_RAD_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xypos_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xypos_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = EBox_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xypos_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = EBox_RAD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xypos_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_Ins_block_to_cone_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_Ins_block_to_cone_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Lens_IR_Tel_Obj,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = PLD2_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Obj_IR_Tel_CCD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Obj_IR_Tel_CCD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Obj_IR_Tel_STR_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Obj_IR_Tel_STR_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = STR_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = STR_RAD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = STR_RAD_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = STR_RAD_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_STR_Panel_inf_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_PLD2_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xyneg_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_STR_Panel_inf_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_STR_Panel_inf_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_STR_Panel_inf_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_SolarPanel_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_SolarPanel_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_Ins_Support2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_Ins_Support1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xyneg_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xyneg_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_PLD2_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xyneg_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xypos_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xypos_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xypos_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xypos_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_STR_Support3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_STR_Support4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_STR_Support1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_STR_Support2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_5,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_PLD1_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate2_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_PLD1_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate2_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = CCD_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate2_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate2_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate2_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = PLD1_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xyneg_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate2_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xyneg_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate2_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate2_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xyneg_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xyneg_3,
+        applies = TRUE);
+
+    SET_CONTACT_ZONE(
+        analysis_case = Case_00,
+        contact_zone = EBox_Plate_bottom,
+        applies = TRUE);
+
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    GENERATE_ANALYSIS_FILE (
+        analysis_case = Case_00,
+        title = "GagarinSat_cfg5_Case_00",
+        error_code =  analysis_case_error_flag,
+        results = "GL,TRANS_HF,TRANS_REF",
+        ref_averaged = TRUE,
+        ref_cyclic = TRUE,
+        hf_type = "S,A,P",
+        hf_averaged = TRUE,
+        hf_cyclic = TRUE,
+        environment = 99999,
+        environment_temperature = -270.0,
+        inactive = 99998);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    RUN_ANALYSIS(
+        analysis_case = Case_00);
+END_IF
+
+
+DELETE analysis_case_error_flag;
+
+INTEGER analysis_case_error_flag = 0;
+
+ANALYSIS_CASE Case_01;
+
+DEFINE_ANALYSIS_CASE (
+    analysis_case = Case_01,
+    solver = "ESATAN",
+    working_directory = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\GagarinSat_cfg5\esatan\Case_01",
+    analysis_file = "GagarinSat_cfg5_Case_01.d",
+    error_code =  analysis_case_error_flag,
+    analysis_case_type = "Single Radiative Case",
+    radiative_case = Rad_Case_01);
+
+IF (analysis_case_error_flag == 0) THEN
+    GENERATE_TEMPLATE (
+        analysis_case = Case_01,
+        submodel_files = FALSE,
+        maxmin = TRUE,
+        error_code =  analysis_case_error_flag,
+        execution_block = 
+"
+C
+      TIMEND=6059.2857
+      OUTINT=605.92857
+      NLOOP=100
+      RELXCA=0.01
+      DTIMEI=1.0
+      CALL SOLCYC('SLCRNC',0.1D0,0.1D0,6059.2857D0,100,' ','NONE')
+C
+      CALL SLCRNC
+C",
+        output_block = 
+"      CALL PRNDTB(' ', 'L, T, QS, QE, QA, QI, C', CURRENT)
+C
+      CALL DMPTMD(' ', 'NODES, CONDUCTORS, CONSTANTS', CURRENT, ' ')
+",
+        update = TRUE);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_01,
+        boundary_condition = OBDH,
+        applies = TRUE);
+
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_01,
+        boundary_condition = PLD1_RW,
+        applies = TRUE);
+
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_01,
+        boundary_condition = CCD,
+        applies = TRUE);
+
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_01,
+        boundary_condition = PLD2_ATCS,
+        applies = TRUE);
+
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    UNSET_HF_MULTIPLIERS(analysis_case = Case_01);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = RAD_IR_Tel_Support3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = RAD_IR_Tel_Support4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = RAD_IR_Tel_Support1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = RAD_IR_Tel_Support2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = EBox_RAD_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = EBox_RAD_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Plate_Panel_xypos_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Plate_Panel_xypos_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = EBox_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Plate_Panel_xypos_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = EBox_RAD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Plate_Panel_xypos_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = RAD_Ins_block_to_cone_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = RAD_Ins_block_to_cone_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = IR_Tel_Lens_IR_Tel_Obj,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = PLD2_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = IR_Tel_Obj_IR_Tel_CCD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = IR_Tel_Obj_IR_Tel_CCD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = IR_Tel_Obj_IR_Tel_STR_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = IR_Tel_Obj_IR_Tel_STR_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = STR_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = STR_RAD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = STR_RAD_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = STR_RAD_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = IR_Tel_STR_Panel_inf_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Plate2_PLD2_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Plate_Panel_xyneg_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = IR_Tel_STR_Panel_inf_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Panel_xyneg_Plate_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = IR_Tel_STR_Panel_inf_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = IR_Tel_STR_Panel_inf_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Panel_xypos_SolarPanel_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Panel_xypos_SolarPanel_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = RAD_Ins_Support2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = RAD_Ins_Support1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Panel_xypos_Plate_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Panel_xyneg_Plate_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Panel_xypos_Plate_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Panel_xypos_Plate_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Plate_Panel_xyneg_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Panel_xyneg_Plate_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Plate_Panel_xyneg_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Panel_xyneg_Plate_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Panel_xypos_Plate_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Plate2_PLD2_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Plate_Panel_xyneg_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Plate2_Panel_xypos_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Plate2_Panel_xypos_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Plate2_Panel_xypos_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Plate2_Panel_xypos_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = IR_Tel_Asmbly_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = IR_Tel_Asmbly_RAD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = RAD_STR_Support3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = RAD_STR_Support4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = RAD_STR_Support1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = RAD_STR_Support2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = IR_Tel_Asmbly_RAD_5,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = IR_Tel_Asmbly_RAD_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = IR_Tel_Asmbly_RAD_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Plate2_PLD1_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Panel_xyneg_Plate2_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Plate2_PLD1_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Panel_xyneg_Plate2_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = CCD_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Panel_xyneg_Plate2_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Panel_xypos_Plate2_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Panel_xyneg_Plate2_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = PLD1_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Plate2_Panel_xyneg_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Panel_xypos_Plate2_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Plate2_Panel_xyneg_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Panel_xypos_Plate2_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Panel_xypos_Plate2_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Plate2_Panel_xyneg_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_01,
+        conductor = Plate2_Panel_xyneg_3,
+        applies = TRUE);
+
+    SET_CONTACT_ZONE(
+        analysis_case = Case_01,
+        contact_zone = EBox_Plate_bottom,
+        applies = TRUE);
+
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    GENERATE_ANALYSIS_FILE (
+        analysis_case = Case_01,
+        title = "GagarinSat_cfg5_Case_01",
+        error_code =  analysis_case_error_flag,
+        results = "GL,TRANS_HF,TRANS_REF",
+        ref_averaged = TRUE,
+        ref_cyclic = TRUE,
+        hf_type = "S,A,P",
+        hf_averaged = TRUE,
+        hf_cyclic = TRUE,
+        environment = 99999,
+        environment_temperature = -270.0,
+        inactive = 99998);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    RUN_ANALYSIS(
+        analysis_case = Case_01);
+END_IF
+
+
+DELETE analysis_case_error_flag;
+
+INTEGER analysis_case_error_flag = 0;
+
+DEFINE_ANALYSIS_CASE (
+    analysis_case = Case_00,
+    solver = "ESATAN",
+    working_directory = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\GagarinSat_cfg5\esatan\Case_00",
+    analysis_file = "GagarinSat_v0_Case_00.d",
+    error_code =  analysis_case_error_flag,
+    analysis_case_type = "Single Radiative Case",
+    radiative_case = Rad_Case_00);
+
+IF (analysis_case_error_flag == 0) THEN
+    GENERATE_TEMPLATE (
+        analysis_case = Case_00,
+        submodel_files = FALSE,
+        maxmin = TRUE,
+        error_code =  analysis_case_error_flag,
+        execution_block = 
+"
+C
+      TIMEND=6059.2857
+      OUTINT=605.92857
+      NLOOP=100
+      RELXCA=0.01
+      DTIMEI=1.0
+      CALL SOLCYC('SLCRNC',0.1D0,0.1D0,6059.2857D0,100,' ','NONE')
+C
+      CALL SLCRNC
+C",
+        output_block = 
+"      CALL PRNDTB(' ', 'L, T, QS, QE, QA, QI, C', CURRENT)
+C
+      CALL DMPTMD(' ', 'NODES, CONDUCTORS, CONSTANTS', CURRENT, ' ')
+",
+        update = TRUE);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_00,
+        boundary_condition = OBDH,
+        applies = TRUE);
+
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_00,
+        boundary_condition = PLD1_RW,
+        applies = TRUE);
+
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_00,
+        boundary_condition = CCD,
+        applies = TRUE);
+
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_00,
+        boundary_condition = PLD2_ATCS,
+        applies = TRUE);
+
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    UNSET_HF_MULTIPLIERS(analysis_case = Case_00);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_IR_Tel_Support3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_IR_Tel_Support4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_IR_Tel_Support1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_IR_Tel_Support2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = EBox_RAD_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = EBox_RAD_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xypos_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xypos_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = EBox_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xypos_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = EBox_RAD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xypos_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_Ins_block_to_cone_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_Ins_block_to_cone_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Lens_IR_Tel_Obj,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = PLD2_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Obj_IR_Tel_CCD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Obj_IR_Tel_CCD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Obj_IR_Tel_STR_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Obj_IR_Tel_STR_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = STR_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = STR_RAD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = STR_RAD_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = STR_RAD_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_STR_Panel_inf_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_PLD2_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xyneg_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_STR_Panel_inf_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_STR_Panel_inf_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_STR_Panel_inf_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_SolarPanel_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_SolarPanel_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_Ins_Support2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_Ins_Support1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xyneg_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xyneg_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_PLD2_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xyneg_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xypos_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xypos_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xypos_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xypos_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_STR_Support3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_STR_Support4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_STR_Support1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_STR_Support2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_5,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_PLD1_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate2_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_PLD1_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate2_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = CCD_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate2_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate2_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate2_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = PLD1_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xyneg_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate2_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xyneg_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate2_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate2_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xyneg_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xyneg_3,
+        applies = TRUE);
+
+    SET_CONTACT_ZONE(
+        analysis_case = Case_00,
+        contact_zone = EBox_Plate_bottom,
+        applies = TRUE);
+
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    GENERATE_ANALYSIS_FILE (
+        analysis_case = Case_00,
+        title = "GagarinSat_cfg5_Case_00",
+        error_code =  analysis_case_error_flag,
+        results = "GL,TRANS_HF,TRANS_REF",
+        ref_averaged = TRUE,
+        ref_cyclic = TRUE,
+        hf_type = "S,A,P",
+        hf_averaged = TRUE,
+        hf_cyclic = TRUE,
+        environment = 99999,
+        environment_temperature = -270.0,
+        inactive = 99998);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    RUN_ANALYSIS(
+        analysis_case = Case_00);
+END_IF
+
+
+DELETE analysis_case_error_flag;
+DELETE acase01;
+
+INTEGER analysis_case_error_flag = 0;
+
+DEFINE_ANALYSIS_CASE (
+    analysis_case = Case_00,
+    solver = "ESATAN",
+    working_directory = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\GagarinSat_cfg5\esatan\Case_00",
+    analysis_file = "GagarinSat_v0_Case_00.d",
+    error_code =  analysis_case_error_flag,
+    analysis_case_type = "Single Radiative Case",
+    radiative_case = Rad_Case_00);
+
+IF (analysis_case_error_flag == 0) THEN
+    GENERATE_TEMPLATE (
+        analysis_case = Case_00,
+        submodel_files = FALSE,
+        maxmin = TRUE,
+        error_code =  analysis_case_error_flag,
+        execution_block = 
+"
+C
+      TIMEND=6059.2857
+      OUTINT=605.92857
+      NLOOP=100
+      RELXCA=0.01
+      DTIMEI=1.0
+      CALL SOLCYC('SLCRNC',0.1D0,0.1D0,6059.2857D0,100,' ','NONE')
+C
+      CALL SLCRNC
+C",
+        output_block = 
+"      CALL PRNDTB(' ', 'L, T, QS, QE, QA, QI, C', CURRENT)
+C
+      CALL DMPTMD(' ', 'NODES, CONDUCTORS, CONSTANTS', CURRENT, ' ')
+",
+        update = TRUE);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_00,
+        boundary_condition = OBDH,
+        applies = TRUE);
+
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_00,
+        boundary_condition = PLD1_RW,
+        applies = TRUE);
+
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_00,
+        boundary_condition = CCD,
+        applies = TRUE);
+
+    SET_BOUNDARY_CONDITION(
+        analysis_case = Case_00,
+        boundary_condition = PLD2_ATCS,
+        applies = TRUE);
+
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    UNSET_HF_MULTIPLIERS(analysis_case = Case_00);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_IR_Tel_Support3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_IR_Tel_Support4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_IR_Tel_Support1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_IR_Tel_Support2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = EBox_RAD_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = EBox_RAD_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xypos_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xypos_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = EBox_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xypos_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = EBox_RAD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xypos_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_Ins_block_to_cone_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_Ins_block_to_cone_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Lens_IR_Tel_Obj,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = PLD2_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Obj_IR_Tel_CCD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Obj_IR_Tel_CCD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Obj_IR_Tel_STR_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Obj_IR_Tel_STR_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = STR_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = STR_RAD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = STR_RAD_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = STR_RAD_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_STR_Panel_inf_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_PLD2_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xyneg_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_STR_Panel_inf_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_STR_Panel_inf_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_STR_Panel_inf_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_SolarPanel_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_SolarPanel_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_Ins_Support2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_Ins_Support1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xyneg_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xyneg_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_PLD2_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate_Panel_xyneg_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xypos_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xypos_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xypos_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xypos_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_STR_Support3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_STR_Support4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_STR_Support1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = RAD_STR_Support2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_5,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = IR_Tel_Asmbly_RAD_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_PLD1_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate2_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_PLD1_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate2_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = CCD_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate2_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate2_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xyneg_Plate2_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = PLD1_RAD_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xyneg_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate2_3,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xyneg_4,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate2_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Panel_xypos_Plate2_1,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xyneg_2,
+        applies = TRUE);
+
+    SET_USER_DEFINED_CONDUCTOR(
+        analysis_case = Case_00,
+        conductor = Plate2_Panel_xyneg_3,
+        applies = TRUE);
+
+    SET_CONTACT_ZONE(
+        analysis_case = Case_00,
+        contact_zone = EBox_Plate_bottom,
+        applies = TRUE);
+
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    GENERATE_ANALYSIS_FILE (
+        analysis_case = Case_00,
+        title = "GagarinSat_cfg5_Case_00",
+        error_code =  analysis_case_error_flag,
+        results = "GL,TRANS_HF,TRANS_REF",
+        ref_averaged = TRUE,
+        ref_cyclic = TRUE,
+        hf_type = "S,A,P",
+        hf_averaged = TRUE,
+        hf_cyclic = TRUE,
+        environment = 99999,
+        environment_temperature = -270.0,
+        inactive = 99998);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    RUN_ANALYSIS(
+        analysis_case = Case_00);
+END_IF
+
+
+DELETE analysis_case_error_flag;
+/* ESATAN-TMS version 2020, run date 22:46 Tue 11 May 2021 */
+/* BEGIN_MODEL GagarinSat_cfg5 WORKBENCH_V1 */ ;
+
+INTEGER analysis_case_error_flag = 0;
+
+DEFINE_ANALYSIS_CASE (
+    analysis_case = Case_00,
+    solver = "ESATAN",
+    working_directory = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\GagarinSat_cfg5\esatan\Case_00",
+    analysis_file = "GagarinSat_v0_Case_00.d",
+    error_code =  analysis_case_error_flag,
+    analysis_case_type = "Single Radiative Case",
+    radiative_case = Rad_Case_00);
+
+IF (analysis_case_error_flag == 0) THEN
+    GENERATE_TEMPLATE (
+        analysis_case = Case_00,
+        submodel_files = FALSE,
+        maxmin = TRUE,
+        error_code =  analysis_case_error_flag,
+        execution_block = 
+"
+C
+      TIMEND=6059.2857
+      OUTINT=605.92857
+      NLOOP=100
+      RELXCA=0.01
+      DTIMEI=1.0
+      CALL SOLCYC('SLCRNC',0.1D0,0.1D0,6059.2857D0,100,' ','NONE')
+C
+      CALL SLCRNC
+C",
+        output_block = 
+"      CALL PRNDTB(' ', 'L, T, QS, QE, QA, QI, C', CURRENT)
+C
+      CALL DMPTMD(' ', 'NODES, CONDUCTORS, CONSTANTS', CURRENT, ' ')
+",
+        update = TRUE);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    UNSET_HF_MULTIPLIERS(analysis_case = Case_00);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    GENERATE_ANALYSIS_FILE (
+        analysis_case = Case_00,
+        title = "GagarinSat_cfg5_Case_00",
+        error_code =  analysis_case_error_flag,
+        results = "GL,TRANS_HF,TRANS_REF",
+        ref_averaged = TRUE,
+        ref_cyclic = TRUE,
+        hf_type = "S,A,P",
+        hf_averaged = TRUE,
+        hf_cyclic = TRUE,
+        environment = 99999,
+        environment_temperature = -270.0,
+        inactive = 99998);
+END_IF
+
+
+IF (analysis_case_error_flag == 0) THEN
+    RUN_ANALYSIS(
+        analysis_case = Case_00);
+END_IF
+
+
+DELETE analysis_case_error_flag;
