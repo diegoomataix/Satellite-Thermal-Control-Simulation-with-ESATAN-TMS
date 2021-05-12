@@ -873,3 +873,7 @@ contact_conductance = 200.0,
 maximum_gap = 0.01,
 number_sample_points = 10000);
 
+/* END_MODEL */
+/* ESATAN-TMS version 2020, run date 16:07 Wed 12 May 2021 */
+/* BEGIN_MODEL GagarinSat_cfgCryo WORKBENCH_V1 */
+END_MODEL
