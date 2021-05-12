@@ -2,3 +2,11 @@
 BEGIN_MODEL GagarinSat_cfgCryo WORKBENCH_V1 ;
 REPORT_SYMBOL(symbol_name = "CryoCool_Diss_Support1");
 
+/* ESATAN-TMS version 2020, run date 9:41 Wed 12 May 2021 */
+/* BEGIN_MODEL GagarinSat_cfgCryo WORKBENCH_V1 */ ;
+/* END_MODEL */
+/* ESATAN-TMS version 2020, run date 10:17 Wed 12 May 2021 */
+/* BEGIN_MODEL GagarinSat_cfgCryo WORKBENCH_V1 */ ;
+/* END_MODEL */
+/* ESATAN-TMS version 2020, run date 14:09 Wed 12 May 2021 */
+/* BEGIN_MODEL GagarinSat_cfgCryo WORKBENCH_V1 */ ;

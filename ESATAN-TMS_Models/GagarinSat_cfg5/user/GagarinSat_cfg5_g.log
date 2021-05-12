@@ -5334,4 +5334,138 @@ STR_RAD_4 = CONDUCTIVE_CONDUCTOR(
 
 /* ESATAN-TMS version 2020, run date 23:46 Tue 11 May 2021 */
 /* BEGIN_MODEL GagarinSat_cfg5 WORKBENCH_V1 */
+/* END_MODEL */
+/* ESATAN-TMS version 2020, run date 10:17 Wed 12 May 2021 */
+/* BEGIN_MODEL GagarinSat_cfg5 WORKBENCH_V1 */
+/* END_MODEL */
+/* ESATAN-TMS version 2020, run date 10:50 Wed 12 May 2021 */
+/* BEGIN_MODEL GagarinSat_cfg5 WORKBENCH_V1 */
+RAD_IR_TEL = SHELL_SCS_CONE(
+    semi_ang = 45.0,
+    hmax = 0.25,
+    hmin = 0.1385,
+    angmin = 0.0,
+    angmax = 360.0,
+    sense = -1,
+    colour1 = "PURPLE",
+    colour2 = "PALE_BLUE",
+    side1 = "Active",
+    nbase1 = 61000,
+    ndelta1_1 = 1,
+    side2 = "Active",
+    nbase2 = 61000,
+    ndelta2_1 = 1,
+    label1 = "RAD_Ins",
+    label2 = "RAD_Ins",
+    opt1 = OSR,
+    opt2 = OSR,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    bulk = Copper,
+    thick = 5.0e-03,
+    meshType1 = "regular",
+    nodes1 = 1,
+    meshType2 = "regular",
+    nodes2 = 3,
+    analysis_type = "Lumped Parameter");
+
+RAD_IR_TEL = ROTATE(
+    object_name = RAD_IR_TEL,
+    x_ang = 90.0,
+    z_ang = -90.0,
+    clear = TRUE);
+RAD_IR_TEL = TRANSLATE(
+    object_name = RAD_IR_TEL,
+    x_dist = -0.211,
+    z_dist = 0.55);
+RAD_IR_TEL_2 = SHELL_SCS_DISC(
+    rmax = 0.1385,
+    rmin = 0.0,
+    height = 0.0,
+    angmin = 0.0,
+    angmax = 360.0,
+    sense = -1,
+    colour1 = "PURPLE",
+    colour2 = "PALE_BLUE",
+    side1 = "Active",
+    nbase1 = 62000,
+    ndelta1_1 = 1,
+    side2 = "Active",
+    nbase2 = 62500,
+    ndelta2_1 = 1,
+    label1 = "RAD_Ins",
+    label2 = "RAD_Ins",
+    opt1 = OSR,
+    opt2 = OSR,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    bulk = Copper,
+    thick = 5.0e-03,
+    meshType1 = "regular",
+    nodes1 = 1,
+    meshType2 = "regular",
+    nodes2 = 1,
+    analysis_type = "Lumped Parameter");
+
+RAD_IR_TEL_2 = ROTATE(
+    object_name = RAD_IR_TEL_2,
+    x_ang = 90.0,
+    z_ang = 90.0,
+    clear = TRUE);
+RAD_IR_TEL_2 = TRANSLATE(
+    object_name = RAD_IR_TEL_2,
+    x_dist = -0.21,
+    z_dist = 0.55);
+RAD_INS = SHELL_SCS_RECTANGLE(
+    xmax = 0.25,
+    ymax = 0.34,
+    height = 0.0,
+    xmin = 0.0,
+    ymin = 0.0,
+    sense = -1,
+    colour1 = "PALE_BLUE",
+    colour2 = "PURPLE",
+    side1 = "Active",
+    nbase1 = 60000,
+    ndelta1_1 = 1,
+    side2 = "Active",
+    nbase2 = 60000,
+    ndelta2_1 = 1,
+    label1 = "RAD_IR_Tel",
+    label2 = "RAD_IR_Tel",
+    opt1 = OSR,
+    opt2 = OSR,
+    criticality1 = "NORMAL",
+    criticality2 = "NORMAL",
+    bulk = Copper,
+    thick = 5.0e-03,
+    meshType1 = "regular",
+    nodes1 = 3,
+    meshType2 = "regular",
+    nodes2 = 3,
+    analysis_type = "Lumped Parameter");
+
+RAD_INS = ROTATE(
+    object_name = RAD_INS,
+    x_ang = 90.0,
+    z_ang = 90.0,
+    clear = TRUE);
+RAD_INS = TRANSLATE(
+    object_name = RAD_INS,
+    x_dist = 0.21,
+    y_dist = -0.125,
+    z_dist = 0.36);
+RAD_Ins_block_to_cone_1 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "RAD_IR_TEL_2:face2",
+    destination_reference = "RAD_IR_TEL:face2",
+    conductor_override = 50.0);
+
+RAD_Ins_block_to_cone_2 = CONDUCTIVE_CONDUCTOR(
+    source_reference = "RAD_IR_TEL_2:face1",
+    destination_reference = "RAD_IR_TEL:face1",
+    conductor_override = 1270.0);
+
+/* END_MODEL */
+/* ESATAN-TMS version 2020, run date 14:09 Wed 12 May 2021 */
+/* BEGIN_MODEL GagarinSat_cfg5 WORKBENCH_V1 */
 END_MODEL
