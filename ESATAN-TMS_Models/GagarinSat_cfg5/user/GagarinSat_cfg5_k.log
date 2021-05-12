@@ -1387,3 +1387,49 @@ FOR (orbit_index = 1;
 END_FOR
 DELETE radiative_case_error_flag;
 
+/* /* END_MODEL */ */
+/* ESATAN-TMS version 2020, run date 23:48 Wed 12 May 2021 */
+/* BEGIN_MODEL GagarinSat_cfg5 WORKBENCH_V1 */ ;
+DEFINE_ACCURACY (
+	radiative_case = Rad_Case_00,
+	control_method = "FIXED_RAYS",
+	ray_total_cutoff = 5.0e-03,
+	coupling_min_rays_normal = 10000,
+	coupling_min_rays_critical = 100000,
+	coupling_min_rays_non_critical = 1000,
+	hf_min_rays_normal = 10000,
+	hf_min_rays_critical = 100000,
+	hf_min_rays_non_critical = 1000,
+	seed = 1000,
+	extinct = 1.0e-03);
+
+GC = EVAL(Rad_Case_00.GC);
+R_PLANET = EVAL(Rad_Case_00.ORBIT.PLANET_RADIUS);
+R_SUN = EVAL(Rad_Case_00.ORBIT.SUN_RADIUS);
+IF (EVAL(Rad_Case_00.SUN_DISTANCE_OVERRIDE) == 0.0) THEN
+    SUN_PLANET_DIST = EVAL(Rad_Case_00.ORBIT.SUN_DISTANCE);
+ELSE
+    SUN_PLANET_DIST = EVAL(Rad_Case_00.SUN_DISTANCE_OVERRIDE);
+END_IF
+T_SUN = EVAL(Rad_Case_00.T_SUN);
+SOLAR_DECLINATION = EVAL(Rad_Case_00.ORBIT.SOLAR_DECLN);
+
+PROP_ENV = Rad_Case_00.PROP_ENV;
+
+INTEGER radiative_case_error_flag = 0;
+FOR (orbit_index = 1;
+    orbit_index <= Rad_Case_00.NUM_ORBIT_POSITIONS;
+    orbit_index = EVAL(orbit_index + 1))
+
+    CALCULATE (
+        radiative_case = Rad_Case_00,
+        calc_types = "REF, SDF, SAF, PAF, ALBEDO_PAF",
+        pos_index = orbit_index,
+        eclipse_check = TRUE,
+        error_code = radiative_case_error_flag);
+
+END_FOR
+DELETE radiative_case_error_flag;
+
+/* ESATAN-TMS version 2020, run date 23:58 Wed 12 May 2021 */
+/* BEGIN_MODEL GagarinSat_cfg5 WORKBENCH_V1 */ ;

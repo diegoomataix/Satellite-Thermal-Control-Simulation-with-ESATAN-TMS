@@ -17211,3 +17211,969 @@ DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
         asm_axes = TRUE,
         points = FALSE);
 
+LOAD_EXTERNAL_RESULTS (
+   type = "TMD",
+   file = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\GagarinSat_cfg5\esatan\Case_00_Surv\GAGARINSAT_CFG5_CASE_00_.TMD");
+RADIATIVE_PRE_PROCESS_OVERLAY(source = "GEOMETRY",
+                              display = "MODEL_ONLY");
+CLEAR();
+
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type= "Thermal_Node",
+    start_time = 0.0,
+    end_time = 6059.29,
+    cycle = 1,
+    radiative_case = Rad_Case_00,
+    analysis_case = Case_00_Surv,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+    average = TRUE
+
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = -62.92442739564778,
+    max = 28.886119642810478,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg5.RANGE = "default_range";
+GagarinSat_cfg5.SHADE = "continuous_shade";
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+STRING vis_items_show[5] = {"CCD",
+    "OBDH",
+    "PLD1_RW",
+    "PLD2_ATCS",
+    "Surv_OBDH"};
+THERMAL_PRE_PROCESS_OVERLAY(
+    result_type = "BOUNDARY_CONDITIONS",
+    item_names = "vis_items_show"
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 0.0,
+    type = "LINEAR"
+);
+
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 0.0,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = boundary_condition_shade,
+    discrete = "boundary_condition[1]",
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg5.DISCRETE = "boundary_condition[1]";
+GagarinSat_cfg5.SHADE = "boundary_condition_shade";
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Boundary Conditions Type",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+LOAD_EXTERNAL_RESULTS (
+   type = "TMD",
+   file = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\GagarinSat_cfg5\esatan\Case_00_Surv\GAGARINSAT_CFG5_CASE_00_.TMD");
+RADIATIVE_PRE_PROCESS_OVERLAY(source = "GEOMETRY",
+                              display = "MODEL_ONLY");
+CLEAR();
+
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+DELETE vis_items_show;
+STRING vis_items_show[5] = {"CCD",
+    "OBDH",
+    "PLD1_RW",
+    "PLD2_ATCS",
+    "Surv_OBDH"};
+THERMAL_PRE_PROCESS_OVERLAY(
+    result_type = "BOUNDARY_CONDITIONS",
+    item_names = "vis_items_show"
+);
+CLEAR();
+
+KEY(shade = boundary_condition_shade,
+    discrete = "boundary_condition[1]",
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg5.DISCRETE = "boundary_condition[1]";
+GagarinSat_cfg5.SHADE = "boundary_condition_shade";
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Boundary Conditions Type",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type= "Thermal_Node",
+    start_time = 0.0,
+    end_time = 6059.29,
+    cycle = 1,
+    radiative_case = Rad_Case_00,
+    analysis_case = Case_00_Surv,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+     planet_scale = 0.628,
+     model_scale = 0.59,
+     draw_periapsis = TRUE,
+     draw_asc_node = TRUE
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = -64.08151978259859,
+    max = 58.17348070807315,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+DELETE vis_items_show;
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg5.RANGE = "default_range";
+GagarinSat_cfg5.SHADE = "continuous_shade";
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_00_Surv);
+DRAW_PERIAPSIS(orbit = Rad_Case_00.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_00.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_Case_00,
+            time = vis_orbit_times[1],
+            scale = 0.628,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= 11;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.59 * (Rad_Case_00.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+END_FOR
+LOAD_EXTERNAL_RESULTS (
+   type = "TMD",
+   file = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\GagarinSat_cfg5\esatan\Case_00_Surv\GAGARINSAT_CFG5_CASE_00_.TMD");
+RADIATIVE_PRE_PROCESS_OVERLAY(source = "GEOMETRY",
+                              display = "MODEL_ONLY");
+CLEAR();
+
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+RESET_VIEW();
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type= "Thermal_Node",
+    start_time = 0.0,
+    end_time = 6059.29,
+    cycle = 1,
+    radiative_case = Rad_Case_00,
+    analysis_case = Case_00_Surv,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+     planet_scale = 0.628,
+     model_scale = 0.59,
+     draw_periapsis = TRUE,
+     draw_asc_node = TRUE
+);
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg5.RANGE = "default_range";
+GagarinSat_cfg5.SHADE = "continuous_shade";
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_00_Surv);
+DRAW_PERIAPSIS(orbit = Rad_Case_00.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_00.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_Case_00,
+            time = vis_orbit_times[1],
+            scale = 0.628,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= 11;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.59 * (Rad_Case_00.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+END_FOR
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type= "Thermal_Node",
+    analysis_case = Case_00_Surv,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+     planet_scale = 0.628,
+     model_scale = 0.59,
+     draw_periapsis = TRUE,
+     draw_asc_node = TRUE
+);
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg5.RANGE = "default_range";
+GagarinSat_cfg5.SHADE = "continuous_shade";
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_00_Surv);
+DRAW_PERIAPSIS(orbit = Rad_Case_00.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_00.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_Case_00,
+            time = vis_orbit_times[1],
+            scale = 0.628,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= 11;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.59 * (Rad_Case_00.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+END_FOR
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type= "Thermal_Node",
+    start_time = 0.0,
+    end_time = 6059.29,
+    cycle = 1,
+    radiative_case = Rad_Case_00,
+    analysis_case = Case_00_Surv,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+     planet_scale = 0.628,
+     model_scale = 0.59,
+     draw_periapsis = TRUE,
+     draw_asc_node = TRUE
+);
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg5.RANGE = "default_range";
+GagarinSat_cfg5.SHADE = "continuous_shade";
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_00_Surv);
+DRAW_PERIAPSIS(orbit = Rad_Case_00.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_00.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_Case_00,
+            time = vis_orbit_times[1],
+            scale = 0.628,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= 11;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.59 * (Rad_Case_00.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+END_FOR
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg5.RANGE = "default_range";
+GagarinSat_cfg5.SHADE = "continuous_shade";
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_00_Surv);
+DRAW_PERIAPSIS(orbit = Rad_Case_00.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_00.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_Case_00,
+            time = vis_orbit_times[1],
+            scale = 0.628,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= 11;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.59 * (Rad_Case_00.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+END_FOR
+LOAD_EXTERNAL_RESULTS (
+   type = "TMD",
+   file = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\GagarinSat_cfg5\esatan\Case_00_Surv\GAGARINSAT_CFG5_CASE_00_.TMD");
+RADIATIVE_PRE_PROCESS_OVERLAY(source = "GEOMETRY",
+                              display = "MODEL_ONLY");
+CLEAR();
+
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+RESET_VIEW();
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type= "Thermal_Node",
+    start_time = 0.0,
+    end_time = 6059.29,
+    cycle = 1,
+    radiative_case = Rad_Case_00,
+    analysis_case = Case_00_Surv,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+     planet_scale = 0.628,
+     model_scale = 0.59,
+     draw_periapsis = TRUE,
+     draw_asc_node = TRUE
+);
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg5.RANGE = "default_range";
+GagarinSat_cfg5.SHADE = "continuous_shade";
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_00_Surv);
+DRAW_PERIAPSIS(orbit = Rad_Case_00.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_00.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_Case_00,
+            time = vis_orbit_times[1],
+            scale = 0.628,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= 11;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.59 * (Rad_Case_00.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+END_FOR
+DEFINE_RANGE(
+    range = default_range,
+    min = -64.08151978259859,
+    max = 136.70568257607465,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg5.RANGE = "default_range";
+GagarinSat_cfg5.SHADE = "continuous_shade";
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_00_Surv);
+DRAW_PERIAPSIS(orbit = Rad_Case_00.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_00.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_Case_00,
+            time = vis_orbit_times[1],
+            scale = 0.628,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= 11;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.59 * (Rad_Case_00.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+END_FOR
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type= "Thermal_Node",
+    start_time = 0.0,
+    end_time = 6059.29,
+    cycle = 1,
+    radiative_case = Rad_Case_00,
+    analysis_case = Case_00_Surv,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+    average = TRUE
+
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = -62.92442739564778,
+    max = 28.886119642810478,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg5.RANGE = "default_range";
+GagarinSat_cfg5.SHADE = "continuous_shade";
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+RESET_VIEW();
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg5.RANGE = "default_range";
+GagarinSat_cfg5.SHADE = "continuous_shade";
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg5.RANGE = "default_range";
+GagarinSat_cfg5.SHADE = "continuous_shade";
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg5.RANGE = "default_range";
+GagarinSat_cfg5.SHADE = "continuous_shade";
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg5.RANGE = "default_range";
+GagarinSat_cfg5.SHADE = "continuous_shade";
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type= "Thermal_Node",
+    start_time = 0.0,
+    end_time = 6059.29,
+    cycle = 1,
+    radiative_case = Rad_Case_00,
+    analysis_case = Case_00_Surv,
+    fixed_scale = FALSE,
+    attribute = "T_MIN",
+    average = TRUE
+
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = -64.26159834466702,
+    max = -1.8851742867578933,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg5.RANGE = "default_range";
+GagarinSat_cfg5.SHADE = "continuous_shade";
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: T MIN",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type= "Thermal_Node",
+    start_time = 0.0,
+    end_time = 6059.29,
+    cycle = 1,
+    radiative_case = Rad_Case_00,
+    analysis_case = Case_00_Surv,
+    fixed_scale = FALSE,
+    attribute = "T_MAX",
+    average = TRUE
+
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = -0.08389305102868878,
+    max = 138.80946410837865,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg5.RANGE = "default_range";
+GagarinSat_cfg5.SHADE = "continuous_shade";
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: T MAX",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+/* /* END_MODEL */ */
+/* ESATAN-TMS version 2020, run date 23:48 Wed 12 May 2021 */
+/* BEGIN_MODEL GagarinSat_cfg5 WORKBENCH_V1 */ ;
+RADIATIVE_PRE_PROCESS_OVERLAY(source = "GEOMETRY",
+                              display = "MODEL_ONLY");
+CLEAR();
+
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+RESET_VIEW();
+
+CLEAR();
+
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+LOAD_EXTERNAL_RESULTS (
+   type = "TMD",
+   file = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\GagarinSat_cfg5\esatan\Case_00\GAGARINSAT_CFG5_CASE_00.TMD");
+RADIATIVE_PRE_PROCESS_OVERLAY(source = "GEOMETRY",
+                              display = "MODEL_ONLY");
+CLEAR();
+
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type= "Thermal_Node",
+    start_time = 0.0,
+    end_time = 6059.29,
+    cycle = 1,
+    radiative_case = Rad_Case_00,
+    analysis_case = Case_00,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+     planet_scale = 0.628,
+     model_scale = 0.59,
+     draw_periapsis = TRUE,
+     draw_asc_node = TRUE
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = -60.815035727375815,
+    max = 138.44924055116002,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg5.RANGE = "default_range";
+GagarinSat_cfg5.SHADE = "continuous_shade";
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_00);
+DRAW_PERIAPSIS(orbit = Rad_Case_00.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_00.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_Case_00,
+            time = vis_orbit_times[vis_orbit_index],
+            scale = 0.628,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.59 * (Rad_Case_00.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+/* ESATAN-TMS version 2020, run date 23:58 Wed 12 May 2021 */
+/* BEGIN_MODEL GagarinSat_cfg5 WORKBENCH_V1 */ ;
+RADIATIVE_PRE_PROCESS_OVERLAY(source = "GEOMETRY",
+                              display = "MODEL_ONLY");
+CLEAR();
+
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+RESET_VIEW();
+
+CLEAR();
+
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+LOAD_EXTERNAL_RESULTS (
+   type = "TMD",
+   file = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\GagarinSat_cfg5\esatan\Case_00_Surv\GAGARINSAT_CFG5_CASE_00_.TMD");
+RADIATIVE_PRE_PROCESS_OVERLAY(source = "GEOMETRY",
+                              display = "MODEL_ONLY");
+CLEAR();
+
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type= "Thermal_Node",
+    start_time = 0.0,
+    end_time = 6059.29,
+    cycle = 1,
+    radiative_case = Rad_Case_00,
+    analysis_case = Case_00_Surv,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+     draw_periapsis = TRUE,
+     draw_asc_node = TRUE
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = -64.08151978259859,
+    max = 136.70568257607465,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+GagarinSat_cfg5.RANGE = "default_range";
+GagarinSat_cfg5.SHADE = "continuous_shade";
+GagarinSat_cfg5.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_00_Surv);
+DRAW_PERIAPSIS(orbit = Rad_Case_00.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_00.ORBIT);
+DRAW_PLANET(radiative_case = Rad_Case_00,
+            time = vis_orbit_times[vis_orbit_index],
+            scale = 1.0,
+            range = default_range,
+            shade = continuous_shade
+);
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.02 * (Rad_Case_00.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
