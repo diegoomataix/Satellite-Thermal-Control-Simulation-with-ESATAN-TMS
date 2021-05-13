@@ -1,4 +1,4 @@
-BEGIN_MODEL GagarinSat_cfg5 WORKBENCH_V1 ESARAD_GENERATED
+BEGIN_MODEL ChilledSAT WORKBENCH_V1 ESARAD_GENERATED
 
 RADIATIVE_CASE Rad_Case_00;
 DEFINE_RADIATIVE_CASE (
@@ -115,7 +115,7 @@ DEFINE_MISSION (
     primary_vector = [0.0, 0.0, 1.0], 
     primary_direction = "ZENITH", 
     second_vector = [0.0, 1.0, 0.0], 
-    second_direction = "VELOCITY", 
+    second_direction = "TRUE_SUN", 
     euler_order = "phi, psi, omega", 
     spinning_craft = FALSE, 
     sun_temperature = 5778.0, 

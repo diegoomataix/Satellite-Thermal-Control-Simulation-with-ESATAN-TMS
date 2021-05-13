@@ -6059,7 +6059,7 @@ STR_RAD_4 = CONDUCTIVE_CONDUCTOR(
     destination_reference = "RAD_STR:surface2",
     conductor_override = 1.41299);
 
-/* END_MODEL */
+/* /* END_MODEL */ */
 /* ESATAN-TMS version 2020, run date 23:51 Wed 12 May 2021 */
 /* BEGIN_MODEL GagarinSat_cfg5 WORKBENCH_V1 */
 RAD_STR = SHELL_SCS_RECTANGLE(
@@ -6095,3 +6095,12 @@ RAD_STR = TRANSLATE(
     y_dist = -0.1,
     z_dist = 0.7355,
     clear = TRUE);
+/* ESATAN-TMS version 2020, run date 0:18 Thu 13 May 2021 */
+/* BEGIN_MODEL GagarinSat_cfg5 WORKBENCH_V1 */
+/* END_MODEL */
+/* ESATAN-TMS version 2020, run date 12:47 Thu 13 May 2021 */
+/* BEGIN_MODEL GagarinSat_cfg5 WORKBENCH_V1 */
+/* END_MODEL */
+/* ESATAN-TMS version 2020, run date 14:27 Thu 13 May 2021 */
+/* BEGIN_MODEL GagarinSat_cfg5 WORKBENCH_V1 */
+END_MODEL

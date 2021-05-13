@@ -1,4 +1,4 @@
-BEGIN_MODEL GagarinSat_cfg5 WORKBENCH_V1 ESARAD_GENERATED
+BEGIN_MODEL ChilledSAT WORKBENCH_V1 ESARAD_GENERATED
 
 BOUNDARY_CONDITION PLD2_ATCS;
 PLD2_ATCS = TOTAL_AREA_HEAT_LOAD (
@@ -89,7 +89,7 @@ GENERATE_ANALYSIS_FILE(
     hf_averaged = TRUE, 
     hf_cyclic = TRUE, 
     hf_type = "S,A,P", 
-    title = "GagarinSat_cfg5_Case_00", 
+    title = "ChilledSAT_Case_00", 
     dystor = 0, 
     environment = 99999, 
     environment_temperature = -270.0, 
@@ -102,6 +102,67 @@ GENERATE_ANALYSIS_FILE(
 
 RUN_ANALYSIS(
     analysis_case = Case_00, 
+    options = "PreProcess,Solve");
+
+ANALYSIS_CASE Case_00_CC;
+DEFINE_ANALYSIS_CASE(
+    analysis_case = Case_00_CC, 
+    title = "Cold Case", 
+    description = "Cold Case for LEO SS 12am orbit", 
+    solver = "ESATAN", 
+    template_file = "Template.tpl", 
+    analysis_file = "GagarinSat_cfg5_Case_00_CC.d", 
+    radiative_case = Rad_Case_00);
+
+GENERATE_TEMPLATE(
+    analysis_case = Case_00_CC, 
+    submodel_files = FALSE, 
+    maxmin = TRUE, 
+    execution_block = "
+C
+      TIMEND=6059.2857
+      OUTINT=605.92857
+      NLOOP=100
+      RELXCA=0.01
+      DTIMEI=1.0
+      CALL SOLCYC('SLCRNC',0.1D0,0.1D0,6059.2857D0,100,' ','NONE')
+C
+      CALL SLCRNC
+C
+", 
+    output_block = "      CALL PRNDTB(' ', 'L, T, QS, QE, QA, QI, C', CURRENT)
+C
+      CALL DMPTMD(' ', 'NODES, CONDUCTORS, CONSTANTS', CURRENT, ' ')
+
+");
+
+IMPORT_ANALYSIS_CASE_FILE(
+    analysis_case = Case_00_CC,
+    source_file_path = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\ChilledSAT\ChilledSAT_Case_00_CC.tpl",
+    destination_file_name = "Template.tpl");
+
+GENERATE_ANALYSIS_FILE(
+    analysis_case = Case_00_CC, 
+    results = "GL,TRANS_HF,TRANS_REF", 
+    ref_averaged = TRUE, 
+    ref_cyclic = TRUE, 
+    ref_mf = 1.0, 
+    hf_averaged = TRUE, 
+    hf_cyclic = TRUE, 
+    hf_type = "S,A,P", 
+    title = "ChilledSAT_Case_00_CC", 
+    dystor = 0, 
+    environment = 99999, 
+    environment_temperature = -270.0, 
+    inactive = 99998, 
+    area_mf = 1.0, 
+    segments = FALSE, 
+    acd_file = TRUE, 
+    ref_deviation = 5.0e-03, 
+    hf_deviation = 5.0e-03);
+
+RUN_ANALYSIS(
+    analysis_case = Case_00_CC, 
     options = "PreProcess,Solve");
 
 ANALYSIS_CASE Case_00_Surv;
@@ -155,7 +216,7 @@ GENERATE_ANALYSIS_FILE(
     hf_averaged = TRUE, 
     hf_cyclic = TRUE, 
     hf_type = "S,A,P", 
-    title = "GagarinSat_cfg5_Case_00_Surv", 
+    title = "ChilledSAT_Case_00_Surv", 
     dystor = 0, 
     environment = 99999, 
     environment_temperature = -270.0, 
@@ -173,6 +234,9 @@ RUN_ANALYSIS(
 ANALYSIS_CASE Case_01;
 DEFINE_ANALYSIS_CASE(
     analysis_case = Case_01, 
+    title = "LEO SS 6am Case", 
+    description = "LEO SS 6am Case
+Operating mode ON", 
     solver = "ESATAN", 
     template_file = "Template.tpl", 
     analysis_file = "GagarinSat_cfg5_Case_01.d", 
@@ -234,7 +298,7 @@ GENERATE_ANALYSIS_FILE(
     hf_averaged = TRUE, 
     hf_cyclic = TRUE, 
     hf_type = "S,A,P", 
-    title = "GagarinSat_cfg5_Case_01", 
+    title = "ChilledSAT_Case_01", 
     dystor = 0, 
     environment = 99999, 
     environment_temperature = -270.0, 

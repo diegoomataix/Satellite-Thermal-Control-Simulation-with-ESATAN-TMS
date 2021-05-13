@@ -1,0 +1,8 @@
+# Definitions for MaxMin data added by ESATAN-TMS
+$USER_NODE_ENTITIES
+$REAL
+T_MIN ;
+TIM_MIN ;
+T_MAX ;
+TIM_MAX ;
+#

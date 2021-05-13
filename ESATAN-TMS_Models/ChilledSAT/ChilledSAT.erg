@@ -1,4 +1,4 @@
-BEGIN_MODEL GagarinSat_cfg5 WORKBENCH_V1 ESARAD_GENERATED
+BEGIN_MODEL ChilledSAT WORKBENCH_V1 ESARAD_GENERATED
 
 /* Start of independent variable block */
 
@@ -1313,7 +1313,7 @@ GEOMETRY REFERENCE_BODY;
 REFERENCE_BODY = BODY + INS + IR_TEL + 
     RAD + MLI_asmbly + RAD2;
 
-GagarinSat_cfg5 = ASSEMBLE(
+ChilledSAT = ASSEMBLE(
     ref_comp = REFERENCE_BODY, 
     moving_comp = Solar_Panles_xPlus, 
     xt = 0.0, 
