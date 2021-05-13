@@ -1,4 +1,4 @@
-BEGIN_MODEL GagarinSat_cfgCryo WORKBENCH_V1 ESARAD_GENERATED
+BEGIN_MODEL CryoSAT WORKBENCH_V1 ESARAD_GENERATED
 
 BOUNDARY_CONDITION PLD2_ATCS;
 PLD2_ATCS = TOTAL_AREA_HEAT_LOAD (
@@ -40,7 +40,7 @@ DEFINE_ANALYSIS_CASE(
     analysis_case = Case_00, 
     solver = "ESATAN", 
     template_file = "Template.tpl", 
-    analysis_file = "GagarinSat_v0_Case_00.d", 
+    analysis_file = "GagarinSat_cfgCryo_Case_00.d", 
     radiative_case = Rad_Case_00);
 
 SET_BOUNDARY_CONDITION (
@@ -109,7 +109,7 @@ GENERATE_ANALYSIS_FILE(
     hf_averaged = TRUE, 
     hf_cyclic = TRUE, 
     hf_type = "S,A,P", 
-    title = "GagarinSat_cfgCryo_Case_00", 
+    title = "CryoSAT_Case_00", 
     dystor = 0, 
     environment = 99999, 
     environment_temperature = -270.0, 
@@ -124,6 +124,68 @@ RUN_ANALYSIS(
     analysis_case = Case_00, 
     options = "PreProcess,Solve");
 
+ANALYSIS_CASE Case_00_CC;
+DEFINE_ANALYSIS_CASE(
+    analysis_case = Case_00_CC, 
+    description = "LEO SS 12am
+Cold Case ON
+", 
+    solver = "ESATAN", 
+    template_file = "Template.tpl", 
+    analysis_file = "GagarinSat_cfgCryo_Case_00_CC.d", 
+    radiative_case = Rad_Case_00_Surv);
+
+GENERATE_TEMPLATE(
+    analysis_case = Case_00_CC, 
+    submodel_files = FALSE, 
+    maxmin = TRUE, 
+    execution_block = "
+C
+      TIMEND=6059.2857
+      OUTINT=605.92857
+      NLOOP=100
+      RELXCA=0.01
+      DTIMEI=1.0
+      CALL SOLCYC('SLCRNC',0.1D0,0.1D0,6059.2857D0,100,' ','NONE')
+C
+      CALL SLCRNC
+C
+", 
+    output_block = "      CALL PRNDTB(' ', 'L, T, QS, QE, QA, QI, C', CURRENT)
+C
+      CALL DMPTMD(' ', 'NODES, CONDUCTORS, CONSTANTS', CURRENT, ' ')
+
+");
+
+IMPORT_ANALYSIS_CASE_FILE(
+    analysis_case = Case_00_CC,
+    source_file_path = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\CryoSAT\CryoSAT_Case_00_CC.tpl",
+    destination_file_name = "Template.tpl");
+
+GENERATE_ANALYSIS_FILE(
+    analysis_case = Case_00_CC, 
+    results = "GL,TRANS_HF,TRANS_REF", 
+    ref_averaged = TRUE, 
+    ref_cyclic = TRUE, 
+    ref_mf = 1.0, 
+    hf_averaged = TRUE, 
+    hf_cyclic = TRUE, 
+    hf_type = "S,A,P", 
+    title = "CryoSAT_Case_00_CC", 
+    dystor = 0, 
+    environment = 99999, 
+    environment_temperature = -270.0, 
+    inactive = 99998, 
+    area_mf = 1.0, 
+    segments = FALSE, 
+    acd_file = TRUE, 
+    ref_deviation = 5.0e-03, 
+    hf_deviation = 5.0e-03);
+
+RUN_ANALYSIS(
+    analysis_case = Case_00_CC, 
+    options = "PreProcess,Solve");
+
 ANALYSIS_CASE Case_00_Surv;
 DEFINE_ANALYSIS_CASE(
     analysis_case = Case_00_Surv, 
@@ -133,7 +195,7 @@ Survival Mode ON
     solver = "ESATAN", 
     template_file = "Template.tpl", 
     analysis_file = "GagarinSat_cfgCryo_Case_00_Surv.d", 
-    radiative_case = Rad_Case_00_Surv);
+    radiative_case = Rad_Case_00);
 
 SET_BOUNDARY_CONDITION (
     analysis_case = Case_00_Surv, 
@@ -176,7 +238,7 @@ GENERATE_ANALYSIS_FILE(
     hf_averaged = TRUE, 
     hf_cyclic = TRUE, 
     hf_type = "S,A,P", 
-    title = "GagarinSat_cfgCryo_Case_00_Surv", 
+    title = "CryoSAT_Case_00_Surv", 
     dystor = 0, 
     environment = 99999, 
     environment_temperature = -270.0, 
@@ -194,6 +256,9 @@ RUN_ANALYSIS(
 ANALYSIS_CASE Case_01;
 DEFINE_ANALYSIS_CASE(
     analysis_case = Case_01, 
+    title = "LEO SS6am Ops", 
+    description = "LEO SS 6am
+Operational Mode ON", 
     solver = "ESATAN", 
     template_file = "Template.tpl", 
     analysis_file = "GagarinSat_cfgCryo_Case_01.d", 
@@ -265,7 +330,7 @@ GENERATE_ANALYSIS_FILE(
     hf_averaged = TRUE, 
     hf_cyclic = TRUE, 
     hf_type = "S,A,P", 
-    title = "GagarinSat_cfgCryo_Case_01", 
+    title = "CryoSAT_Case_01", 
     dystor = 0, 
     environment = 99999, 
     environment_temperature = -270.0, 

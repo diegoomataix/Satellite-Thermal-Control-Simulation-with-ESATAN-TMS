@@ -1,4 +1,4 @@
-BEGIN_MODEL GagarinSat_cfgCryo WORKBENCH_V1 ESARAD_GENERATED
+BEGIN_MODEL CryoSAT WORKBENCH_V1 ESARAD_GENERATED
 
 /* Start of independent variable block */
 
@@ -308,6 +308,7 @@ CCD_CryoCool_Diss = NON_GEOMETRIC_THERMAL_NODE(
     origin = [0.0, 0.0, 0.0], 
     radius = 0.04, 
     node_number = 71000, 
+    model_name = "CryoDiss", 
     volume = 2.9716e-04, 
     bulk = Al_6061, 
     capacitance_override = -10000.0, 
@@ -324,6 +325,7 @@ CCD_CryoCool_Sink = NON_GEOMETRIC_THERMAL_NODE(
     origin = [0.0, 0.0, 0.0], 
     radius = 0.04, 
     node_number = 70500, 
+    model_name = "CryoSink", 
     volume = 2.9716e-04, 
     bulk = Al_6061, 
     capacitance_override = -10000.0, 
@@ -1254,7 +1256,7 @@ GEOMETRY REFERENCE_BODY;
 REFERENCE_BODY = BODY + INS + IR_TEL + 
     RAD + MLI_asmbly + RAD2 + CryoCooler;
 
-GagarinSat_cfgCryo = ASSEMBLE(
+CryoSAT = ASSEMBLE(
     ref_comp = REFERENCE_BODY, 
     moving_comp = Solar_Panles_xPlus, 
     xt = 0.0, 
