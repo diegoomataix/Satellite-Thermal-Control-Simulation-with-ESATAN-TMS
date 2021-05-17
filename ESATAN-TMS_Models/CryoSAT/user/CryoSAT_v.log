@@ -817,3 +817,900 @@ DISPLAY(p_and_o = Rad_Case_01.ORBIT_POSITIONS[vis_orbit_index],
         spin_position = 0);
 
 END_FOR
+LOAD_EXTERNAL_RESULTS (
+   type = "TMD",
+   file = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\CryoSAT\esatan\Case_01\CRYOSAT_CASE_01.TMD");
+RADIATIVE_PRE_PROCESS_OVERLAY(source = "GEOMETRY",
+                              display = "MODEL_ONLY");
+CLEAR();
+
+CryoSAT.NODES = FALSE;
+
+ANNOTATE(string = "Colour",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+RESET_VIEW();
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type= "Thermal_Node",
+    start_time = 0.0,
+    end_time = 6059.29,
+    cycle = 1,
+    radiative_case = Rad_Case_01,
+    analysis_case = Case_01,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+     planet_scale = 0.537,
+     model_scale = 0.501,
+     draw_periapsis = TRUE,
+     draw_asc_node = TRUE
+)
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 1.208547748115838, at anomaly 0.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 13.76976590269541, at anomaly 36.00008479191818.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 23.96742452022012, at anomaly 72.00016958383637.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 24.78734235434001, at anomaly 108.0002543757546.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 15.79217446824651, at anomaly 143.9997450382388.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 1.208621613520029, at anomaly 179.9998298311107.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 13.76970221732535, at anomaly 215.9999146220752.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 23.96739581068936, at anomaly 251.9999994139933.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 24.78736373123599, at anomaly 288.0000842059115.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 15.79202524267934, at anomaly 324.0001689978297.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 1.20843758555227, at anomaly 360.000253789153.
+      Error number: 702 */
+;
+DEFINE_RANGE(
+    range = default_range,
+    min = -203.15,
+    max = 62.202616007645595,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+CryoSAT.RANGE = "default_range";
+CryoSAT.SHADE = "continuous_shade";
+CryoSAT.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_01);
+DRAW_PERIAPSIS(orbit = Rad_Case_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_01.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_Case_01,
+            time = vis_orbit_times[1],
+            scale = 0.537,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= 11;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.501 * (Rad_Case_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+END_FOR
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type = "Thermal_Node",
+    time_step = 0.0,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+    radiative_case = Rad_Case_01
+)
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 1.208547748115838, at anomaly 0.
+      Error number: 702 */
+;
+DEFINE_RANGE(
+    range = default_range,
+    min = -203.15,
+    max = 61.218372129454345,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+CryoSAT.RANGE = "default_range";
+CryoSAT.SHADE = "continuous_shade";
+CryoSAT.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        time = vis_orbit_times[1],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE,
+        assembly_p_and_o = vis_orbit_pos[1]);
+
+RESET_VIEW();
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type= "Thermal_Node",
+    start_time = 0.0,
+    end_time = 6059.29,
+    cycle = 1,
+    radiative_case = Rad_Case_01,
+    analysis_case = Case_01,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+    average = TRUE
+
+)
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 1.208547748115838, at anomaly 0.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 13.76976590269541, at anomaly 36.00008479191818.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 23.96742452022012, at anomaly 72.00016958383637.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 24.78734235434001, at anomaly 108.0002543757546.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 15.79217446824651, at anomaly 143.9997450382388.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 1.208621613520029, at anomaly 179.9998298311107.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 13.76970221732535, at anomaly 215.9999146220752.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 23.96739581068936, at anomaly 251.9999994139933.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 24.78736373123599, at anomaly 288.0000842059115.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 15.79202524267934, at anomaly 324.0001689978297.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 1.20843758555227, at anomaly 360.000253789153.
+      Error number: 702 */
+;
+DEFINE_RANGE(
+    range = default_range,
+    min = -203.14585737481957,
+    max = 61.685559412359304,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+CryoSAT.RANGE = "default_range";
+CryoSAT.SHADE = "continuous_shade";
+CryoSAT.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+DEFINE_RANGE(
+    range = default_range,
+    min = -203.14585737481957,
+    max = 139.66940952787382,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+CryoSAT.RANGE = "default_range";
+CryoSAT.SHADE = "continuous_shade";
+CryoSAT.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type= "Thermal_Node",
+    start_time = 0.0,
+    end_time = 6059.29,
+    cycle = 1,
+    radiative_case = Rad_Case_01,
+    analysis_case = Case_01,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+     planet_scale = 0.537,
+     model_scale = 0.501,
+     draw_periapsis = TRUE,
+     draw_asc_node = TRUE
+)
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 1.208547748115838, at anomaly 0.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 13.76976590269541, at anomaly 36.00008479191818.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 23.96742452022012, at anomaly 72.00016958383637.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 24.78734235434001, at anomaly 108.0002543757546.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 15.79217446824651, at anomaly 143.9997450382388.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 1.208621613520029, at anomaly 179.9998298311107.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 13.76970221732535, at anomaly 215.9999146220752.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 23.96739581068936, at anomaly 251.9999994139933.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 24.78736373123599, at anomaly 288.0000842059115.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 15.79202524267934, at anomaly 324.0001689978297.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 1.20843758555227, at anomaly 360.000253789153.
+      Error number: 702 */
+;
+DEFINE_RANGE(
+    range = default_range,
+    min = -203.15,
+    max = 143.8212258076125,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+CryoSAT.RANGE = "default_range";
+CryoSAT.SHADE = "continuous_shade";
+CryoSAT.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DRAW_ORBIT(analysis_case = Case_01);
+DRAW_PERIAPSIS(orbit = Rad_Case_01.ORBIT);
+DRAW_ASCENDING_NODE(orbit = Rad_Case_01.ORBIT);
+vis_orbit_index = 1;
+vis_orbit_index = 1;
+DRAW_PLANET(radiative_case = Rad_Case_01,
+            time = vis_orbit_times[1],
+            scale = 0.537,
+            range = default_range,
+            shade = continuous_shade
+);
+FOR (vis_orbit_index = 1;
+    vis_orbit_index <= 11;
+    vis_orbit_index = EVAL(vis_orbit_index + 1))
+DISPLAY(p_and_o = vis_orbit_pos[vis_orbit_index],
+        time = vis_orbit_times[vis_orbit_index],
+        scale = 0.501 * (Rad_Case_01.ORBIT.ALT_A + R_PLANET),
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+END_FOR
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type= "Thermal_Node",
+    start_time = 0.0,
+    end_time = 6059.29,
+    cycle = 1,
+    radiative_case = Rad_Case_01,
+    analysis_case = Case_01,
+    fixed_scale = FALSE,
+    attribute = "Temperature",
+    average = TRUE
+
+)
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 1.208547748115838, at anomaly 0.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 13.76976590269541, at anomaly 36.00008479191818.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 23.96742452022012, at anomaly 72.00016958383637.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 24.78734235434001, at anomaly 108.0002543757546.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 15.79217446824651, at anomaly 143.9997450382388.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 1.208621613520029, at anomaly 179.9998298311107.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 13.76970221732535, at anomaly 215.9999146220752.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 23.96739581068936, at anomaly 251.9999994139933.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 24.78736373123599, at anomaly 288.0000842059115.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 15.79202524267934, at anomaly 324.0001689978297.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 1.20843758555227, at anomaly 360.000253789153.
+      Error number: 702 */
+;
+DEFINE_RANGE(
+    range = default_range,
+    min = -203.14585737481957,
+    max = 139.66940952787382,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+CryoSAT.RANGE = "default_range";
+CryoSAT.SHADE = "continuous_shade";
+CryoSAT.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+RESET_VIEW();
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+CryoSAT.RANGE = "default_range";
+CryoSAT.SHADE = "continuous_shade";
+CryoSAT.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+CryoSAT.RANGE = "default_range";
+CryoSAT.SHADE = "continuous_shade";
+CryoSAT.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+CryoSAT.RANGE = "default_range";
+CryoSAT.SHADE = "continuous_shade";
+CryoSAT.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+CryoSAT.RANGE = "default_range";
+CryoSAT.SHADE = "continuous_shade";
+CryoSAT.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+CryoSAT.RANGE = "default_range";
+CryoSAT.SHADE = "continuous_shade";
+CryoSAT.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: Temperature",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type= "Thermal_Node",
+    start_time = 0.0,
+    end_time = 6059.29,
+    cycle = 1,
+    radiative_case = Rad_Case_01,
+    analysis_case = Case_01,
+    fixed_scale = FALSE,
+    attribute = "T_MIN",
+    average = TRUE
+
+)
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 1.208547748115838, at anomaly 0.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 13.76976590269541, at anomaly 36.00008479191818.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 23.96742452022012, at anomaly 72.00016958383637.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 24.78734235434001, at anomaly 108.0002543757546.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 15.79217446824651, at anomaly 143.9997450382388.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 1.208621613520029, at anomaly 179.9998298311107.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 13.76970221732535, at anomaly 215.9999146220752.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 23.96739581068936, at anomaly 251.9999994139933.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 24.78736373123599, at anomaly 288.0000842059115.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 15.79202524267934, at anomaly 324.0001689978297.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 1.20843758555227, at anomaly 360.000253789153.
+      Error number: 702 */
+;
+DEFINE_RANGE(
+    range = default_range,
+    min = -203.14999980008838,
+    max = 0.9378453420865495,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+CryoSAT.RANGE = "default_range";
+CryoSAT.SHADE = "continuous_shade";
+CryoSAT.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: T MIN",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type= "Thermal_Node",
+    start_time = 0.0,
+    end_time = 6059.29,
+    cycle = 1,
+    radiative_case = Rad_Case_01,
+    analysis_case = Case_01,
+    fixed_scale = FALSE,
+    attribute = "T_MAX",
+    average = TRUE
+
+)
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 1.208547748115838, at anomaly 0.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 13.76976590269541, at anomaly 36.00008479191818.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 23.96742452022012, at anomaly 72.00016958383637.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 24.78734235434001, at anomaly 108.0002543757546.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 15.79217446824651, at anomaly 143.9997450382388.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 1.208621613520029, at anomaly 179.9998298311107.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 13.76970221732535, at anomaly 215.9999146220752.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 23.96739581068936, at anomaly 251.9999994139933.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 24.78736373123599, at anomaly 288.0000842059115.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 15.79202524267934, at anomaly 324.0001689978297.
+      Error number: 702 */
+
+   /* Warning Error: current function is orientating main body */
+   /* Unable to orient secondary pointing vector exactly.
+  Angle of pointing vector to direction is 1.20843758555227, at anomaly 360.000253789153.
+      Error number: 702 */
+;
+DEFINE_RANGE(
+    range = default_range,
+    min = -203.14583963319376,
+    max = 143.95051912884614,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+CryoSAT.RANGE = "default_range";
+CryoSAT.SHADE = "continuous_shade";
+CryoSAT.NODES = FALSE;
+
+ANNOTATE(string = "Thermal Node Attributes: T MAX",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+DELETE vis_items_key;
+STRING vis_items_key[13] = {"Solar_Cells",
+    "Al_anodized",
+    "Goldised_Kapton",
+    "Al_anodized_blck",
+    "SSM",
+    "OSR",
+    "Kapton_ITO",
+    "CCD_Detector",
+    "IR_lens",
+    "Al_7075_Polished",
+    "VDA_Kapton",
+    "White_paint",
+    "Black_paint"};
+RADIATIVE_PRE_PROCESS_OVERLAY(
+    source= "THERMO_OPTICAL"
+);
+CLEAR();
+
+DELETE vis_items_key;
+STRING vis_items_key[9] = {"Al_anodized_blck",
+    "Black_paint",
+    "CCD_Detector",
+    "Goldised_Kapton",
+    "IR_lens",
+    "Kapton_ITO",
+    "OSR",
+    "Solar_Cells",
+    "VDA_Kapton"};
+KEY(shade = vis_item_shade,
+    discrete = "vis_items_key[1]",
+    x = 0.02,
+    y = 0.02);
+
+CryoSAT.DISCRETE = "vis_items_key[1]";
+CryoSAT.SHADE = "vis_item_shade";
+CryoSAT.NODES = FALSE;
+
+ANNOTATE(string = "Thermo Optical Properties",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+THERMAL_POST_PROCESS_OVERLAY(
+    record_type= "Heat_Flux_Sum",
+    start_time = 0.0,
+    end_time = 6059.29,
+    cycle = 1,
+    radiative_case = Rad_Case_00,
+    analysis_case = Case_00,
+    albedo_hf="Total_Albedo_Heat_Source",
+    ir_hf="Total_Earth_Heat_Source",
+    solar_hf="Total_Solar_Heat_Source",
+    fixed_scale = FALSE,
+    average = TRUE
+
+);
+DEFINE_RANGE(
+    range = default_range,
+    min = 0.0,
+    max = 1057.977500721491,
+    type = "LINEAR"
+);
+
+CLEAR();
+
+KEY(shade = continuous_shade,
+    range = default_range,
+    x = 0.02,
+    y = 0.02);
+
+CryoSAT.RANGE = "default_range";
+CryoSAT.SHADE = "continuous_shade";
+CryoSAT.NODES = FALSE;
+
+ANNOTATE(string = "Heat Flux (W/m2) Total Albedo Heat Source + Total Earth Heat Source + Total Solar Heat Source",
+         x = 0.02,
+         y = 0.95);
+
+DISPLAY(p_and_o = [0.0,0.0,0.0,0.0,0.0,0.0],
+        scale = 1.0,
+        axes = TRUE,
+        asm_axes = TRUE,
+        points = FALSE);
+
+END_MODEL
