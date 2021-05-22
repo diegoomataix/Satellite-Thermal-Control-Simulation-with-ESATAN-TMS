@@ -1,0 +1,316 @@
+BEGIN_MODEL ChilledSAT WORKBENCH_V1 ESARAD_GENERATED
+
+BOUNDARY_CONDITION PLD2_ATCS;
+PLD2_ATCS = TOTAL_AREA_HEAT_LOAD (
+    reference = "Payload_2", 
+    value = 4.0);
+
+BOUNDARY_CONDITION PLD1_RW;
+PLD1_RW = TOTAL_AREA_HEAT_LOAD (
+    reference = "Payload_1", 
+    value = 2.0);
+
+BOUNDARY_CONDITION OBDH;
+OBDH = TOTAL_AREA_HEAT_LOAD (
+    reference = "Electronic_Box:surface1", 
+    value = 16.0);
+
+BOUNDARY_CONDITION CCD;
+CCD = TOTAL_AREA_HEAT_LOAD (
+    reference = "IR_TEL_CCD:surface1", 
+    value = 0.1);
+
+BOUNDARY_CONDITION Surv_OBDH;
+Surv_OBDH = TOTAL_AREA_HEAT_LOAD (
+    reference = "Electronic_Box:surface1", 
+    value = 8.0);
+
+ANALYSIS_CASE Case_00;
+DEFINE_ANALYSIS_CASE(
+    analysis_case = Case_00, 
+    solver = "ESATAN", 
+    template_file = "Template.tpl", 
+    analysis_file = "GagarinSat_v0_Case_00.d", 
+    radiative_case = Rad_Case_00);
+
+SET_BOUNDARY_CONDITION (
+    analysis_case = Case_00, 
+    boundary_condition = CCD, 
+    applies = TRUE);
+
+SET_BOUNDARY_CONDITION (
+    analysis_case = Case_00, 
+    boundary_condition = OBDH, 
+    applies = TRUE);
+
+SET_BOUNDARY_CONDITION (
+    analysis_case = Case_00, 
+    boundary_condition = PLD1_RW, 
+    applies = TRUE);
+
+SET_BOUNDARY_CONDITION (
+    analysis_case = Case_00, 
+    boundary_condition = PLD2_ATCS, 
+    applies = TRUE);
+
+GENERATE_TEMPLATE(
+    analysis_case = Case_00, 
+    submodel_files = FALSE, 
+    maxmin = TRUE, 
+    execution_block = "
+C
+      TIMEND=6059.2857
+      OUTINT=605.92857
+      NLOOP=100
+      RELXCA=0.01
+      DTIMEI=1.0
+      CALL SOLCYC('SLCRNC',0.1D0,0.1D0,6059.2857D0,100,' ','NONE')
+C
+      CALL SLCRNC
+C
+", 
+    output_block = "      CALL PRNDTB(' ', 'L, T, QS, QE, QA, QI, C', CURRENT)
+C
+      CALL DMPTMD(' ', 'NODES, CONDUCTORS, CONSTANTS', CURRENT, ' ')
+
+");
+
+IMPORT_ANALYSIS_CASE_FILE(
+    analysis_case = Case_00,
+    source_file_path = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\ChilledSAT\ChilledSAT_Case_00.tpl",
+    destination_file_name = "Template.tpl");
+
+GENERATE_ANALYSIS_FILE(
+    analysis_case = Case_00, 
+    results = "GL,TRANS_HF,TRANS_REF", 
+    ref_averaged = TRUE, 
+    ref_cyclic = TRUE, 
+    ref_mf = 1.0, 
+    hf_averaged = TRUE, 
+    hf_cyclic = TRUE, 
+    hf_type = "S,A,P", 
+    title = "ChilledSAT_Case_00", 
+    dystor = 0, 
+    environment = 99999, 
+    environment_temperature = -270.0, 
+    inactive = 99998, 
+    area_mf = 1.0, 
+    segments = FALSE, 
+    acd_file = TRUE, 
+    ref_deviation = 5.0e-03, 
+    hf_deviation = 5.0e-03);
+
+RUN_ANALYSIS(
+    analysis_case = Case_00, 
+    options = "PreProcess,Solve");
+
+ANALYSIS_CASE Case_00_CC;
+DEFINE_ANALYSIS_CASE(
+    analysis_case = Case_00_CC, 
+    title = "Cold Case", 
+    description = "Cold Case for LEO SS 12am orbit", 
+    solver = "ESATAN", 
+    template_file = "Template.tpl", 
+    analysis_file = "GagarinSat_cfg5_Case_00_CC.d", 
+    radiative_case = Rad_Case_00);
+
+GENERATE_TEMPLATE(
+    analysis_case = Case_00_CC, 
+    submodel_files = FALSE, 
+    maxmin = TRUE, 
+    execution_block = "
+C
+      TIMEND=6059.2857
+      OUTINT=605.92857
+      NLOOP=100
+      RELXCA=0.01
+      DTIMEI=1.0
+      CALL SOLCYC('SLCRNC',0.1D0,0.1D0,6059.2857D0,100,' ','NONE')
+C
+      CALL SLCRNC
+C
+", 
+    output_block = "      CALL PRNDTB(' ', 'L, T, QS, QE, QA, QI, C', CURRENT)
+C
+      CALL DMPTMD(' ', 'NODES, CONDUCTORS, CONSTANTS', CURRENT, ' ')
+
+");
+
+IMPORT_ANALYSIS_CASE_FILE(
+    analysis_case = Case_00_CC,
+    source_file_path = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\ChilledSAT\ChilledSAT_Case_00_CC.tpl",
+    destination_file_name = "Template.tpl");
+
+GENERATE_ANALYSIS_FILE(
+    analysis_case = Case_00_CC, 
+    results = "GL,TRANS_HF,TRANS_REF", 
+    ref_averaged = TRUE, 
+    ref_cyclic = TRUE, 
+    ref_mf = 1.0, 
+    hf_averaged = TRUE, 
+    hf_cyclic = TRUE, 
+    hf_type = "S,A,P", 
+    title = "ChilledSAT_Case_00_CC", 
+    dystor = 0, 
+    environment = 99999, 
+    environment_temperature = -270.0, 
+    inactive = 99998, 
+    area_mf = 1.0, 
+    segments = FALSE, 
+    acd_file = TRUE, 
+    ref_deviation = 5.0e-03, 
+    hf_deviation = 5.0e-03);
+
+RUN_ANALYSIS(
+    analysis_case = Case_00_CC, 
+    options = "PreProcess,Solve");
+
+ANALYSIS_CASE Case_00_Surv;
+DEFINE_ANALYSIS_CASE(
+    analysis_case = Case_00_Surv, 
+    title = "Survival mode", 
+    description = "Survival mode for LEO SS 12am orbit", 
+    solver = "ESATAN", 
+    template_file = "Template.tpl", 
+    analysis_file = "GagarinSat_cfg5_Case_00_Surv.d", 
+    radiative_case = Rad_Case_00);
+
+SET_BOUNDARY_CONDITION (
+    analysis_case = Case_00_Surv, 
+    boundary_condition = Surv_OBDH, 
+    applies = TRUE);
+
+GENERATE_TEMPLATE(
+    analysis_case = Case_00_Surv, 
+    submodel_files = FALSE, 
+    maxmin = TRUE, 
+    execution_block = "
+C
+      TIMEND=6059.2857
+      OUTINT=605.92857
+      NLOOP=100
+      RELXCA=0.01
+      DTIMEI=1.0
+      CALL SOLCYC('SLCRNC',0.1D0,0.1D0,6059.2857D0,100,' ','NONE')
+C
+      CALL SLCRNC
+C
+", 
+    output_block = "      CALL PRNDTB(' ', 'L, T, QS, QE, QA, QI, C', CURRENT)
+C
+      CALL DMPTMD(' ', 'NODES, CONDUCTORS, CONSTANTS', CURRENT, ' ')
+
+");
+
+IMPORT_ANALYSIS_CASE_FILE(
+    analysis_case = Case_00_Surv,
+    source_file_path = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\ChilledSAT\ChilledSAT_Case_00_Surv.tpl",
+    destination_file_name = "Template.tpl");
+
+GENERATE_ANALYSIS_FILE(
+    analysis_case = Case_00_Surv, 
+    results = "GL,TRANS_HF,TRANS_REF", 
+    ref_averaged = TRUE, 
+    ref_cyclic = TRUE, 
+    ref_mf = 1.0, 
+    hf_averaged = TRUE, 
+    hf_cyclic = TRUE, 
+    hf_type = "S,A,P", 
+    title = "ChilledSAT_Case_00_Surv", 
+    dystor = 0, 
+    environment = 99999, 
+    environment_temperature = -270.0, 
+    inactive = 99998, 
+    area_mf = 1.0, 
+    segments = FALSE, 
+    acd_file = TRUE, 
+    ref_deviation = 5.0e-03, 
+    hf_deviation = 5.0e-03);
+
+RUN_ANALYSIS(
+    analysis_case = Case_00_Surv, 
+    options = "PreProcess,Solve");
+
+ANALYSIS_CASE Case_01;
+DEFINE_ANALYSIS_CASE(
+    analysis_case = Case_01, 
+    title = "LEO SS 6am Case", 
+    description = "LEO SS 6am Case
+Operating mode ON", 
+    solver = "ESATAN", 
+    template_file = "Template.tpl", 
+    analysis_file = "GagarinSat_cfg5_Case_01.d", 
+    radiative_case = Rad_Case_01);
+
+SET_BOUNDARY_CONDITION (
+    analysis_case = Case_01, 
+    boundary_condition = CCD, 
+    applies = TRUE);
+
+SET_BOUNDARY_CONDITION (
+    analysis_case = Case_01, 
+    boundary_condition = OBDH, 
+    applies = TRUE);
+
+SET_BOUNDARY_CONDITION (
+    analysis_case = Case_01, 
+    boundary_condition = PLD1_RW, 
+    applies = TRUE);
+
+SET_BOUNDARY_CONDITION (
+    analysis_case = Case_01, 
+    boundary_condition = PLD2_ATCS, 
+    applies = TRUE);
+
+GENERATE_TEMPLATE(
+    analysis_case = Case_01, 
+    submodel_files = FALSE, 
+    maxmin = TRUE, 
+    execution_block = "
+C
+      TIMEND=6059.2857
+      OUTINT=605.92857
+      NLOOP=100
+      RELXCA=0.01
+      DTIMEI=1.0
+      CALL SOLCYC('SLCRNC',0.1D0,0.1D0,6059.2857D0,100,' ','NONE')
+C
+      CALL SLCRNC
+C
+", 
+    output_block = "      CALL PRNDTB(' ', 'L, T, QS, QE, QA, QI, C', CURRENT)
+C
+      CALL DMPTMD(' ', 'NODES, CONDUCTORS, CONSTANTS', CURRENT, ' ')
+
+");
+
+IMPORT_ANALYSIS_CASE_FILE(
+    analysis_case = Case_01,
+    source_file_path = "C:\ESATAN-TMS\ESATAN-TMS-Models\ESATAN-TMS_Models\ChilledSAT\ChilledSAT_Case_01.tpl",
+    destination_file_name = "Template.tpl");
+
+GENERATE_ANALYSIS_FILE(
+    analysis_case = Case_01, 
+    results = "GL,TRANS_HF,TRANS_REF", 
+    ref_averaged = TRUE, 
+    ref_cyclic = TRUE, 
+    ref_mf = 1.0, 
+    hf_averaged = TRUE, 
+    hf_cyclic = TRUE, 
+    hf_type = "S,A,P", 
+    title = "ChilledSAT_Case_01", 
+    dystor = 0, 
+    environment = 99999, 
+    environment_temperature = -270.0, 
+    inactive = 99998, 
+    area_mf = 1.0, 
+    segments = FALSE, 
+    acd_file = TRUE, 
+    ref_deviation = 5.0e-03, 
+    hf_deviation = 5.0e-03);
+
+RUN_ANALYSIS(
+    analysis_case = Case_01, 
+    options = "PreProcess,Solve");
+
+END_MODEL
